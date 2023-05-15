@@ -1,0 +1,90 @@
+{% import "macros.html" as macro %}
+
+{% set form_type = 'newsletter' %}
+{% set input_prefix = form_type ~ '-' %}
+
+<p class="color-white like-h4">{{ __('NEWSLETTER headline', 'eugen') }}</p>
+<p class="color-white size-lead mt-xxs">{{ __('NEWSLETTER text', 'eugen') }}</p>
+
+<form class="eugen-form mt-s" data-type="{{ form_type }}" novalidate>
+	<div class="form-grid">
+		<div class="form-col c100">
+			<div class="has-radio">
+				<input type="radio" value="{{ __('FORM salutation female', 'eugen') }}" name="{{ input_prefix }}salutation" id="{{ input_prefix }}salutation-{{ __('FORM salutation female', 'eugen') | slugify }}" />
+				<label for="{{ input_prefix }}salutation-{{ __('FORM salutation female', 'eugen') | slugify }}">
+					<span class="text-wrapper">
+						<span class="radio-status radio-status-inactive icon-radio"></span>
+						<span class="radio-status radio-status-active icon-radio"></span>
+						<span class="label-value">{{ __('FORM salutation female', 'eugen') }}</span>
+					</span>
+				</label>
+			</div>
+			<div class="has-radio">
+				<input type="radio" value="{{ __('FORM salutation male', 'eugen') }}" name="{{ input_prefix }}salutation" id="{{ input_prefix }}salutation-{{ __('FORM salutation male', 'eugen') | slugify }}">
+				<label for="{{ input_prefix }}salutation-{{ __('FORM salutation male', 'eugen') | slugify }}">
+					<span class="text-wrapper">
+						<span class="radio-status radio-status-inactive icon-radio"></span>
+						<span class="radio-status radio-status-active icon-radio"></span>
+						<span class="label-value">{{ __('FORM salutation male', 'eugen') }}</span>
+					</span>
+				</label>
+			</div>
+			<div class="has-radio">
+				<input type="radio" value="ind_Schl_3286" name="{{ input_prefix }}salutation" id="{{ input_prefix }}salutation-{{ __('FORM salutation diverse', 'eugen') | slugify }}">
+				<label for="{{ input_prefix }}salutation-{{ __('FORM salutation diverse', 'eugen') | slugify }}">
+					<span class="text-wrapper">
+						<span class="radio-status radio-status-inactive icon-radio"></span>
+						<span class="radio-status radio-status-active icon-radio"></span>
+						<span class="label-value">{{ __('FORM salutation diverse', 'eugen') }}</span>
+					</span>
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="form-grid">
+		<div class="form-col c50">
+			<label for="{{ input_prefix }}first-name" aria-label="{{ __('FORM first name', 'eugen') }}">
+				<input type="text" name="{{ input_prefix }}first-name" id="{{ input_prefix }}first-name">
+				<span class="placeholder">{{ __('FORM first name', 'eugen') }}</span>
+			</label>
+		</div>
+		<div class="form-col c50">
+			<label for="{{ input_prefix }}last-name"  aria-label="{{ __('FORM last name', 'eugen') }}">
+				<input type="text" name="{{ input_prefix }}last-name" id="{{ input_prefix }}last-name">
+				<span class="placeholder">{{ __('FORM last name', 'eugen') }}</span>
+			</label>
+		</div>
+	</div>
+	<div class="form-grid">
+		<div class="form-col c100">
+			<label for="{{ input_prefix }}email" aria-label="{{ __('FORM e-mail', 'eugen') }}">
+				<input type="email" name="{{ input_prefix }}email" id="{{ input_prefix }}email">
+				<span class="placeholder">{{ __('FORM e-mail', 'eugen') }}</span>
+			</label>
+		</div>
+	</div>
+	<div class="form-grid">
+		<div class="form-col c100">
+			<div class="has-checkbox">
+				<input type="checkbox" name="{{ input_prefix }}consent" id="{{ input_prefix }}consent">
+				<label for="{{ input_prefix }}consent">
+					<span class="text-wrapper">
+						<span class="checkbox-status checkbox-status-inactive icon-consent"></span>
+						<span class="checkbox-status checkbox-status-active icon-consent fa-solid fa-check"></span>
+						<span class="label-value">{{ __('NEWSLETTER consent', 'eugen') }}</span>
+					</span>
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="form-grid mt-m">
+		<div class="form-col c100">
+			<button class="btn btn-primary btn-large btn-full-width" data-submit>{{ __('NEWSLETTER register', 'eugen') }}</button>
+		</div>
+	</div>
+	{% include "partial/recaptcha.twig" %}
+</form>
+
+<div class="form-success mt-s">
+	<p class="lead color-white">{{ __('NEWSLETTER success', 'eugen') }}</p>
+</div>

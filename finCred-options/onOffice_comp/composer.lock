@@ -1,0 +1,58 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "c6e7746107ebe61f0a52ec8c4296b3b6",
+    "packages": [
+        {
+            "name": "onoffice/sdk",
+            "version": "v0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/onOfficeGmbH/sdk.git",
+                "reference": "7c736daa841d7d1ffe362a491d7d8da01190ed5a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/onOfficeGmbH/sdk/zipball/7c736daa841d7d1ffe362a491d7d8da01190ed5a",
+                "reference": "7c736daa841d7d1ffe362a491d7d8da01190ed5a",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "phpunit/phpunit": "^6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "onOffice\\SDK\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Official client to communicate with the onOffice API",
+            "support": {
+                "issues": "https://github.com/onOfficeGmbH/sdk/issues",
+                "source": "https://github.com/onOfficeGmbH/sdk/tree/v0.2.0"
+            },
+            "time": "2020-02-24T11:09:57+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
+}

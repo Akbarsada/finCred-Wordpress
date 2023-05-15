@@ -1,0 +1,352 @@
+#gform_page_1_2{
+  margin-top: 96px;
+
+
+
+
+  //disabled
+  input[type=radio]:disabled + label:before {
+    background-color: #F2F2F2;
+    border: 1px solid #CCCCCC;
+
+  }
+
+  input[type="radio"]:checked:disabled + label:after {
+
+    background: #666666;
+
+  }
+
+  .hr-linien{
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  /*    #field_1_102{
+        #hr-mieter{
+          margin-top: 10px;
+        }
+
+      }
+
+      #field_1_101{
+        #hr-haushalte{
+          margin-top: 10px;
+        }
+
+      }*/
+
+
+
+  #haupt-mieter{
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+  }
+
+  #input_1_41{
+    margin-top: -20px;
+  }
+
+
+
+
+
+
+  .dropdown-content{
+    background-color: #72EDCA;
+    border: #10B485 solid 1px;
+    border-radius: 8px;
+    color: black;
+    font-family: nexa;
+    width: auto;
+    min-width: 244px;
+    height: auto;
+    padding: 8px;
+    padding-top: 16px;
+
+
+  }
+
+  .hr-linien{
+    width: 109%;
+    margin-left: -16px!important;
+  }
+
+  #field_1_93{
+    z-index: 9999;
+  }
+
+  //datum icon
+  #field_1_7,#field_1_117 {
+
+    .ginput_container  {
+      display: inline-block;
+      position: relative;
+      background: #FFF;
+      width: 100%;
+
+    }
+
+    .ginput_container .placeholder {
+      position: absolute;
+      top: 50%;
+      right: 13px;
+      color: #888;
+      margin-top: -.5em;
+      line-height: 1em;
+      z-index: 9999;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 14px;
+      color:#999999;
+      font-size: 16px;
+      text-align: right;
+    }
+
+    .ginput_container  input {
+      padding: 4px 6px;
+      position: relative;
+      z-index: 10;
+      width: 100%;
+    }
+
+    .ginput_container input:focus + .placeholder {
+      display: none;
+    }
+  }
+
+  #input_1_7::placeholder{
+    font-family: Nexa, Arial, Helvetica, sans-serif;
+  }
+
+  #input_1_117::placeholder{
+    font-family: Nexa, Arial, Helvetica, sans-serif;
+  }
+
+  #input_1_117, #input_1_7{
+    width: 292px;
+  }
+
+  input[type=checkbox] + label:before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0px 8px 0 0px;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: #D0F9ED;
+    border: 1px solid #43E7B9;
+  }
+
+  input[type=radio] + label:before {
+    content: '';
+    display:inline-block;
+    width:20px;
+    height:20px;
+    margin: 0px 8px 4px 8px;
+    vertical-align:middle;
+    cursor:pointer;
+    border-radius:  50%;
+    background-color: #D0F9ED;
+    border: 1px solid #43E7B9;
+    margin-right: 8px;
+  }
+
+  input[type="checkbox"]:checked + label:after {
+
+    font-family: 'Material Icons';
+    content: 'check';
+    width: 10px !important;
+    height: 10px !important;
+    color: #CF003D;
+    position: absolute;
+    top: -2px;
+    left: -1px;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 22px;
+  }
+
+  #info_datum,#info_haushalt,#info_mieter,#info_hauptmieter{
+    margin-left: 5px;
+    font-size: 16px;
+  }
+
+
+  #field_1_92{
+    .gsection_title{
+      opacity: 1;
+      color: rgba(0,0,0,1);
+      font-size: 32px;
+      font-weight: 700;
+      font-style: normal;
+      letter-spacing: -0,5px;
+      text-align: left;
+      line-height: 40px;
+    }
+  }
+
+  .zusatzInfo{
+    opacity: 1;
+    color: rgba(0,0,0,1);
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-align: left;
+    line-height: 28px;
+    margin-bottom: 40px;
+  }
+
+  #field_1_42{
+    margin-bottom: 0px;
+  }
+  .hr-linien{
+    border-top: 1px solid rgba(20,225,167, 1);
+    opacity: 1;
+    margin-top: 40px;
+  }
+
+  /*                   #field_1_93,
+                     #field_1_94,
+                     #field_1_14,
+                     #field_1_15,
+                     #field_1_20,
+                     #field_1_25,
+                     #field_1_30{
+                       margin-top: 40px;
+
+                     }*/
+
+  //arrows
+  #field_1_95,
+  #field_1_5{
+    margin-left: 8px;
+    .ginput_container{
+      display: inline;
+    }
+  }
+
+  #field_1_95 > div {
+    text-align: right;
+    margin-top: -62px;
+    margin-right: 20px;
+    ::selection {
+      color: #000;
+      background: transparent!important;
+    }
+  }
+
+  #field_1_5 > div {
+    text-align: right;
+    margin-top: -90px;
+    margin-right: 20px;
+    ::selection {
+      color: #000;
+      background: transparent!important;
+    }
+  }
+
+  #next_mieter,
+  #next_haushalt{
+    position: absolute;
+    margin-top: 6px;
+    margin-left: 14px;
+    cursor: pointer;
+    font-size: 24px;
+  }
+
+  #prev_mieter,
+  #prev_haushalt{
+    position: absolute;
+    margin-top: 6px;
+    margin-left: -24px;
+    cursor: pointer;
+    font-size: 24px;
+  }
+
+  .gform_page_footer {
+    margin-top: 89px !important;
+  }
+
+  //Weiter Button Seite 2
+  #gform_next_button_1_43{
+    border: solid 1px #14E1A7;
+    border-radius: 32px;
+    opacity: 1;
+    background-color: #14e1a7;
+    width: 344px;
+    height: 64px;
+    cursor: pointer;
+    opacity: 1;
+    color: black;
+    font-size: 18px;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 0.7px;
+    text-align: center;
+    line-height: 28px;
+    text-transform: uppercase;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: 94px;
+    padding-top: 7px;
+  }
+
+
+  /*    #next_button_arrow:before{
+        font-family: "Font Awesome 6 Pro";
+        content: "\f061";
+
+        margin-left: -21px;
+
+        opacity: 1;
+        color: rgba(0,0,0,1);
+
+        font-size: 18px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 0.7px;
+        text-align: center;
+        line-height: 27px;
+        text-transform: uppercase;
+      }*/
+  #next_button_arrow{
+    position: absolute;
+    bottom: 123px;
+    right: 130px;
+    font-size: 18px;
+  }
+
+
+  // Seite 2. zurücik Button
+  #gform_previous_button_1_43{
+    border: none;
+    opacity: 1;
+    color: rgba(0,0,0,1);
+    font-size: 18px;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 0.7px;
+    text-align: center;
+    line-height: 28px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: 31px;
+
+  }
+}

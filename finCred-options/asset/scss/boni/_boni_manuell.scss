@@ -1,0 +1,3061 @@
+
+//START GENERAL -- DESKTOP && TABLET####################################################################################
+//########DESKTOP && TABLET
+body {
+  font-family: Nexa, Helvetica, sans-serif;
+}
+
+.btn, .btn-large, .btn-small, .btn-floating, .dropdown-content, .collapsible, .sidenav {
+  box-shadow: none;
+}
+hr{
+  height: 1px;
+  background-color: transparent !important;
+  border: none;
+}
+.gform_page_footer #gform_next_button_2_130{
+  background-color: transparent !important;
+  color: transparent;
+  border: transparent;
+  position: absolute;
+}
+header{
+  opacity: 1!important;
+}
+
+
+ul.nav_slider_text_list {
+  list-style-type: circle;
+}
+
+
+#maneul_loader{
+  margin-top: 100px;
+  margin-bottom: 100px;
+.manuel_icon_finish{
+  text-align: center;
+  font-size: 64px;
+}
+  p{
+    text-align: center;
+  }
+
+}
+
+
+//loader
+#loader_info{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  font-size: 18px;
+  width: 600px;
+}
+
+#loader_icon{
+  text-align: center;
+  margin-bottom: 40px;
+  color: black;
+}
+
+#loader_text{
+  opacity: 1;
+  color: rgba(0,0,0,1);
+  font-size: 32px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: -0.5px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.spinner-layer {
+  border-color: black;
+}
+
+
+//END GENERAL -- DESKTOP && TABLET######################################################################################
+//########DESKTOP && TABLET
+
+.punkt_1{
+  background-color: rgba(208,249,237, 1);
+}
+.punkt_2{
+  background-color: rgba(114,237,202, 1);
+}
+.punkt_3{
+  background-color: rgba(67,231,185, 1);
+}
+.punkt_4{
+  background-color: rgba(20,225,167, 1);
+}
+
+/* Media Querry
+------------------------------------ */
+
+//START MEDIA QUERY DESKTOP#############################################################################################
+//########DESKTOP
+@media screen and (min-width: 1025px) {
+  body {
+    font-family: Nexa, Helvetica, sans-serif;
+  }
+  #boni_header{
+    position: fixed;
+    z-index: 9999999;
+    border-bottom: solid 1px #72EDCA;
+    width: 100%;
+    height: 129px;
+    background-color: white;
+  }
+  #content-desktop {
+    margin-top: 129px !important;
+  }
+
+  .gsection_title {
+    width: auto !important;
+    opacity: 1;
+    color: rgba(0,0,0,1);
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -0,2px;
+    text-align: left;
+    line-height: 26px;
+    display: inline;
+  }
+
+  #field_2_93, #field_2_94{
+    width: 80%;}
+
+
+  /* Datapicker
+    ------------------------------------ */
+
+  .gform-theme-datepicker:not(.gform-legacy-datepicker) .ui-datepicker-calendar .ui-state-disabled .ui-state-default {
+    box-shadow: none;
+  }
+
+  .gform-theme-datepicker:not(.gform-legacy-datepicker) {
+    width: 250px!important;
+    height: auto !important;
+  }
+
+  .gform-theme-datepicker:not(.gform-legacy-datepicker) .ui-datepicker-header .ui-datepicker-next::before {
+    margin-top: -19px;
+  }
+
+  .gform-theme-datepicker:not(.gform-legacy-datepicker) .ui-datepicker-header .ui-datepicker-prev::before {
+    margin-top: -19px;
+  }
+
+  .ui-datepicker:not(.gform-legacy-datepicker) .ui-datepicker-title {
+    margin-top: -3px;
+  }
+
+
+  #ui-datepicker-div{
+    background-color: #72EDCA !important;
+    border: solid 1px #10B485 !important;
+    border-radius: 16px;
+  }
+  //hide days of next and previous month
+  #ui-datepicker-div table.ui-datepicker-calendar td.ui-datepicker-other-month.ui-datepicker-unselectable.ui-state-disabled {
+    visibility: hidden;
+  }
+
+/*  .ui-datepicker-calendar{
+    width: 24px!important;
+    height: 20px!important;
+  }*/
+
+  .gform-theme-datepicker:not(.gform-legacy-datepicker) .ui-datepicker-calendar td {
+    font-size: .8125rem;
+    height: 20px!important;
+    width: 24px!important;
+  }
+
+  .gform-theme-datepicker:not(.gform-legacy-datepicker) .ui-datepicker-calendar th span {
+     height: 20px!important;
+     width: 24px!important;
+  }
+
+  .ui-datepicker:not(.gform-legacy-datepicker) a.ui-state-default {
+    line-height: 1!important;
+  }
+  //einzelne Tage
+  .gform-theme-datepicker:not(.gform-legacy-datepicker) td, .gform-theme-datepicker:not(.gform-legacy-datepicker) th {
+     padding: 0px!important;
+     text-shadow: none;
+     text-transform: none;
+  }
+
+  //Monat
+  .gform-theme-datepicker:not(.gform-legacy-datepicker) .ui-datepicker-header select.ui-datepicker-month {
+    margin-right: 20px;
+    -moz-text-align-last: left!important;
+    text-align-last: left!important;
+    width: auto !important;
+  }
+
+//Woche
+  .gform-theme-datepicker:not(.gform-legacy-datepicker) .ui-datepicker-calendar th span {
+
+    color: rgba(0,0,0,1) !important;
+    font-size: 13px!important;
+    font-weight: 900 !important;
+    font-style: normal!important;
+    letter-spacing: 0px;
+    text-align: center!important;
+    line-height: 20px!important;
+    margin-left: 3px!important;
+  }
+
+  .ui-datepicker-month{
+    width: auto !important;
+    background-image: none !important;
+    color: rgba(0,0,0,1) !important;
+    font-family: nexa !important;
+    font-size: 13px !important;
+    font-weight: 900 !important;
+    font-style: normal !important;
+    letter-spacing: 0px;
+    text-align: right !important;
+    line-height: 20px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .ui-datepicker-year{
+    width: auto !important;
+    background-image: none !important;
+    color: rgba(0,0,0,1) !important;
+    font-size: 13px !important;
+    font-weight: 900 !important;
+    font-style: normal !important;
+    letter-spacing: 0px;
+    text-align: center !important;
+    line-height: 20px !important;
+  }
+
+  //nicht mögliche tage
+  .gform-theme-datepicker:not(.gform-legacy-datepicker) .ui-datepicker-calendar .ui-state-disabled .ui-state-default {
+    align-items: center;
+    background: transparent !important;
+    border: none !important;
+    border-radius: 100%;
+    font-size: 13px;
+    font-weight: 400;
+    color: #10B485 !important;
+    cursor: text;
+    display: flex;
+    height: 24px!important;
+    justify-content: center;
+    text-decoration: none;
+    width: 24px!important;
+    position: absolute!important;
+    box-shadow: none !important;
+  }
+  //ausgewählte Tage
+  .gform-theme-datepicker:not(.gform-legacy-datepicker) .ui-datepicker-calendar .ui-datepicker-current-day .ui-state-default {
+    align-items: center;
+    background: #D0F9ED !important;
+    border: 1px solid #10B485 !important;
+    border-radius: 100%;
+    box-shadow: none;
+    color: #2f4054 !important;
+    font-size: 13px;
+    display: flex;
+    height: 24px!important;
+    justify-content: center;
+    text-decoration: none;
+    transition: color .3s ease-in-out,background-color .3s ease-in-out,border-color .3s ease-in-out;
+    width: 24px!important;
+  }
+  //auswahlmögliche Tage
+  .gform-theme-datepicker:not(.gform-legacy-datepicker) .ui-datepicker-calendar .ui-state-default {
+    align-items: center;
+    background: #FFFFFF !important;
+    border: 1px solid #10B485 !important;
+    border-radius: 100%;
+    box-shadow: none;
+    color: #2f4054;
+    font-size: 13px;
+    font-weight: 900;
+    display: flex;
+    height: 24px!important;
+    justify-content: center;
+    text-decoration: none;
+    transition: color .3s ease-in-out,background-color .3s ease-in-out,border-color .3s ease-in-out;
+    width: 24px!important;
+
+  }
+
+
+
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  ////////HEADER
+  #header-desktop{
+    height: 129px;
+    border-bottom: solid 1px #72EDCA;
+    margin-bottom: 0px !important;
+    background-color: white;
+
+                  .boni-header{
+                    background-color: #FFFFFF;
+                    width: 100%;
+                    height: 129px;
+                    border-bottom: solid 1px #72EDCA;
+
+                  }
+
+
+                  .logo>svg{
+                    width: 175px;
+                    height: 64px;
+
+                    position: absolute;
+                    left: 169px;
+                    top: 40px;
+                  }
+
+                  #boni_check_desktop_header{
+                    opacity: 1;
+                    color: rgba(0,0,0,1);
+                    font-size: 24px;
+                    font-weight: 700;
+                    font-style: normal;
+                    letter-spacing: -0.4px;
+                    text-align: left;
+                    line-height: 30px;
+
+                    position: absolute;
+                    left: 400px;
+                    top: 62px;
+                  }
+                  #translate_switch_desktop{
+                    position: absolute;
+                    top: 54px;
+                    right: 108px;
+
+                  }
+                  .switch label .lever:after {
+                    content: 'DE';
+
+                    opacity: 1;
+                    color: rgba(255,255,255,1);
+                    font-size: 13px;
+                    font-weight: 900;
+                    font-style: normal;
+                    letter-spacing: 0px;
+                    text-align: left;
+                    line-height: 20px;
+                    background-color: black;
+                    border-radius: 32px;
+                    opacity: 1;
+                    background-color: rgba(20,225,167, 1);
+                  }
+
+
+  }
+
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  ////////LINKS WRAPPER
+  #links_wrapper{
+    position: fixed;
+    z-index: 9999;
+                    #vorschaubild_bonicheck {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        overflow: hidden;
+                        height: 315px;
+
+                    }
+
+                    #vorschaubild_bonicheck img {
+                        flex-shrink: 0;
+                        min-width: 100%;
+                        min-height: 100%
+                    }
+
+                    #vorschautext_wrapper{
+                        padding-left: 40px;
+                        height: 100%;
+                        min-height: 632px;
+                    }
+
+                    #vorschautext_header,
+                    #vorschautext_zimmer_header,
+                    #vorschautext_miete_header{
+                        opacity: 1;
+                        color: rgba(0,0,0,1);
+                        font-size: 13px;
+                        font-weight: 400;
+                        font-style: normal;
+                        letter-spacing: 1.1px;
+                        text-align: left;
+                        line-height: 20px;
+                        text-transform: uppercase;
+                        padding-top: 24px;
+                        margin-top: 0;
+                    }
+
+                    #vorschautext_header{
+                      padding-top: 40px;
+                    }
+
+
+                     #vorschautext_objekttitel{
+                        font-weight: bold;
+                        margin-bottom: 8px;
+                    }
+
+                    #vorschautext_adresse{
+                        font-weight: bold;
+                        /*margin-bottom: 24px;*/
+                    }
+
+                    #vorschautext_zimmer{
+                        font-weight: bold;
+                       /* margin-bottom: 24px;*/
+                    }
+
+                    #vorschautext_miete{
+                        font-weight: bold;
+                        margin-bottom: 8px;
+                    }
+
+                    #vorschautext_ort{
+                        font-weight: bold;
+                        margin-bottom: 8px;
+                    }
+
+                    #mini_footer_menu{
+                        position: absolute;
+                        bottom: 40px;
+                        left: 0;
+                        z-index: 9;
+
+                              a{
+                              margin-left: 40px;
+                              opacity: 1;
+                              color: rgba(0,0,0,1);
+                              font-size: 13px;
+                              font-weight: 400;
+                              font-style: normal;
+                              letter-spacing: 0px;
+                              text-align: left;
+                              line-height: 20px;
+                              }
+                    }
+
+                    #vorschautext_bild{
+                        position: absolute;
+                        bottom: 0px;
+                        width: 65%;
+                        left: 36%;
+                    }
+
+  }
+
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  ////////FORM WRAPPER
+  #form_wrapper{
+    z-index: 9;
+    margin-bottom: 50px;
+    width: 50%;
+    max-width: 600px;
+    margin: auto;
+
+    .gform_wrapper .gfield_error .gfield_repeater_cell label,
+    .gform_wrapper .gfield_error label,
+    .gform_wrapper .gfield_error legend,
+    .gform_wrapper .gfield_validation_message,
+    .gform_wrapper .validation_message,
+    .gform_wrapper [aria-invalid=true]+label,
+    .gform_wrapper label+[aria-invalid=true] {
+      color: #CF003D;
+    }
+
+    .gform_wrapper .gfield_error [aria-invalid=true] {
+      border-radius: 8px;
+      outline: 4px solid rgba(236,153,177, 1);
+      border: 1px solid rgba(207,0,61, 1);
+      opacity: 1;
+      background-color: rgba(242,242,242, 1);
+
+    }
+
+    .gfield_validation_message {
+      opacity: 1;
+      color: rgba(207,0,61,1);
+      font-size: 13px;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: 0px;
+      text-align: left;
+      line-height: 20px;
+    }
+
+
+
+    .gform_wrapper .gfield_validation_message, .gform_wrapper .validation_message {
+      background: #fff;
+      border: none;
+      font-size: 14.992px;
+      margin-top: 8px;
+      padding: 12.992px 24px;
+      color:#CF003D;
+    }
+
+    //.gform_wrapper .gfield_error [aria-invalid=true] {
+    //  border: 1px solid #CF003D;
+    //}
+
+
+
+
+  }
+
+
+
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  ////////SEITE 1
+  #gform_page_2_1{
+    margin-top: 96px;
+
+                      .dropdown-content{
+                        background-color: #72EDCA;
+                        border: #10B485 solid 1px;
+                        border-radius: 8px;
+                        color: black;
+                        font-family: nexa;
+                        width: auto;
+                        min-width: 244px;
+                        height: auto;
+                        padding: 8px;
+                        padding-top: 16px;
+
+
+                      }
+
+                      #field_2_93{
+                        z-index: 9999;
+                      }
+
+                      #field_2_7,#field_2_117 {
+
+                                  .ginput_container  {
+                                    display: inline-block;
+                                    position: relative;
+                                    background: #FFF;
+
+                                  }
+
+                                  .ginput_container .placeholder {
+                                      position: absolute;
+                                      top: 50%;
+                                      right: 13px;
+                                      color: #888;
+                                      margin-top: -.5em;
+                                      line-height: 1em;
+                                      z-index: 9999;
+                                      overflow: hidden;
+                                      white-space: nowrap;
+                                      width: 14px;
+                                      color:#999999;
+                                      font-size: 16px;
+                                      text-align: right;
+                                  }
+
+                                 .ginput_container  input {
+                                      padding: 4px 6px;
+                                      position: relative;
+                                      z-index: 10;
+                                  }
+
+                                 .ginput_container input:focus + .placeholder {
+                                      display: none;
+                                  }
+                       }
+
+                      #input_2_7::placeholder{
+                        font-family: Nexa, Arial, Helvetica, sans-serif;
+                      }
+
+                      #input_2_117::placeholder{
+                        font-family: Nexa, Arial, Helvetica, sans-serif;
+                      }
+
+                      #input_2_117, #input_2_7{
+                        width: 292px;
+                      }
+
+                     input[type=checkbox] + label:before {
+                          content: '';
+                          display: inline-block;
+                          width: 20px;
+                          height: 20px;
+                          margin: 0px 8px 0 0px;
+                          vertical-align: middle;
+                          cursor: pointer;
+                          border-radius: 2px;
+                          background-color: #D0F9ED;
+                          border: 1px solid #43E7B9;
+                        }
+
+
+                      input[type="checkbox"]:checked + label:after {
+
+                        font-family: 'Material Icons';
+                        content: 'check';
+                        width: 10px !important;
+                        height: 10px !important;
+                        color: #CF003D;
+                        position: absolute;
+                        top: -2px;
+                        left: -1px;
+                        display: inline-block;
+                        cursor: pointer;
+                        font-size: 22px;
+                      }
+
+                      input[type=radio] + label:before {
+                          content: '';
+                          display:inline-block;
+                          width:20px;
+                          height:20px;
+                          margin: 0px 8px 4px 8px;
+                          vertical-align:middle;
+                          cursor:pointer;
+                          border-radius:  50%;
+                          background-color: #D0F9ED;
+                          border: 1px solid #43E7B9;
+                          margin-right: 8px;
+                      }
+
+                      #info_datum,#info_haushalt,#info_mieter,#info_hauptmieter{
+                        margin-left: 5px;
+                        font-size: 16px;
+                      }
+
+
+                      #field_2_92{
+                                  .gsection_title{
+                                    opacity: 1;
+                                    color: rgba(0,0,0,1);
+                                    font-size: 32px;
+                                    font-weight: 700;
+                                    font-style: normal;
+                                    letter-spacing: -0,5px;
+                                    text-align: left;
+                                    line-height: 40px;
+                                  }
+                      }
+
+                      .zusatzInfo{
+                        opacity: 1;
+                        color: rgba(0,0,0,1);
+                        font-size: 18px;
+                        font-weight: 400;
+                        font-style: normal;
+                        letter-spacing: 0px;
+                        text-align: left;
+                        line-height: 28px;
+                        margin-bottom: 40px;
+                      }
+
+                      #field_2_42{
+                        margin-bottom: 0px;
+                      }
+                      .hr-linien{
+                        border-top: 1px solid rgba(20,225,167, 1);
+                        opacity: 1;
+                        margin-top: 40px;
+                      }
+
+                      #field_2_93,
+                      #field_2_94,
+                      #field_2_14,
+                      #field_2_15,
+                      #field_2_20,
+                      #field_2_25,
+                      #field_2_30{
+                        margin-top: 40px;
+                        width: 444px;
+                      }
+
+                      //arrows
+
+                      #field_2_95 > div {
+                        text-align: right;
+                        margin-top: -62px;
+                        margin-right: 20px;
+
+                                    ::selection {
+                                      color: #000;
+                                      background: transparent!important;
+                                    }
+                      }
+
+                      #field_2_5 > div {
+                        text-align: right;
+                        margin-top: -90px;
+                        margin-right: 20px;
+
+                                    ::selection {
+                                      color: #000;
+                                      background: transparent!important;
+                                    }
+                      }
+
+                      #next_mieter,
+                      #next_haushalt{
+                        position: absolute;
+                        margin-top: 6px;
+                        margin-left: 14px;
+                        cursor: pointer;
+                        font-size: 24px;
+                      }
+
+                      #prev_mieter,
+                      #prev_haushalt{
+                        position: absolute;
+                        margin-top: 6px;
+                        margin-left: -24px;
+                        cursor: pointer;
+                        font-size: 24px;
+                      }
+
+                      .gform_page_footer {
+                        margin-top: 89px !important;
+                      }
+
+
+                      //Weiter Button Seite 2
+                      #gform_next_button_2_43{
+
+                        border: solid 1px #14E1A7;
+                        border-radius: 32px;
+                        opacity: 1;
+                        background-color: #14e1a7;
+
+                        height: 64px;
+                        cursor: pointer;
+
+                        color: black;
+                        font-size: 18px;
+                        font-weight: 900;
+                        font-style: normal;
+                        letter-spacing: 0.7px;
+
+                        line-height: 28px;
+                        text-transform: uppercase;
+                        margin-top: -42px;
+                        float: right;
+                        width: 158px;
+                        text-align: left;
+                        padding-left: 25px;
+
+                      }
+
+
+                      #next_button_arrow{
+                        position: absolute;
+                        bottom: 91px;
+                        right: 21px;
+                      }
+
+                      // Seite 2. zurücik Button
+                      #gform_previous_button_2_43{
+                        border: none;
+                        opacity: 1;
+                        cursor: pointer;
+                        opacity: 1;
+                        color: black;
+                        font-size: 18px;
+                        font-style: normal;
+                        position: absolute;
+                        font-weight: 700;
+                        /* width: 100%; */
+                        margin: -13px auto;
+                        text-transform: uppercase;
+                        float: left;
+
+                      }
+
+
+
+  }
+
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  ////////SEITE 3
+  #gform_page_2_2{
+#next_button_arrow{
+  display: none;
+}
+
+                      .fa-info-circle:before {
+                        opacity: 1;
+                        color: rgba(0,0,0,1);
+                        font-size: 16px;
+                        font-weight: 400;
+                        font-style: normal;
+                        letter-spacing: 0px;
+                        text-align: center;
+                      }
+
+                      i:hover {
+                        color: #14E1A7!important;
+
+                      }
+
+                      #input_2_44{
+                        margin-top: 40px;
+                        margin-left: 19px;
+                      }
+
+                      .header_boni_check{
+                        opacity: 1;
+                        color: rgba(0,0,0,1);
+                        font-size: 32px;
+                        font-weight: 700;
+                        font-style: normal;
+                        letter-spacing: -0,5px;
+                        text-align: center;
+                        line-height: 40px;
+                        margin-top: 72px;
+                      }
+
+                      #show_box_express{
+                        background-color: #D0F9ED;
+                        cursor: pointer !important;
+                        border: solid 1px #D0F9ED;
+                        border-radius: 8px;
+                        width: 291px;
+                        margin: auto;
+                      }
+
+                      #show_box_manuell{
+                        cursor: pointer !important;
+                        border: solid 1px #14E1A7;
+                        border-radius: 8px;
+                        width: 291px;
+                        margin: auto;
+                      }
+
+                      input[type=radio] + label:before {
+                          content: '';
+                          display: inline-block;
+                          width: 20px;
+                          height: 20px;
+                          margin: 0px 8px 0 8px;
+                          vertical-align: middle;
+                          cursor: pointer;
+                          border-radius: 50%;
+                          background-color: #72EDCA;
+                          border: 1px solid #10b485;
+                          margin-right: -17px;
+                        }
+
+                      .gform_page_footer{
+                        margin: 25px 0 !important;
+                      }
+
+                      #express_empfelung_kreis{
+                        opacity: 1;
+                        background-color: rgba(207,0,61, 1);
+                        position: absolute;
+                        width: 80px;
+                        height: 80px;
+                        margin-left: -42px;
+                        border-radius: 100%;
+                      }
+
+                      #gform_previous_button_2_130{
+                        border: none;
+                        opacity: 1;
+                        cursor: pointer;
+                        opacity: 1;
+                        color: black;
+                        font-size: 18px;
+                        font-style: normal;
+                        position: absolute;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        width: 100%;
+                        margin: 0 auto;
+
+                      }
+
+
+
+
+                    .text_coice{
+                      padding: 0px 16px;
+                      height: 57px;
+                    }
+
+    #manuell-out{
+      width: 600px;
+      p{
+        padding: 32px;
+      }
+
+
+
+    }
+
+
+
+
+
+
+  #express-out{
+      width: 600px;
+      p{
+        padding: 32px;
+      }
+    }
+
+
+    .nav_out_wrapper{
+      margin-top: 206px;
+
+      #icon_navbar{
+        font-size: 40px;
+        padding: 32px;
+      }
+    }
+
+    .nav_slider_header{
+
+      opacity: 1;
+      color: rgba(0,0,0,1);
+      font-size: 24px;
+      font-weight: 700;
+      font-style: normal;
+      letter-spacing: -0.5px;
+      text-align: left;
+      line-height: 40px;
+    }
+
+    .nav_slider_text{
+
+      opacity: 1;
+      color: rgba(0,0,0,1);
+      font-size: 16px;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: 0px;
+      text-align: left;
+      line-height: 24px;
+
+    }
+
+.lever{
+  vertical-align: baseline;
+}
+
+    .switch{
+      width: 600px;
+      padding-left: 12px;
+    }
+
+  }
+
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  ////////SEITE 4
+  #gform_page_2_3{
+
+                  #label_2_141_1{
+                    margin-left: 42px;
+                                  label{
+                                    line-height: 1.4;
+                                  }
+                  }
+
+                   input[type=checkbox] + label:before {
+                        content: '';
+                        display: inline-block;
+                        width: 20px;
+                        height: 20px;
+                        margin: 0px 20px 0 -40px;
+                        vertical-align: middle;
+                        cursor: pointer;
+                        border-radius: 2px;
+                        background-color: #D0F9ED;
+                        border: 1px solid #43E7B9;
+                      }
+
+                  input[type="checkbox"]:checked + label:after {
+                      font-family: 'Material Icons';
+                      content: 'check';
+                      width: 10px !important;
+                      height: 10px !important;
+                      color: #CF003D;
+                      position: absolute;
+                      top: -2px;
+                      left: -41px;
+                      display: inline-block;
+                      cursor: pointer;
+                      font-size: 22px;
+                  }
+
+                  #gform_previous_button_2{
+                    text-align: left;
+                  }
+
+                  #uploadFile_icon{
+                    font-size: 32px;
+                    margin-top: 21px;
+                  }
+
+                  .gfield_upload_rules_2_134{
+                                  p{
+                                    opacity: 1;
+                                    color: rgba(0,0,0,1);
+                                    font-size: 13px;
+                                    font-weight: 400;
+                                    font-style: normal;
+                                    letter-spacing: 0px;
+                                    text-align: center;
+                                    line-height: 20px;
+                                  }
+                  }
+
+                  .header_manuel_check{
+                    opacity: 1;
+                    color: rgba(0,0,0,1);
+                    font-size: 32px;
+                    font-weight: 700;
+                    font-style: normal;
+                    letter-spacing: -0.5px;
+                    text-align: left;
+                    line-height: 40px;
+                  }
+
+                  .manueller_check_text{
+                    margin-bottom: 40px;
+                  }
+
+                  .manueller_check_text{
+                                  p{
+                                    opacity: 1;
+                                    color: black;
+                                    font-size: 18px;
+                                    font-weight: 400;
+                                    font-style: normal;
+                                    letter-spacing: 0px;
+                                    line-height: 28px;
+                                    margin-top: 24px;
+                                  }
+                  }
+
+                 .gfield_label {
+                    display: inline-block;
+                    font-size: 16px;
+                    font-weight: 700;
+                    margin-bottom: 8px;
+                    padding: 0;
+                    margin-top: 18px;
+                  }
+
+                  .ginput_container_fileupload {
+                      height: 165px;
+                      width: auto;
+                      background-color: #F2F2F2;
+                  }
+
+                  .gform_drop_area{
+                      height: 100px;
+                      background-color: #F2F2F2;
+                      //zum check disablen
+                      border: solid 1px #F2F2F2;
+                      padding: 16px;
+                      margin-bottom: 0px;
+                  }
+
+                  #field_2_134{
+                    background-color: #F2F2F2;
+                    border: solid 1px #F2F2F2;
+                    border-radius: 8px;
+                  }
+
+
+                  #gfield_upload_rules_2_134{
+                    margin: auto;
+                    padding-top: 0px;
+                    opacity: 1;
+                    color: rgba(0,0,0,1);
+                    font-family: "Nexa";
+                    font-size: 13px;
+                    font-weight: 400;
+                    font-style: normal;
+                    letter-spacing: 0px;
+                    text-align: center;
+                    line-height: 20px;
+                                p{
+                                  margin-top: 0;
+                                }
+                    }
+
+                  #gform_browse_button_2_134{
+                    cursor: pointer;
+                    border-radius: 32px;
+                    border: 2px solid rgba(20,225,167, 1);
+                    opacity: 1;
+                    background-color: rgba(255,255,255, 1);
+                    width: 322px;
+                    height: 56px;
+                    opacity: 1;
+                    color: rgba(0,0,0,1);
+                    font-size: 18px;
+                    font-weight: 900;
+                    font-style: normal;
+                    letter-spacing: 0.7px;
+                    text-align: center;
+                    line-height: 28px;
+                    text-transform: uppercase;
+                  }
+
+                  #field_2_134{
+                  text-align: center;
+                                  #gform_preview_2_134{
+                                                      .ginput_preview:after {
+                                                        font-family: 'Material Icons';
+                                                        content: "clear";
+                                                        color: red;
+                                                        position: absolute;
+                                                        right: 22px;
+                                                        font-size: 22px;
+                                                      }
+                                                      .ginput_preview{
+                                                        border-top: solid #CCCCCC 1px;
+                                                        display: inherit;
+                                                        padding-left: 12px;
+                                                        opacity: 1;
+                                                        color: black;
+                                                        font-size: 13px;
+                                                        font-weight: 400;
+                                                        font-style: normal;
+                                                        letter-spacing: 0px;
+                                                        text-align: left;
+                                                        line-height: 20px;
+                                                        margin-bottom: 14px;
+                                                        padding-top: 16px;
+                                                                          span{
+                                                                            position: absolute;
+                                                                            right: 23px;
+                                                                            margin-top: -9px;
+                                                                            z-index: 9999;
+                                                                            }
+                                                                          .dashicons-trash:before {
+                                                                            display: none;
+                                                                            }
+                                                                        }
+
+                                                     }
+                                }
+
+                  //Jetzt aschicken Button Button
+                  #gform_submit_button_3{
+
+                    border: solid 1px #14E1A7;
+                    border-radius: 32px;
+                    opacity: 1;
+                    background-color: #14e1a7;
+
+                    height: 64px;
+                    cursor: pointer;
+                    opacity: 1;
+                    color: black;
+                    font-size: 18px;
+                    font-weight: 900;
+                    font-style: normal;
+                    letter-spacing: 0.7px;
+                    text-align: center;
+                    line-height: 28px;
+                    text-transform: uppercase;
+                    margin-left: 205px;
+                    margin-top: 30px;
+                    position: absolute;
+
+                    text-align: left;
+                    padding-left: 25px;
+                    width: 270px;
+
+                  }
+
+                  ///Jetzt aschicken zurück Button
+                  #gform_previous_button_2{
+                    border: none;
+                    opacity: 1;
+                    width: 125px;
+                    height: 64px;
+                    cursor: pointer;
+                    opacity: 1;
+                    color: black;
+                    font-size: 18px;
+                    font-weight: 900;
+                    font-style: normal;
+                    letter-spacing: 0,7px;
+                    text-align: center;
+                    line-height: 28px;
+                    text-transform: uppercase;
+                    margin-top: 30px;
+
+                  }
+
+
+
+                  #next_button_arrow{
+                    position: absolute;
+                    bottom: 121px;
+                    right: 11px;
+                  }
+
+
+
+            }
+
+
+
+
+}//END MEDIA QUERY DESKTOP####################################################
+
+
+
+//START MEDIA QUERY TABLET'#############################################################################################
+//########TABLET
+@media screen and (max-width: 1025px) {
+
+.lang_tablet{
+
+  text-align: center;
+
+  margin-top: 20px;
+
+}
+
+
+  /* Datapicker
+    ------------------------------------ */
+
+  .gform-theme-datepicker:not(.gform-legacy-datepicker) .ui-datepicker-calendar .ui-state-disabled .ui-state-default {
+    box-shadow: none;
+  }
+
+  .gform-theme-datepicker:not(.gform-legacy-datepicker) {
+    width: 250px!important;
+    height: auto !important;
+  }
+
+  .gform-theme-datepicker:not(.gform-legacy-datepicker) .ui-datepicker-header .ui-datepicker-next::before {
+    margin-top: -19px;
+  }
+
+  .gform-theme-datepicker:not(.gform-legacy-datepicker) .ui-datepicker-header .ui-datepicker-prev::before {
+    margin-top: -19px;
+  }
+
+  .ui-datepicker:not(.gform-legacy-datepicker) .ui-datepicker-title {
+    margin-top: -3px;
+  }
+
+
+  #ui-datepicker-div{
+    background-color: #72EDCA !important;
+    border: solid 1px #10B485 !important;
+    border-radius: 16px;
+  }
+  //hide days of next and previous month
+  #ui-datepicker-div table.ui-datepicker-calendar td.ui-datepicker-other-month.ui-datepicker-unselectable.ui-state-disabled {
+    visibility: hidden;
+  }
+
+
+  .ui-datepicker:not(.gform-legacy-datepicker) a.ui-state-default {
+    line-height: 1!important;
+  }
+  //einzelne Tage
+  .gform-theme-datepicker:not(.gform-legacy-datepicker) td, .gform-theme-datepicker:not(.gform-legacy-datepicker) th {
+    padding: 0px!important;
+    text-shadow: none;
+    text-transform: none;
+  }
+
+  //Monat
+  .gform-theme-datepicker:not(.gform-legacy-datepicker) .ui-datepicker-header select.ui-datepicker-month {
+    margin-right: 20px;
+    -moz-text-align-last: left!important;
+    text-align-last: left!important;
+    width: auto !important;
+  }
+
+  //Woche
+  .gform-theme-datepicker:not(.gform-legacy-datepicker) .ui-datepicker-calendar th span {
+
+    color: rgba(0,0,0,1) !important;
+    font-size: 13px!important;
+    font-weight: 900 !important;
+    font-style: normal!important;
+    letter-spacing: 0px;
+    text-align: center!important;
+    line-height: 20px!important;
+    margin-left: 3px!important;
+  }
+
+  .ui-datepicker-month{
+    width: auto !important;
+    background-image: none !important;
+    color: rgba(0,0,0,1) !important;
+    font-family: nexa !important;
+    font-size: 13px !important;
+    font-weight: 900 !important;
+    font-style: normal !important;
+    letter-spacing: 0px;
+    text-align: right !important;
+    line-height: 20px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .ui-datepicker-year{
+    width: auto !important;
+    background-image: none !important;
+    color: rgba(0,0,0,1) !important;
+    font-size: 13px !important;
+    font-weight: 900 !important;
+    font-style: normal !important;
+    letter-spacing: 0px;
+    text-align: center !important;
+    line-height: 20px !important;
+  }
+
+  //nicht mögliche tage
+  .gform-theme-datepicker:not(.gform-legacy-datepicker) .ui-datepicker-calendar .ui-state-disabled .ui-state-default {
+    align-items: center;
+    background: transparent !important;
+    border: none !important;
+    border-radius: 100%;
+    font-size: 13px;
+    font-weight: 400;
+    color: #10B485 !important;
+    cursor: text;
+    display: flex;
+
+    justify-content: center;
+    text-decoration: none;
+
+    position: absolute!important;
+    box-shadow: none !important;
+  }
+  //ausgewählte Tage
+  .gform-theme-datepicker:not(.gform-legacy-datepicker) .ui-datepicker-calendar .ui-datepicker-current-day .ui-state-default {
+    align-items: center;
+    background: #D0F9ED !important;
+    border: 1px solid #10B485 !important;
+    border-radius: 100%;
+    box-shadow: none;
+    color: #2f4054 !important;
+    font-size: 13px;
+    display: flex;
+
+    justify-content: center;
+    text-decoration: none;
+    transition: color .3s ease-in-out,background-color .3s ease-in-out,border-color .3s ease-in-out;
+
+  }
+  //auswahlmögliche Tage
+  .gform-theme-datepicker:not(.gform-legacy-datepicker) .ui-datepicker-calendar .ui-state-default {
+    align-items: center;
+    background: #FFFFFF !important;
+    border: 1px solid #10B485 !important;
+    border-radius: 100%;
+    box-shadow: none;
+    color: #2f4054;
+    font-size: 13px;
+    font-weight: 900;
+    display: flex;
+
+    justify-content: center;
+    text-decoration: none;
+    transition: color .3s ease-in-out,background-color .3s ease-in-out,border-color .3s ease-in-out;
+
+
+  }
+  body {
+    font-family: Nexa, Helvetica, sans-serif;
+  }
+
+  #boni_header{
+    position: fixed;
+    z-index: 9999999;
+    border-bottom: solid 1px #72EDCA;
+    width: 100%;
+    height: 68px;
+    background-color: white;
+  }
+  //Mini Footer
+  #mini_footer_menu{
+  /*  margin-top: -68px;*/
+    margin-bottom: 32px;
+    text-align: center;
+    bottom: 40px;
+    left: 0;
+    z-index: 9;
+                    a{
+                     /* margin-right: 40px;*/
+                      opacity: 1;
+                      color: rgba(0,0,0,1);
+                      font-size: 13px;
+                      font-weight: 400;
+                      font-style: normal;
+                      letter-spacing: 0px;
+                      text-align: center;
+                      line-height: 20px;
+                    }
+  }
+
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  ////////COLLAPSIBLE TABLET
+.collapsible{
+  margin-bottom: 0;
+}
+  ////////COLLAPSIBLE HEADER
+  .collapsible-header{
+    display: block;
+    background-color: #14E1A7;
+    border-bottom: none;
+    padding: 16px 16px 1px 16px;
+
+              #vorschautext_header {
+                opacity: 1;
+                color: rgba(0,0,0,1);
+                font-size: 13px;
+                font-weight: 400;
+                font-style: normal;
+                letter-spacing: 1.1px;
+                text-align: left;
+                line-height: 20px;
+                text-transform: uppercase;
+              }
+
+              #vorschautext_adresse{
+                margin-bottom: 24px;
+                opacity: 1;
+                color: rgba(0,0,0,1);
+                font-size: 13px;
+                font-weight: 900;
+                font-style: normal;
+                letter-spacing: 0px;
+                text-align: left;
+                line-height: 20px;
+                margin-top: 4px;
+              }
+  }
+
+  ////////COLLAPSIBLE BODY
+  .collapsible-body {
+    background-color: #14E1A7;
+    padding: 1px 16px 16px 16px;
+
+              #vorschautext_zimmer_header,
+              #vorschautext_miete_header{
+                opacity: 1;
+                color: rgba(0,0,0,1);
+                font-size: 13px;
+                font-weight: 400;
+                font-style: normal;
+                letter-spacing: 1.1px;
+                text-align: left;
+                line-height: 20px;
+                text-transform: uppercase;
+              }
+                #vorschautext_miete_header{
+                  margin-top: 16px;
+                }
+
+                #vorschautext_miete,
+                #vorschautext_zimmer{
+                  opacity: 1;
+                  color: rgba(0,0,0,1);
+                  font-size: 13px;
+                  font-weight: 900;
+                  font-style: normal;
+                  letter-spacing: 0px;
+                  text-align: left;
+                  line-height: 20px;
+                }
+
+  }
+
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  ////////HEADER TABLET
+  #header-desktop{
+    height: 129px;
+    border-bottom: solid 1px #72EDCA;
+    margin-bottom: 0px !important;
+    background-color: white;
+
+                  .boni-header{
+                    background-color: #FFFFFF;
+                    width: 100%;
+                    height: 129px;
+                    border-bottom: solid 1px #72EDCA;
+                  }
+
+                  .logo>svg{
+                    width: 175px;
+                    height: 64px;
+                    position: absolute;
+                    left: 169px;
+                    top: 40px;
+                  }
+
+                  #boni_check_desktop_header{
+                    opacity: 1;
+                    color: rgba(0,0,0,1);
+                    font-size: 24px;
+                    font-weight: 700;
+                    font-style: normal;
+                    letter-spacing: -0.4px;
+                    text-align: left;
+                    line-height: 30px;
+                    position: absolute;
+                    left: 400px;
+                    top: 62px;
+                  }
+
+                  #translate_switch_desktop{
+                    position: absolute;
+                    top: 54px;
+                    right: 108px;
+
+                  }
+                  .switch label .lever:after {
+                    content: 'DE';
+                    opacity: 1;
+                    color: rgba(255,255,255,1);
+                    font-size: 13px;
+                    font-weight: 900;
+                    font-style: normal;
+                    letter-spacing: 0px;
+                    text-align: left;
+                    line-height: 20px;
+                    background-color: black;
+                    border-radius: 32px;
+                    opacity: 1;
+                    background-color: rgba(20,225,167, 1);
+                  }
+  }
+
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  ////////FORM WRAPPER TABLET
+  #form_wrapper{
+                .gform_wrapper .gfield_error .gfield_repeater_cell label,
+                .gform_wrapper .gfield_error label,
+                .gform_wrapper .gfield_error legend,
+                .gform_wrapper .gfield_validation_message,
+                .gform_wrapper .validation_message,
+                .gform_wrapper [aria-invalid=true]+label,
+                .gform_wrapper label+[aria-invalid=true] {
+                  color: #CF003D;
+                }
+
+                .gform_wrapper .gfield_error [aria-invalid=true] {
+                  border-radius: 8px;
+                  outline: 4px solid rgba(236,153,177, 1);
+                  border: 1px solid rgba(207,0,61, 1);
+                  opacity: 1;
+                  background-color: rgba(242,242,242, 1);
+
+                }
+
+                .gfield_validation_message {
+                  opacity: 1;
+                  color: rgba(207,0,61,1);
+                  font-size: 13px;
+                  font-weight: 400;
+                  font-style: normal;
+                  letter-spacing: 0px;
+                  text-align: left;
+                  line-height: 20px;
+                }
+
+                .gform_wrapper .gfield_validation_message, .gform_wrapper .validation_message {
+                  background: #fff;
+                  border: none;
+                  font-size: 14.992px;
+                  margin-top: 8px;
+                  padding: 12.992px 24px;
+                  color:#CF003D;
+                }
+
+
+  }
+
+
+
+
+
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  ////////SEITE  TABLET
+  #gform_wrapper_3{
+
+    .gform_drop_instructions{
+      display: none!important;
+    }
+
+                      padding: 16px;
+
+
+                    #label_3_141_1{
+                      margin-left: 42px;
+                                      label{
+                                        line-height: 1.4;
+                                      }
+
+                    }
+
+                    input[type=checkbox] + label:before {
+                      content: '';
+                      display: inline-block;
+                      width: 20px;
+                      height: 20px;
+                      margin: 0px 20px 0 -40px;
+                      vertical-align: middle;
+                      cursor: pointer;
+                      border-radius: 2px;
+                      background-color: #D0F9ED;
+                      border: 1px solid #43E7B9;
+                        }
+
+                    input[type="checkbox"]:checked + label:after {
+
+                      font-family: 'Material Icons';
+                      content: 'check';
+                      width: 10px !important;
+                      height: 10px !important;
+                      color: #CF003D;
+                      position: absolute;
+                      top: -2px;
+                      left: -41px;
+                      display: inline-block;
+                      cursor: pointer;
+                      font-size: 22px;
+                    }
+
+                    #uploadFile_icon{
+                      font-size: 32px;
+                      margin-top: 21px;
+                    }
+
+                  .gfield_upload_rules_3_134{
+                                      p{
+                                        opacity: 1;
+                                        color: rgba(0,0,0,1);
+
+                                        font-size: 13px;
+                                        font-weight: 400;
+                                        font-style: normal;
+                                        letter-spacing: 0px;
+                                        text-align: center;
+                                        line-height: 20px;
+                                      }
+                  }
+
+                  .header_manuel_check{
+                    opacity: 1;
+                    color: rgba(0,0,0,1);
+                    font-size: 32px;
+                    font-weight: 700;
+                    font-style: normal;
+                    letter-spacing: -0.5px;
+                    text-align: left;
+                    line-height: 40px;
+                  }
+
+
+                  .manueller_check_text{
+
+                    margin-bottom: 40px;
+                  }
+
+
+                  .manueller_check_text{
+                                    p{
+                                      opacity: 1;
+                                      color: black;
+                                      font-size: 18px;
+                                      font-weight: 400;
+                                      font-style: normal;
+                                      letter-spacing: 0px;
+                                      line-height: 28px;
+                                      margin-top: 24px;
+                                    }
+                  }
+
+
+                  .gfield_label {
+                    display: inline-block;
+                    font-size: 16px;
+                    font-weight: 700;
+                    margin-bottom: 8px;
+                    padding: 0;
+                    margin-top: 18px;
+                  }
+
+
+                  .ginput_container_fileupload {
+                    height: 165px;
+                    width: auto;
+                    background-color: #F2F2F2;
+                  }
+
+                  .gform_drop_area{
+                    height: 100px;
+                    background-color: #F2F2F2;
+                    //zum check disablen
+                    border: solid 1px #F2F2F2;
+                    padding: 16px;
+                    margin-bottom: 0px;
+
+                  }
+
+
+                  #field_3_134{
+                    background-color: #F2F2F2;
+                    border: solid 1px #F2F2F2;
+                    border-radius: 8px;
+                  }
+
+
+                  #gfield_upload_rules_3_134{
+
+                    margin: auto;
+                    padding-top: 0px;
+                    opacity: 1;
+                    color: rgba(0,0,0,1);
+                    font-family: "Nexa";
+                    font-size: 13px;
+                    font-weight: 400;
+                    font-style: normal;
+                    letter-spacing: 0px;
+                    text-align: center;
+                    line-height: 20px;
+                                        p{
+                                          margin-top: 0;
+                                        }
+                  }
+
+
+
+
+
+
+                  #gform_browse_button_3_134{
+                    cursor: pointer;
+                    border-radius: 32px;
+                    border: 2px solid rgba(20,225,167, 1);
+                    opacity: 1;
+                    background-color: rgba(255,255,255, 1);
+                    width: 322px;
+                    height: 56px;
+                    opacity: 1;
+                    color: rgba(0,0,0,1);
+                    font-size: 18px;
+                    font-weight: 900;
+                    font-style: normal;
+                    letter-spacing: 0.7px;
+                    text-align: center;
+                    line-height: 28px;
+                    text-transform: uppercase;
+                  }
+
+
+
+
+
+                  #field_3_134{
+                    text-align: center;
+
+                                #gform_preview_3_134{
+
+                                  .ginput_preview:after {
+                                    font-family: 'Material Icons';
+                                    content: "clear";
+                                    color: red;
+                                    position: absolute;
+                                    right: 22px;
+                                    font-size: 22px;
+                                  }
+
+                                  .ginput_preview{
+                                    border-top: solid #CCCCCC 1px;
+                                    display: inherit;
+                                    padding-left: 12px;
+                                    opacity: 1;
+                                    color: black;
+                                    font-size: 13px;
+                                    font-weight: 400;
+                                    font-style: normal;
+                                    letter-spacing: 0px;
+                                    text-align: left;
+                                    line-height: 20px;
+                                    margin-bottom: 14px;
+                                    padding-top: 16px;
+                                                      span{
+                                                        position: absolute;
+                                                        right: 23px;
+                                                        margin-top: -9px;
+                                                        z-index: 9999;
+                                                      }
+
+                                                      .dashicons-trash:before {
+                                                        display: none;
+                                                      }
+
+
+                                  }
+
+                                }
+                  }
+
+
+
+                    //Jetzt aschicken Button Button
+                    #gform_submit_button_3{
+
+                      border: solid 1px #14E1A7;
+                      border-radius: 32px;
+                      opacity: 1;
+                      background-color: #14e1a7;
+
+                      height: 64px;
+                      cursor: pointer;
+                      opacity: 1;
+                      color: black;
+                      font-size: 18px;
+                      font-weight: 900;
+                      font-style: normal;
+                      letter-spacing: 0.7px;
+                      text-align: center;
+                      line-height: 28px;
+                      text-transform: uppercase;
+                      margin: auto;
+                      margin-top: 30px;
+                     /* position: absolute;*/
+
+                    }
+
+
+
+                    ///Jetzt aschicken zurück Button
+                    #gform_previous_button_3{
+                      border: none;
+                      opacity: 1;
+                      width: 125px;
+                      height: 64px;
+                      cursor: pointer;
+                      opacity: 1;
+                      color: black;
+                      font-size: 18px;
+                      font-weight: 900;
+                      font-style: normal;
+                      letter-spacing: 0.7px;
+                      text-align: center;
+                      line-height: 28px;
+                      text-transform: uppercase;
+                      margin-top: 30px;
+
+                    }
+
+
+  }
+
+
+
+  #content-desktop {
+    background: linear-gradient(
+                    to right,
+                    transparent,
+                    transparent  33.3333333333%,
+                    transparent 1rem,
+                    transparent 100%
+    )!important;
+  }
+
+
+  #vorschautext_header{
+    display: inline;
+  }
+  //Vorschau weiter Button
+
+  .gform_page_footer{
+    text-align: center!important;
+  }
+  #gform_fields_2_2{
+    margin: 16px;
+    width: 92%;
+  }
+  #input_2_7, #input_2_117{
+  width: 100%;
+  }
+  .gsection_title {
+    width: auto !important;
+    opacity: 1;
+    color: rgba(0,0,0,1);
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -0,2px;
+    text-align: left;
+    line-height: 26px;
+    display: inline;
+
+  }
+
+
+
+  #ui-datepicker-div {
+    border-radius: 0px!important;
+    margin: auto!important;
+    width: 100%!important;
+    left: 0 !important;
+    top: 0!important;
+    z-index: 99999999!important;
+    height: 326px!important;
+  }
+
+  //info Fields
+  //Haushalt
+  #field_2_136{
+    position: absolute;
+    top: 511px;
+    left: 115px;
+  }
+
+
+  #field_2_95 > div {
+    margin-left: 22px;
+  }
+
+
+
+  #field_2_5 > div {
+    margin-left: 22px;
+  }
+
+
+
+}//END MEDIA QUERY TABLET####################################################
+
+
+
+
+
+
+
+          .sidenav-overlay {
+             background-color: rgba(0, 0, 0, 0.0);
+          }
+
+          /* Desktop && Tablet
+          ------------------------------------ */
+
+
+
+
+
+
+.hello_selina{
+  height: 64px;
+  margin-top: 104px;
+}
+
+.hello_selina_innerwrapper{
+  width: 68%;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Desktop
+------------------------------------ */
+.grid .col.c4 {
+  margin: 0;
+  padding: 0;
+
+                #object-wrapper{
+                   background-color: #14E1A7;
+                  padding: 0px;
+
+
+
+
+                }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Ausfüll Seite 3. weiter Button
+#gform_next_button_2_130{
+  border: solid 1px #14E1A7;
+  border-radius: 32px !important;
+  opacity: 1;
+  background-color: #FFFFFF;
+  width: 125px;
+  height: 64px;
+  cursor: pointer;
+
+  opacity: 1;
+  color: rgba(0,0,0,1);
+
+  font-size: 18px;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 0,7px;
+  text-align: center;
+  line-height: 28px;
+  text-transform: uppercase;
+
+}
+
+
+//Boni Button
+#boni-button{
+  border: solid 1px #14E1A7;
+  border-radius: 32px !important;
+  opacity: 1;
+  background-color: #FFFFFF;
+  width: 125px;
+  height: 64px;
+  cursor: pointer;
+
+  opacity: 1;
+  color: rgba(0,0,0,1);
+
+  font-size: 18px;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 0,7px;
+  text-align: center;
+  line-height: 28px;
+  text-transform: uppercase;
+
+}
+
+//undsiplay weiter Express/Manuell
+
+
+
+.grid .col.c8 {
+  margin: 0;
+  padding: 0;
+
+
+                #vorschautext_kunden_text{
+                  margin-bottom: 30px;
+                }
+
+
+
+                //Vorschau weiter Button
+
+
+  //Seite 2
+
+
+                //Select Rund Zahl
+                select {
+                  -webkit-appearance: none;
+                  -moz-appearance: none;
+                  text-indent: -1px;
+                  text-overflow: '';
+                  border: solid #43E7B9 1px;
+                  border-radius: 38px;
+                  background-color: #D0F9ED;
+
+                  width: 34px !important;
+                  height: 34px !important;
+                  text-align: center !important;
+                  vertical-align: middle !important;
+
+                  opacity: 1;
+                  color: rgba(0,0,0,1);
+
+                  font-size: 18px;
+                  font-weight: 700;
+                  font-style: normal;
+                  font-family: nexa;
+                  letter-spacing: 1.8px;
+                  text-align: center;
+              /*    line-height: 21px;*/
+                }
+
+                /* Select Anzahl Einwohner
+                 ------------------------------------ */
+
+                // Pfeile Haushalt
+                #field_2_92 > h3{
+                  font-size:32px;
+                }
+
+
+
+                //arrows
+      /*          #prev_haushalt::after{
+                  font-family: 'Material Icons';
+                  content: 'chevron_left';
+                  font-size: 24px;
+                  font-weight: 400;
+
+                  position: absolute;
+                  display: inline !important;
+                  margin-left: 583px;
+                  margin-top: -69px;
+                  cursor: pointer;
+
+
+
+                }*/
+
+
+
+
+
+
+
+}
+
+
+/* Tablet
+------------------------------------ */
+
+
+
+
+#smart_info_html{margin-top: 52px;}
+.grid .col.t12 {
+  margin: 0;
+  padding: 0;
+
+
+
+
+
+                //Vorschau weiter Button
+
+
+
+}
+
+
+
+
+
+
+  #form-wrapper{
+  margin-left: 240px;
+    margin-top: 300px;
+    height: inherit;
+
+
+
+
+
+
+
+
+
+
+                #info_datum:hover{
+                  cursor: pointer;
+                }
+
+                #datum {
+                  width: 252px !important;
+                  height: 60px !important;
+                  background-color: #72EDCA;
+                  border: solid 1px #10B485;
+                  border-radius: 8px;
+
+
+                  p{
+                    color: rgba(0,0,0,1);
+                    padding: 8px;
+                    font-size: 13px;
+                    font-weight: 400;
+                    font-style: normal;
+                    letter-spacing: 0px;
+                    text-align: left;
+                    line-height: 20px;
+                  }
+                }
+
+                //Haushalt
+                #info_haushalt{
+                  position: absolute;
+                  margin-left: 367px;
+                  margin-top: -51px;
+
+
+                }
+
+                #info_haushalt:hover{
+                  cursor: pointer;
+                }
+
+               #haushalt {
+                    width: 252px !important;
+                    height: 60px !important;
+                    background-color: #72EDCA;
+                    border: solid 1px #10B485;
+                    border-radius: 8px;
+
+
+                           p{
+                             color: rgba(0,0,0,1);
+                             padding: 8px;
+                             font-size: 13px;
+                             font-weight: 400;
+                             font-style: normal;
+                             letter-spacing: 0px;
+                             text-align: left;
+                             line-height: 20px;
+                           }
+                  }
+
+                //Mieter
+                #info_mieter{
+                  position: absolute;
+                  margin-left: 367px;
+                  margin-top: -51px;
+
+
+                }
+
+                #info_mieter:hover{
+                  cursor: pointer;
+                }
+
+                #mieter {
+                  width: 252px !important;
+                  height: 60px !important;
+                  background-color: #72EDCA;
+                  border: solid 1px #10B485;
+                  border-radius: 8px;
+
+
+                  p{
+                    color: rgba(0,0,0,1);
+                    padding: 8px;
+                    font-size: 13px;
+                    font-weight: 400;
+                    font-style: normal;
+                    letter-spacing: 0px;
+                    text-align: left;
+                    line-height: 20px;
+                  }
+                }
+
+                //Hauptmieter
+                #info_hauptmieter{
+                  position: absolute;
+                  margin-left: 154px;
+                  margin-top: 51px;
+
+
+                }
+
+                #info_hauptmieter:hover{
+                  cursor: pointer;
+                }
+
+                #hauptmieter {
+                  width: 252px !important;
+                  height: 60px !important;
+                  background-color: #72EDCA;
+                  border: solid 1px #10B485;
+                  border-radius: 8px;
+
+
+                  p{
+                    color: rgba(0,0,0,1);
+                    padding: 8px;
+                    font-size: 13px;
+                    font-weight: 400;
+                    font-style: normal;
+                    letter-spacing: 0px;
+                    text-align: left;
+                    line-height: 20px;
+                  }
+                }
+
+
+
+
+    //Ausfüll Seite 2. weiter Button
+
+
+
+
+
+
+
+
+
+}/* Ende Content-Desktop
+------------------------------------ */
+
+
+/* Tablet
+------------------------------------ */
+#header-tablet{
+  .logo>svg{
+    width: 60px;
+  }
+}
+
+
+
+
+
+
+
+/* Smartphone
+------------------------------------ */
+
+
+#header-smartphone{
+  height: 68px;
+  border-bottom: solid 1px #72EDCA;
+
+  .logo>svg{
+    width: 110px;
+    height: 40px;
+    position: absolute;
+    left: 16px;
+    top: 16px;
+  }
+
+  #boni_check_smartphone_header{
+    opacity: 1;
+    color: rgba(0,0,0,1);
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -0,2px;
+    text-align: center;
+    line-height: 24px;
+    position: absolute;
+    left: 142px;
+    top: 30px;
+  }
+}
+
+#content-smartphone{
+  margin-top: 68px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.page-template-boni-request{
+  /* Loading
+------------------------------------ */
+  body{background-color: green;}
+
+  #loading {
+    height: 1000px !important ;
+    background-color: red !important;
+    width: 100%;  }
+}
+
+.page-template-boni-check-template-weitere-php  {
+
+
+  body{background-color: green;}
+
+
+  main{border-radius: 0px}
+  form{margin-bottom: 80px;}
+
+
+
+
+
+
+  .headline-bonichek{
+    opacity: 1;
+    color: rgba(0,0,0,1);
+
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -0,4px;
+    text-align: left;
+    line-height: 30px;
+    padding-left: 117px;
+    padding-top: 27px;
+    position: absolute;
+    top: 26px;
+    left: 177px;
+  }
+
+
+
+
+
+
+  #express_empfelung_kreis_text{
+    opacity: 1;
+    color: rgba(255,255,255,1);
+
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: -0,16px;
+    text-align: center;
+    line-height: 16px;
+    top: 23px;
+    position: absolute;
+    left: 6px;
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  //// Seite 3. zurücik Button
+
+
+
+
+/*  //Jetzt aschicken Button Button
+  #gform_submit_button_1{
+
+    border: solid 1px #14E1A7;
+    border-radius: 32px;
+    opacity: 1;
+    background-color: #14e1a7;
+
+    height: 64px;
+    cursor: pointer;
+    opacity: 1;
+    color: black;
+    font-size: 18px;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 0,7px;
+    text-align: center;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin-left: 286px;
+    margin-top: 30px;
+    position: absolute;
+
+  }*/
+
+  ///Jetzt aschicken zurück Button
+  #gform_previous_button_2{
+    border: none;
+    opacity: 1;
+    width: 125px;
+    height: 64px;
+    cursor: pointer;
+    opacity: 1;
+    color: black;
+    font-size: 18px;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 0,7px;
+    text-align: center;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin-top: 30px;
+
+  }
+
+
+
+
+  #gform_browse_button_2_134{
+    cursor: pointer;
+    border-radius: 32px;
+    border: 2px solid rgba(20,225,167, 1);
+    opacity: 1;
+    background-color: rgba(255,255,255, 1);
+    width: 322px;
+
+    height: 56px;
+
+    opacity: 1;
+    color: rgba(0,0,0,1);
+
+    font-size: 18px;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 0.7px;
+    text-align: center;
+    line-height: 28px;
+    text-transform: uppercase;
+
+  }
+
+.ginput_container{
+  border-radius: 8px;
+
+}
+
+
+
+
+
+  #tab{
+    margin-left: 37px;
+  }
+
+.gform_drop_instructions{
+  display: none!important;
+}
+
+
+
+  .manueller_check_wrapper{
+    margin-left: -23px;
+  }
+
+
+
+
+  //input Felder GF
+  .ginput_container input{
+    border-radius: 8px;
+    border: 1px solid rgba(242,242,242, 1);
+    opacity: 1;
+    background-color: rgba(242,242,242, 1);
+    height: 56px;
+  }
+
+  //Radio Boxes Anrede
+  .gfield_radio > .gchoice {
+    display: inline;
+
+  }
+
+  //Border Sections ausblenden
+  .gsection {
+    border-bottom: none !important;
+  }
+
+  .gf_progressbar_wrapper{
+    display: none;
+
+  }
+
+  .gform_body{
+
+    /*margin-top: 225px;*/
+  }
+
+  .gform_title{
+    opacity: 1;
+    color: rgba(0,0,0,1);
+
+    font-size: 32px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -0,5px;
+    text-align: left;
+    line-height: 40px;
+    margin-bottom: 40px;
+
+  }
+
+
+  //hr
+  #hr-haushalte{
+    margin: 0;
+  }
+
+  #hr-mieter{
+    margin: 0;
+  }
+
+
+  /* Gravity Form HTMLs
+  ------------------------------------ */
+
+
+    /* Custom Radio Button
+    ------------------------------------ */
+  // Custum Radio Buttons
+  input[type=radio] {
+    display: none !important;
+  }
+
+  input[type=radio] label {
+    position: relative;
+    cursor: pointer;
+  }
+
+  input[type=radio] + label:before {
+    content: '';
+    display:inline-block;
+    width:20px;
+    height:20px;
+    margin: 0px 8px 0 8px;
+    vertical-align:middle;
+    cursor:pointer;
+    border-radius:  50%;
+    background-color: #D0F9ED;
+    border: 1px solid #43E7B9;
+    margin-right: 24px;
+  }
+
+  input[type=radio]:checked + label {
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border: none;
+      border-radius: 50%;
+      display: inline-block;
+      cursor:pointer;
+    }
+  }
+  input[type="radio"]:checked + label:after{
+    content: '';
+    width: 10px !important;
+    height: 10px !important;
+    background: #CF003D;
+    position: absolute;
+    top: 5px;
+    left: 13px;
+    border-radius: 50%;
+    display: inline-block;
+    cursor:pointer;
+  }
+
+  /* Custom Checkbox Button
+  ------------------------------------ */
+  //GRAVITY FORMS Custum CHECKBOXES
+  input[type=checkbox] {
+    display: none !important;
+  }
+  .gfield_checkbox{
+
+    opacity: 1;
+    color: rgba(0,0,0,1);
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-align: left;
+    line-height: 24px;
+  }
+
+
+  input[type=checkbox] label {
+    position: relative;
+    cursor: pointer;
+  }
+
+/*  input[type=checkbox] + label:before {
+    content: '';
+    display:inline-block;
+    width:20px;
+    height:20px;
+    margin: 0px 8px 0 0px;
+    vertical-align:middle;
+    cursor:pointer;
+    border-radius: 2px;
+    background-color: #D0F9ED;
+    border: 1px solid #43E7B9;
+  }*/
+
+  input[type=checkbox]:checked + label {
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border: none;
+      border-radius: 50%;
+      display: inline-block;
+      cursor:pointer;
+    }
+  }
+
+
+
+
+
+  /* INFO Seite vier Punkte
+------------------------------------ */
+
+
+  #translate_switch{
+    position: absolute;
+    right: 50px;
+    top: 50px;
+
+  }
+
+
+  #switch_checked_express,
+  #switch_checked_manuell{
+
+    opacity: 1;
+    color: rgba(0,0,0,1);
+
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -0,4px;
+    text-align: left;
+    line-height: 30px;
+
+  }
+  #switch_checked_manuell{
+    color: #999999;
+  }
+
+  .switch label .lever {
+    width: 32px;
+    height: 16px;
+    background-color: #14E1A7;
+    border-radius: 32px;
+  }
+
+  .switch label .lever:after {
+    background-color: #CF003D;
+  }
+
+
+  .switch label input[type=checkbox]:checked + .lever:after {
+    background-color: #CF003D;
+  }
+
+
+  .switch label input[type=checkbox]:checked + .lever {
+    background-color: #14E1A7;
+  }
+
+  .switch label .lever:before, .switch label .lever:after {
+    width: 16px;
+    height: 16px;
+    left: 0;
+    top: 0px;
+
+  }
+
+
+
+  #switch_express_manuell_wrapper{
+
+    margin-top: 50px;
+    text-align: center;
+  }
+
+
+
+
+
+
+  /* Nav Slider
+------------------------------------ */
+
+
+    /* Informationen
+  ------------------------------------ */
+
+
+
+
+  /* Gemeinsame Elemente
+------------------------------------ */
+
+
+
+
+
+
+
+.show_boxes{
+  border: solid #14E1A7 1px;
+  border-radius: 8px;
+  margin-right: 24px;
+
+}
+
+
+.gchoice_2_44_0{
+ /* padding-right: 170px !important;*/
+
+  margin-right: 113px !important;
+}
+
+  #label_2_44_1{
+
+    margin-left: 167px !important;
+  }
+
+
+
+#startseite_big_button{
+  margin-top: -50px !important;
+
+}
+
+
+
+#field_2_44  {
+  z-index: 1 !important;
+}
+
+#input_2_44{
+  //display: none;
+  color: rgba(0,0,0,0,) !important;
+}
+
+
+
+.start_choice{
+margin-top: 56px;
+
+}
+
+.header_choice{
+  opacity: 1;
+  color: rgba(0,0,0,1);
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: -0,4px;
+  text-align: center;
+  line-height: 30px;
+  margin-top: 32px;
+  display: inherit;
+}
+
+.text_coice{
+  opacity: 1;
+  color: rgba(0,0,0,1);
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0px;
+  text-align: center;
+  line-height: 28px;
+  margin-top: 16px;
+
+}
+
+  #field_2_88{
+
+    margin-bottom: 200px;
+  }
+
+  #express_icon{
+
+    opacity: 1;
+    color: rgba(0,0,0,1);
+
+    font-size: 64px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+
+  #manuell_icon{
+
+    opacity: 1;
+    color: rgba(0,0,0,1);
+
+    font-size: 64px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+
+
+  #manuell_icon{
+   display: block;
+  }
+
+  #express_icon{
+   display: block;
+  }
+
+
+
+.weiter_startseite{
+
+  margin-top: 32px;
+  margin-bottom: 32px;
+  text-align: center !important;
+
+}
+
+
+
+
+
+
+
+
+  #weiter_express{
+    input{
+      border: solid 1px #14E1A7;
+      border-radius: 32px;
+      opacity: 1;
+      background-color: rgba(20,225,167, 1);
+      width: 125px;
+      height: 64px;
+      cursor: pointer;
+
+      opacity: 1;
+      color: rgba(0,0,0,1);
+
+      font-size: 18px;
+      font-weight: 900;
+      font-style: normal;
+      letter-spacing: 0,7px;
+      text-align: center;
+      line-height: 28px;
+      text-transform: uppercase;
+    }
+
+  }
+
+//undisplay form Titel
+.gform_heading{
+ display: none;
+}
+
+.gform_page_fields{
+ // margin-top: 261px;
+
+
+
+
+
+
+}
+
+
+
+
+  .text_boni_check{
+    opacity: 1;
+    color: rgba(0,0,0,1);
+
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-align: center;
+    line-height: 28px;
+    margin-top: 24px;
+
+  }
+
+
+
+
+
+
+}
+
+
+
+.btn {
+  box-shadow: none;
+}
+
+
+
+@media screen and (min-width: 1025px) {
+
+
+
+  div#links_wrapper {
+    height: calc(100% - 129px);
+  }
+
+
+
+  .grid .col.c4 #object-wrapper {
+    height: 100%;
+  }
+
+}

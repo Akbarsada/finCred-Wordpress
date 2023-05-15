@@ -1,0 +1,112 @@
+{% extends "base-boni.twig" %}
+{% import "macros.html" as macro %}
+
+{% block content %}
+
+    <main>
+        {% if error_status == "fin_error" %}
+            <div class="content grid mt-s" id="content-desktop">
+                {#DESKTOP#}
+
+                <div class="col c5 t0" >
+
+                    <h1 class="mega hello_selina center" data-concealed="" data-revealed="true" style="">
+                <span class="highlight">
+                        <span class="text">
+                        Oops
+                        </span>
+                </span>
+
+                    </h1>
+
+                    <div class="text" style="
+            font-size: 64px;
+            font-weight: 700;
+            margin-top: 50px;
+            margin-left: 128px;">FinCredible Error</div>
+                    <div class="text" style="
+            font-size: 64px;
+            font-weight: 700;
+            margin-top: 50px;
+            margin-left: 128px;">{{ finCred_error }}</div>
+                </div>
+                <div>
+
+                    <input type="button" id="" class="gform_next_button button" value="zurück zur Hauptseite" >
+                </div>
+
+                {#DESKTOP#}
+
+                {#FORMULAR#}
+                <div class="col c7 t0" id="form_wrapper">
+                    <img id="vorschautext_bild" class="responsive-img" src="https://staging.eugen.immo/wp-content/plugins/eugen-options/asset/img/closeup-phone.png" alt="Bild">
+
+                </div>
+                {#FORMULAR#}
+
+                {#TABLET#}
+                <div class="col c0 t12">
+
+                    <div id="vorschautext_wrapper">
+                        vorschautext_wrapper
+                    </div>
+
+
+
+                    <div class="" id="object-wrapper"> </div>
+                </div>
+                {#TABLET#}
+
+            </div>
+        {% elseif error_status == "boni_abgeschlossen" %}
+            <div class="content grid mt-s" id="content-desktop">
+                {#DESKTOP#}
+
+                <div class="col c5 t0" >
+
+                    <h1 class="mega hello_selina center" data-concealed="" data-revealed="true" style="">
+                <span class="highlight">
+                        <span class="text">
+                        Oops
+                        </span>
+                </span>
+
+                    </h1>
+
+                    <div class="text" style="
+            font-size: 64px;
+            font-weight: 700;
+            margin-top: 50px;
+            margin-left: 128px;">Bonität bereits durchgeführt</div>
+                </div>
+                <div>
+
+                    <input type="button" id="" class="gform_next_button button" value="zurück zur Hauptseite" >
+                </div>
+
+                {#DESKTOP#}
+
+                {#FORMULAR#}
+                <div class="col c7 t0" id="form_wrapper">
+                    <img id="vorschautext_bild" class="responsive-img" src="https://staging.eugen.immo/wp-content/plugins/eugen-options/asset/img/closeup-phone.png" alt="Bild">
+
+                </div>
+                {#FORMULAR#}
+
+                {#TABLET#}
+                <div class="col c0 t12">
+
+                    <div id="vorschautext_wrapper">
+                        vorschautext_wrapper
+                    </div>
+
+
+
+                    <div class="" id="object-wrapper"> </div>
+                </div>
+                {#TABLET#}
+
+            </div>
+        {% endif %}
+    </main>
+{% endblock %}

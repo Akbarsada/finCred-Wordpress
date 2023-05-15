@@ -1,0 +1,7 @@
+{% import "macros.html" as macro %}
+
+<section{{ macro.section_style(data.margins, data.paddings, data.background, [ 'custom-section' ] | merge([ data.border_radius ])) }} id="{{ macro.get_id('section') }}">
+{% for layout in data.contents %}
+  {% include "partial/" ~ layout.acf_fc_layout ~ ".twig" with { "data": layout } %}
+{% endfor %}
+</section>

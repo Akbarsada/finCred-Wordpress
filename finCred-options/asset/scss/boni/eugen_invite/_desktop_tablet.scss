@@ -1,0 +1,134 @@
+body {
+  font-family: Nexa, Helvetica, sans-serif;
+}
+
+input {
+
+  font-family: 'Nexa';
+}
+
+.btn, .btn-large, .btn-small, .btn-floating, .dropdown-content, .collapsible, .sidenav {
+  box-shadow: none;
+}
+.btn:hover, .btn-large:hover, .btn-small:hover, .btn-floating:hover {
+  box-shadow: none;
+}
+
+hr{
+  height: 1px;
+  background-color: transparent !important;
+  border: none;
+}
+.gform_page_footer #gform_next_button_2_130{
+  background-color: transparent !important;
+  color: transparent;
+  border: transparent;
+  position: absolute;
+}
+header{
+  opacity: 1!important;
+}
+
+
+ul.nav_slider_text_list {
+  list-style-type: circle;
+}
+
+
+#maneul_loader{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  .manuel_icon_finish{
+    text-align: center;
+    font-size: 64px;
+  }
+  p{
+    text-align: center;
+  }
+
+}
+
+
+//loader
+#loader_info{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  font-size: 18px;
+  width: 600px;
+}
+
+#loader_icon{
+  text-align: center;
+  margin-bottom: 40px;
+  color: black;
+}
+
+#loader_text{
+  opacity: 1;
+  color: rgba(0,0,0,1);
+  font-size: 32px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: -0.5px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.spinner-layer {
+  border-color: black;
+}
+
+/*Language Switch*/
+
+a.btn.btn-lang, form.eugen-form input.btn.btn-lang, button.btn.btn-lang {
+  position: relative;
+  width: 72px;
+  height: 30px;
+  border: 2px solid #14e1A7;
+  border-radius: 999px;
+  font-size: 1.3rem;
+  line-height: 1;
+  font-weight: 900;
+  color: black;
+  background-color: white;
+}
+
+a.btn.btn-lang[data-lang="de"]:before, a.btn.btn-lang[data-lang="en"]:after, form.eugen-form input.btn.btn-lang[data-lang="de"]:before, form.eugen-form input.btn.btn-lang[data-lang="en"]:after, button.btn.btn-lang[data-lang="de"]:before, button.btn.btn-lang[data-lang="en"]:after {
+  color: #fff;
+  background-color: #14e1A7;
+  border-radius: 999px;
+}
+
+a.btn.btn-lang:before, form.eugen-form input.btn.btn-lang:before, button.btn.btn-lang:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 9px 8px 4px;
+  content: 'DE';
+}
+
+a.btn.btn-lang:after, form.eugen-form input.btn.btn-lang:after, button.btn.btn-lang:after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 9px 8px 4px;
+  content: 'EN';
+}
+
+
+
+.punkt_1{
+  background-color: rgba(208,249,237, 1);
+}
+.punkt_2{
+  background-color: rgba(114,237,202, 1);
+}
+.punkt_3{
+  background-color: rgba(67,231,185, 1);
+}
+.punkt_4{
+  background-color: rgba(20,225,167, 1);
+}

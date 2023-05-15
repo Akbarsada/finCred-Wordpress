@@ -1,0 +1,13 @@
+{% import "macros.html" as macro %}
+
+<section class="contact-teaser background-green-20">
+	<div class="content grid pt-xs pb-xs">
+		<div class="col c8 vertical-center mobile-horizontal-center mobile-align-center">
+			{% include "partial/headline.twig" with { data: { level: 'h3', display_desktop: 'like-h2', text: data.headline }} %}
+			<a class="btn btn-primary btn-large mt-m" href="{{ data.button.url }}" data-concealed>{{ data.button.title }}</a>
+		</div>
+		<div class="col c4 horizontal-right vertical-bottom mobile-horizontal-center mobile-mt-m">
+			<img src="{{ data.illustration.url }}" width="{{ macro.value_or_empty(data.illustration.width) }}" height="{{ macro.value_or_empty(data.illustration.height) }}" aria-hidden="true" data-concealed>
+		</div>
+	</div>
+</section>

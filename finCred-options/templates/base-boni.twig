@@ -1,0 +1,25 @@
+{% block html_head_container %}
+
+	{% include 'header.twig' %}
+	{% block head %}
+	{% endblock %}
+	</head>
+{% endblock %}
+
+<body class="{{body_class}}">
+
+{% block header %}
+	{% include 'menu-boni.twig' %}
+{% endblock %}
+
+{% block content %}
+	Sorry, no content
+{% endblock %}
+
+{% block footer %}
+{#	{% include 'footer-boni.twig' %}#}
+	{{ function('wp_footer') }}
+{% endblock %}
+
+</body>
+</html>

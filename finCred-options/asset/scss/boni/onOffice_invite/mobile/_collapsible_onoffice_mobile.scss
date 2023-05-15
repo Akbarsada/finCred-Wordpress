@@ -1,0 +1,70 @@
+.collapsible{
+  margin-bottom: 0;
+}
+////////COLLAPSIBLE HEADER
+.collapsible-header{
+  display: block;
+  background-color: #14E1A7;
+  border-bottom: none;
+  padding: 16px 16px 1px 16px;
+
+  #vorschautext_header {
+    opacity: 1;
+    color: rgba(0,0,0,1);
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1.1px;
+    text-align: left;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  #vorschautext_adresse{
+    margin-bottom: 24px;
+    opacity: 1;
+    color: rgba(0,0,0,1);
+    font-size: 13px;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-align: left;
+    line-height: 20px;
+    margin-top: 4px;
+  }
+}
+
+////////COLLAPSIBLE BODY
+.collapsible-body {
+  background-color: #14E1A7;
+  padding: 1px 16px 16px 16px;
+
+  #vorschautext_zimmer_header,
+  #vorschautext_miete_header{
+    opacity: 1;
+    color: rgba(0,0,0,1);
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1.1px;
+    text-align: left;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+  #vorschautext_miete_header{
+    margin-top: 16px;
+  }
+
+  #vorschautext_miete,
+  #vorschautext_zimmer{
+    opacity: 1;
+    color: rgba(0,0,0,1);
+    font-size: 13px;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-align: left;
+    line-height: 20px;
+  }
+
+}

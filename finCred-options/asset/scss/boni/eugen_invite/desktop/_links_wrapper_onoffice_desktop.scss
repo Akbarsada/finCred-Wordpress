@@ -1,0 +1,97 @@
+#links_wrapper{
+  position: fixed;
+  z-index: 9999;
+  #vorschaubild_bonicheck {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 315px;
+
+  }
+
+  #vorschaubild_bonicheck img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+  }
+
+  #vorschautext_wrapper{
+    padding-left: 40px;
+    height: 100%;
+    min-height: 632px;
+  }
+
+  #vorschautext_header,
+  #vorschautext_zimmer_header,
+  #vorschautext_miete_header{
+    opacity: 1;
+    color: rgba(0,0,0,1);
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1.1px;
+    text-align: left;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding-top: 24px;
+    margin-top: 0;
+  }
+
+  #vorschautext_header{
+    padding-top: 40px;
+  }
+
+
+  #vorschautext_objekttitel{
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  #vorschautext_adresse{
+    font-weight: bold;
+    /*margin-bottom: 24px;*/
+  }
+
+  #vorschautext_zimmer{
+    font-weight: bold;
+    /* margin-bottom: 24px;*/
+  }
+
+  #vorschautext_miete{
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  #vorschautext_ort{
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  #mini_footer_menu{
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    z-index: 9;
+
+    a{
+      margin-left: 40px;
+      opacity: 1;
+      color: rgba(0,0,0,1);
+      font-size: 13px;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: 0px;
+      text-align: left;
+      line-height: 20px;
+    }
+  }
+
+  #vorschautext_bild{
+    position: absolute;
+    bottom: 0px;
+    width: 65%;
+    left: 36%;
+  }
+
+}

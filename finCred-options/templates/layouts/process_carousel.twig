@@ -1,0 +1,38 @@
+{% import "macros.html" as macro %}
+
+<section{{ macro.section_style(data.margins, [], [], [ 'pt-xl', 'pb-xl', 'background-green', 'background-radius-left' ]) }}>
+	<div class="content grid">
+		<div class="col text text-center align-center">
+			{% include "partial/headline.twig" with { "data": data.headline } %}
+		</div>
+		<div class="swiper-buttons-outside" data-concealed>
+			<button class="swiper-button-prev" aria-label="voriger Eintrag"><i class="fa fa-chevron-left"></i></button>
+			<button class="swiper-button-next" aria-label="nächster Eintrag"><i class="fa fa-chevron-right"></i></button>
+		</div>
+	</div>
+	<div class="content grid mt-xl tablet-mt-l mobile-mt-l">
+		<div class="col c12">
+			<div class="carousel carousel-process">
+				<div class="swiper overflow-visible buttons-outside">
+					<div class="swiper-wrapper">
+					{% set it = 1 %}
+					{% set delay_step = 120 %}
+					{% for step in data.steps %}
+						<div class="swiper-slide">
+							<img src="{{ step.illustration.url }}" width="{{ macro.value_or_empty(step.illustration.width) }}" height="{{ macro.value_or_empty(step.illustration.height) }}" aria-hidden="true" data-concealed="{{ it * delay_step }}">
+							<p class="like-h4 mt-l" data-concealed="{{ it * delay_step }}">{{ step.title }}</p>
+							<p class="pb-s" data-concealed="{{ it * delay_step }}">{{ step.text }}</p>
+						</div>
+						{%  set it = it + 1 %}
+					{% endfor %}
+					</div>
+					<div class="swiper-buttons">
+						<button class="swiper-button-prev" aria-label="voriger Eintrag"><i class="fa fa-chevron-left"></i></button>
+						<button class="swiper-button-next" aria-label="nächster Eintrag"><i class="fa fa-chevron-right"></i></button>
+					</div>
+					<script type="application/json" data-type="swiper-config">{ "slidesPerView": 3, "centeredSlides": false, "slidesPerView": 1.1, "breakpoints": { "640": { "slidesPerView": 2 }, "960": { "slidesPerView": 3 }, "1368": { "slidesPerView": 3 } } }</script>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

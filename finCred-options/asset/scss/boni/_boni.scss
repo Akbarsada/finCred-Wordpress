@@ -1,0 +1,1151 @@
+
+//START GENERAL -- DESKTOP && TABLET####################################################################################
+//########DESKTOP && TABLET
+
+@import "onOffice_invite/desktop_tablet";
+
+//START MEDIA QUERY DESKTOP#############################################################################################
+//########DESKTOP
+@media screen and (min-width: 1025px) {
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////GENERAL
+@import "onOffice_invite/desktop/general_onoffice_desktop.scss";
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////DATAPICKER
+@import "onOffice_invite/desktop/datapicker_onoffice_desktop.scss";
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////HEADER
+@import "onOffice_invite/desktop/header_onoffice_desktop.scss";
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////LINKS WRAPPER
+@import "onOffice_invite/desktop/links_wrapper_onoffice_desktop.scss";
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////FORM WRAPPER
+@import "onOffice_invite/desktop/form_wrapper_onoffice_desktop.scss";
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////SEITE 1
+@import "onOffice_invite/seite1_onoffice_desktop";
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////SEITE 2
+@import "onOffice_invite/seite2_onoffice_desktop";
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////SEITE 3
+@import "onOffice_invite/seite3_onoffice_desktop";
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////SEITE 4
+@import "onOffice_invite/seite4_onoffice_desktop";
+
+}//END MEDIA QUERY DESKTOP####################################################
+
+
+
+//START MEDIA QUERY TABLET'#############################################################################################
+//########TABLET
+@media screen and (max-width: 1025px) {
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////GENERAL TABLET
+@import "onOffice_invite/mobile/general_onoffice_mobile.scss";
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////DATAPICKER TABLET
+@import "onOffice_invite/mobile/datapicker_onoffice_mobile.scss";
+
+
+
+//Mini Footer
+#mini_footer_menu{
+/*  margin-top: -68px;*/
+  margin-bottom: 32px;
+  text-align: center;
+  bottom: 40px;
+  left: 0;
+  z-index: 9;
+                  a{
+                   /* margin-right: 40px;*/
+                    opacity: 1;
+                    color: rgba(0,0,0,1);
+                    font-size: 13px;
+                    font-weight: 400;
+                    font-style: normal;
+                    letter-spacing: 0px;
+                    text-align: center;
+                    line-height: 20px;
+                  }
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////COLLAPSIBLE TABLET
+@import "onOffice_invite/mobile/collapsible_onoffice_mobile";
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////HEADER TABLET
+@import "onOffice_invite/mobile/header_onoffice_mobile.scss";
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////FORM WRAPPER TABLET
+@import "onOffice_invite/mobile/form_wrapper_onoffice_mobile.scss";
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////SEITE 1 TABLET
+@import "onOffice_invite/seite1_onoffice_mobile";
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////SEITE 2 TABLET
+@import "onOffice_invite/seite2_onoffice_mobile";
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////SEITE 3 TABLET
+@import "onOffice_invite/seite3_onoffice_mobile";
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////SEITE 4 TABLET
+@import "onOffice_invite/seite4_onoffice_mobile";
+
+
+}//END MEDIA QUERY TABLET####################################################
+
+
+
+
+
+
+
+          .sidenav-overlay {
+             background-color: rgba(0, 0, 0, 0.0);
+          }
+
+          /* Desktop && Tablet
+          ------------------------------------ */
+
+
+
+
+
+
+.hello_selina{
+  height: 64px;
+  margin-top: 104px;
+}
+
+.hello_selina_innerwrapper{
+  width: 68%;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Desktop
+------------------------------------ */
+.grid .col.c4 {
+  margin: 0;
+  padding: 0;
+
+                #object-wrapper{
+                   background-color: #14E1A7;
+                  padding: 0px;
+
+
+
+
+                }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Ausfüll Seite 3. weiter Button
+#gform_next_button_1_130{
+  border: solid 1px #14E1A7;
+  border-radius: 32px !important;
+  opacity: 1;
+  background-color: #FFFFFF;
+  width: 125px;
+  height: 64px;
+  cursor: pointer;
+
+  opacity: 1;
+  color: rgba(0,0,0,1);
+
+  font-size: 18px;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 0.7px;
+  text-align: center;
+  line-height: 28px;
+  text-transform: uppercase;
+  padding-top: 7px;
+
+}
+
+
+//Boni Button
+#boni-button{
+  border: solid 1px #14E1A7;
+  border-radius: 32px !important;
+  opacity: 1;
+  background-color: #FFFFFF;
+  width: 125px;
+  height: 64px;
+  cursor: pointer;
+
+  opacity: 1;
+  color: rgba(0,0,0,1);
+
+  font-size: 18px;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 0,7px;
+  text-align: center;
+  line-height: 28px;
+  text-transform: uppercase;
+
+}
+
+//undsiplay weiter Express/Manuell
+
+
+
+.grid .col.c8 {
+  margin: 0;
+  padding: 0;
+
+
+                #vorschautext_kunden_text{
+                  margin-bottom: 30px;
+                }
+
+
+
+                //Vorschau weiter Button
+
+
+  //Seite 2
+
+
+                //Select Rund Zahl
+                select {
+                  -webkit-appearance: none;
+                  -moz-appearance: none;
+                  text-indent: -1px;
+                  text-overflow: '';
+                  border: solid #43E7B9 1px;
+                  border-radius: 38px;
+                  background-color: #D0F9ED;
+
+                  width: 34px !important;
+                  height: 34px !important;
+                  text-align: center !important;
+                  vertical-align: middle !important;
+
+                  opacity: 1;
+                  color: rgba(0,0,0,1);
+
+                  font-size: 18px;
+                  font-weight: 700;
+                  font-style: normal;
+                  font-family: nexa;
+                  letter-spacing: 1.8px;
+                  text-align: center;
+              /*    line-height: 21px;*/
+                }
+
+                /* Select Anzahl Einwohner
+                 ------------------------------------ */
+
+                // Pfeile Haushalt
+                #field_1_92 > h3{
+                  font-size:32px;
+                }
+
+
+
+
+
+
+
+
+
+}
+
+
+/* Tablet
+------------------------------------ */
+
+
+
+
+#smart_info_html{margin-top: 52px;}
+.grid .col.t12 {
+  margin: 0;
+  padding: 0;
+
+
+
+
+
+                //Vorschau weiter Button
+
+
+
+}
+
+
+
+
+
+
+  #form-wrapper{
+  margin-left: 240px;
+    margin-top: 300px;
+    height: inherit;
+
+
+
+
+
+
+
+
+
+
+                #info_datum:hover{
+                  cursor: pointer;
+                }
+
+                #datum {
+                  width: 252px !important;
+                  height: 60px !important;
+                  background-color: #72EDCA;
+                  border: solid 1px #10B485;
+                  border-radius: 8px;
+
+
+                  p{
+                    color: rgba(0,0,0,1);
+                    padding: 8px;
+                    font-size: 13px;
+                    font-weight: 400;
+                    font-style: normal;
+                    letter-spacing: 0px;
+                    text-align: left;
+                    line-height: 20px;
+                  }
+                }
+
+                //Haushalt
+                #info_haushalt{
+                  position: absolute;
+                  margin-left: 367px;
+                  margin-top: -51px;
+
+
+                }
+
+                #info_haushalt:hover{
+                  cursor: pointer;
+                }
+
+               #haushalt {
+                    width: 252px !important;
+                    height: 60px !important;
+                    background-color: #72EDCA;
+                    border: solid 1px #10B485;
+                    border-radius: 8px;
+
+
+                           p{
+                             color: rgba(0,0,0,1);
+                             padding: 8px;
+                             font-size: 13px;
+                             font-weight: 400;
+                             font-style: normal;
+                             letter-spacing: 0px;
+                             text-align: left;
+                             line-height: 20px;
+                           }
+                  }
+
+                //Mieter
+                #info_mieter{
+                  position: absolute;
+                  margin-left: 367px;
+                  margin-top: -51px;
+
+
+                }
+
+                #info_mieter:hover{
+                  cursor: pointer;
+                }
+
+                #mieter {
+                  width: 252px !important;
+                  height: 60px !important;
+                  background-color: #72EDCA;
+                  border: solid 1px #10B485;
+                  border-radius: 8px;
+
+
+                  p{
+                    color: rgba(0,0,0,1);
+                    padding: 8px;
+                    font-size: 13px;
+                    font-weight: 400;
+                    font-style: normal;
+                    letter-spacing: 0px;
+                    text-align: left;
+                    line-height: 20px;
+                  }
+                }
+
+                //Hauptmieter
+                #info_hauptmieter{
+                  position: absolute;
+                  margin-left: 154px;
+                  margin-top: 51px;
+
+
+                }
+
+                #info_hauptmieter:hover{
+                  cursor: pointer;
+                }
+
+                #hauptmieter {
+                  width: 252px !important;
+                  height: 60px !important;
+                  background-color: #72EDCA;
+                  border: solid 1px #10B485;
+                  border-radius: 8px;
+
+
+                  p{
+                    color: rgba(0,0,0,1);
+                    padding: 8px;
+                    font-size: 13px;
+                    font-weight: 400;
+                    font-style: normal;
+                    letter-spacing: 0px;
+                    text-align: left;
+                    line-height: 20px;
+                  }
+                }
+
+
+
+
+    //Ausfüll Seite 2. weiter Button
+
+
+
+
+
+
+
+
+
+}/* Ende Content-Desktop
+------------------------------------ */
+
+
+/* Tablet
+------------------------------------ */
+#header-tablet{
+  .logo>svg{
+    width: 60px;
+  }
+}
+
+
+
+
+
+
+
+/* Smartphone
+------------------------------------ */
+
+
+#header-smartphone{
+  height: 68px;
+  border-bottom: solid 1px #72EDCA;
+
+  .logo>svg{
+    width: 110px;
+    height: 40px;
+    position: absolute;
+    left: 16px;
+    top: 16px;
+  }
+
+  #boni_check_smartphone_header{
+    opacity: 1;
+    color: rgba(0,0,0,1);
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -0,2px;
+    text-align: center;
+    line-height: 24px;
+    position: absolute;
+    left: 142px;
+    top: 30px;
+  }
+}
+
+#content-smartphone{
+  margin-top: 68px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.page-template-boni-request{
+  /* Loading
+------------------------------------ */
+  body{background-color: green;}
+
+  #loading {
+    height: 1000px !important ;
+    background-color: red !important;
+    width: 100%;  }
+}
+
+.page-template-boni-check-template,
+.page-template-boni-check-template-weitere,
+.page-template-boni-check-template-manuell{
+
+
+  //disabled
+  input[type=radio]:disabled + label:before {
+    background-color: #F2F2F2;
+    border: 1px solid #CCCCCC;
+
+  }
+
+  input[type="radio"]:checked:disabled + label:after {
+
+    background: #666666;
+
+  }
+
+  body{background-color: green;}
+
+
+  main{border-radius: 0px}
+  form{margin-bottom: 80px;}
+
+
+
+
+
+
+  .headline-bonichek{
+    opacity: 1;
+    color: rgba(0,0,0,1);
+
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -0,4px;
+    text-align: left;
+    line-height: 30px;
+    padding-left: 117px;
+    padding-top: 27px;
+    position: absolute;
+    top: 26px;
+    left: 177px;
+  }
+
+
+
+
+
+
+  #express_empfelung_kreis_text{
+    opacity: 1;
+    color: rgba(255,255,255,1);
+
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: -0,16px;
+    text-align: center;
+    line-height: 16px;
+    top: 23px;
+    position: absolute;
+    left: 6px;
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  //// Seite 3. zurücik Button
+
+
+
+
+
+  ///Jetzt aschicken zurück Button
+  #gform_previous_button_1{
+    border: none;
+    opacity: 1;
+    width: 125px;
+    height: 64px;
+    cursor: pointer;
+    opacity: 1;
+    color: black;
+    font-size: 18px;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 0,7px;
+    text-align: center;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin-top: 30px;
+
+  }
+
+
+
+
+  #gform_browse_button_1_134{
+    cursor: pointer;
+    border-radius: 32px;
+    border: 2px solid rgba(20,225,167, 1);
+    opacity: 1;
+    background-color: rgba(255,255,255, 1);
+    width: 322px;
+
+    height: 56px;
+
+    opacity: 1;
+    color: rgba(0,0,0,1);
+
+    font-size: 18px;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 0.7px;
+    text-align: center;
+    line-height: 28px;
+    text-transform: uppercase;
+
+  }
+
+.ginput_container{
+  border-radius: 8px;
+
+}
+
+
+
+
+
+  #tab{
+    margin-left: 37px;
+  }
+
+.gform_drop_instructions{
+  display: none!important;
+}
+
+
+
+  .manueller_check_wrapper{
+    margin-left: -23px;
+  }
+
+
+
+
+  //input Felder GF
+  .ginput_container input{
+    border-radius: 8px;
+    border: 1px solid rgba(242,242,242, 1);
+    opacity: 1;
+    background-color: rgba(242,242,242, 1);
+    height: 56px;
+  }
+
+  //Radio Boxes Anrede
+  .gfield_radio > .gchoice {
+    display: inline;
+
+  }
+
+  //Border Sections ausblenden
+  .gsection {
+    border-bottom: none !important;
+  }
+
+  .gf_progressbar_wrapper{
+    display: none;
+
+  }
+
+  .gform_body{
+
+    /*margin-top: 225px;*/
+  }
+
+  .gform_title{
+    opacity: 1;
+    color: rgba(0,0,0,1);
+
+    font-size: 32px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -0,5px;
+    text-align: left;
+    line-height: 40px;
+    margin-bottom: 40px;
+
+  }
+
+
+
+
+  /* Gravity Form HTMLs
+  ------------------------------------ */
+
+
+    /* Custom Radio Button
+    ------------------------------------ */
+  // Custum Radio Buttons
+  input[type=radio] {
+    display: none !important;
+  }
+
+  input[type=radio] label {
+    position: relative;
+    cursor: pointer;
+  }
+
+  input[type=radio] + label:before {
+    content: '';
+    display:inline-block;
+    width:20px;
+    height:20px;
+    margin: 0px 8px 0 8px;
+    vertical-align:middle;
+    cursor:pointer;
+    border-radius:  50%;
+    background-color: #D0F9ED;
+    border: 1px solid #43E7B9;
+    margin-right: 24px;
+  }
+
+  input[type=radio]:checked + label {
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border: none;
+      border-radius: 50%;
+      display: inline-block;
+      cursor:pointer;
+    }
+  }
+  input[type="radio"]:checked + label:after{
+    content: '';
+    width: 10px !important;
+    height: 10px !important;
+    background: #CF003D;
+    position: absolute;
+    top: 5px;
+    left: 13px;
+    border-radius: 50%;
+    display: inline-block;
+    cursor:pointer;
+  }
+
+  /* Custom Checkbox Button
+  ------------------------------------ */
+  //GRAVITY FORMS Custum CHECKBOXES
+  input[type=checkbox] {
+    display: none !important;
+  }
+  .gfield_checkbox{
+
+    opacity: 1;
+    color: rgba(0,0,0,1);
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-align: left;
+    line-height: 24px;
+  }
+
+
+  input[type=checkbox] label {
+    position: relative;
+    cursor: pointer;
+  }
+
+
+
+  input[type=checkbox]:checked + label {
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border: none;
+      border-radius: 50%;
+      display: inline-block;
+      cursor:pointer;
+    }
+  }
+
+
+
+
+
+  /* INFO Seite vier Punkte
+------------------------------------ */
+
+
+  #translate_switch{
+    position: absolute;
+    right: 50px;
+    top: 50px;
+
+  }
+
+
+  #switch_checked_express,
+  #switch_checked_manuell{
+
+    opacity: 1;
+    color: rgba(0,0,0,1);
+
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -0,4px;
+    text-align: left;
+    line-height: 30px;
+
+  }
+  #switch_checked_manuell{
+    color: #999999;
+  }
+
+  .switch label .lever {
+    width: 32px;
+    height: 16px;
+    background-color: #14E1A7;
+    border-radius: 32px;
+  }
+
+  .switch label .lever:after {
+    background-color: #CF003D;
+  }
+
+
+  .switch label input[type=checkbox]:checked + .lever:after {
+    background-color: #CF003D;
+  }
+
+
+  .switch label input[type=checkbox]:checked + .lever {
+    background-color: #14E1A7;
+  }
+
+  .switch label .lever:before, .switch label .lever:after {
+    width: 16px;
+    height: 16px;
+    left: 0;
+    top: 0px;
+
+  }
+
+
+
+
+
+
+  #switch_express_manuell_wrapper{
+
+    margin-top: 50px;
+    text-align: center;
+  }
+
+
+
+
+
+
+.show_boxes{
+  border: solid #14E1A7 1px;
+  border-radius: 8px;
+  margin-right: 24px;
+
+}
+
+
+.gchoice_1_44_0{
+ /* padding-right: 170px !important;*/
+
+  margin-right: 113px !important;
+}
+
+  #label_1_44_1{
+
+    margin-left: 167px !important;
+  }
+
+
+
+
+
+#field_1_44  {
+  z-index: 1 !important;
+}
+
+#input_1_44{
+  //display: none;
+  color: rgba(0,0,0,0,) !important;
+}
+
+
+
+.start_choice{
+margin-top: 56px;
+
+}
+
+.header_choice{
+  opacity: 1;
+  color: rgba(0,0,0,1);
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: -0,4px;
+  text-align: center;
+  line-height: 30px;
+  margin-top: 32px;
+  display: inherit;
+}
+
+.text_coice{
+  opacity: 1;
+  color: rgba(0,0,0,1);
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0px;
+  text-align: center;
+  line-height: 28px;
+  margin-top: 16px;
+
+}
+
+  #field_1_88{
+
+    margin-bottom: 200px;
+  }
+
+  #express_icon{
+
+    opacity: 1;
+    color: rgba(0,0,0,1);
+
+    font-size: 64px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+
+  #manuell_icon{
+
+    opacity: 1;
+    color: rgba(0,0,0,1);
+
+    font-size: 64px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+
+
+  #manuell_icon{
+   display: block;
+  }
+
+  #express_icon{
+   display: block;
+  }
+
+
+
+.weiter_startseite{
+
+  margin-top: 32px;
+  margin-bottom: 32px;
+  text-align: center !important;
+
+}
+
+
+
+
+
+
+
+
+  #weiter_express{
+    input{
+      border: solid 1px #14E1A7;
+      border-radius: 32px;
+      opacity: 1;
+      background-color: rgba(20,225,167, 1);
+      width: 125px;
+      height: 64px;
+      cursor: pointer;
+
+      opacity: 1;
+      color: rgba(0,0,0,1);
+
+      font-size: 18px;
+      font-weight: 900;
+      font-style: normal;
+      letter-spacing: 0.7px;
+      text-align: center;
+      line-height: 28px;
+      text-transform: uppercase;
+      padding-top: 7px;
+    }
+
+  }
+
+//undisplay form Titel
+.gform_heading{
+ display: none;
+}
+
+.gform_page_fields{
+ // margin-top: 261px;
+
+
+
+
+
+
+}
+
+
+
+
+  .text_boni_check{
+    opacity: 1;
+    color: rgba(0,0,0,1);
+
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-align: center;
+    line-height: 28px;
+    margin-top: 24px;
+
+  }
+
+
+
+
+
+
+}
+
+
+
+
+
+.btn {
+  box-shadow: none;
+}
+
+
+
+
+
+
+.grid .col.c8 select { /* würde ich ev. noch über eine eigene klasse lösen, .col.c8 ist vielleicht nicht so sinnvoll */
+  pointer-events: none;
+  padding: 9px 7px 7px 9px; /* naja, es funktioniert */
+}
+

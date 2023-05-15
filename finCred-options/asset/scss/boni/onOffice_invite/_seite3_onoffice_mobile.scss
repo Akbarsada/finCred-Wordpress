@@ -1,0 +1,356 @@
+#gform_page_1_3{
+  height: 901px;
+
+  #field_1_120{
+    margin-top: -71px;
+  }
+
+  #field_1_44{
+    height: 5px;
+  }
+
+  #switch_checked_express,
+  #switch_checked_manuell{
+    opacity: 1;
+    color: rgba(0,0,0,1);
+    font-size: 19px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -0.4px;
+    text-align: left;
+    line-height: 30px;
+  }
+  #switch_checked_manuell{
+    color: #999999;
+  }
+
+  .switch label .lever {
+    width: 32px;
+    height: 16px;
+    background-color: #14E1A7;
+    border-radius: 32px;
+  }
+
+  .switch label .lever:after {
+    background-color: #CF003D;
+  }
+
+
+  .switch label input[type=checkbox]:checked + .lever:after {
+    background-color: #CF003D;
+  }
+
+
+  .switch label input[type=checkbox]:checked + .lever {
+    background-color: #14E1A7;
+  }
+
+  .switch label .lever:before, .switch label .lever:after {
+    width: 16px;
+    height: 16px;
+    left: 0;
+    top: 0px;
+
+  }
+
+  #switch_express_manuell_wrapper{
+
+    margin-top: 50px;
+    text-align: left;
+  }
+
+  .switch{
+    padding-left: 12px;
+  }
+
+  /* slider*/
+
+  .content-wrapper{
+    width: 100%;
+    max-width: 600px;
+    min-height: 600px;
+
+    margin: 0 auto;
+    padding: 15px;
+  }
+
+  .slider-title-wrapper{
+    padding: 15px;
+    .slider-title{
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  }
+
+  .slider-container{
+    overflow: hidden;
+    margin-right: -15px;
+    margin-left: -15px;
+    .slider-wrapper{
+      display: block;
+      white-space: nowrap;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+      margin-bottom: -20px;
+      padding-bottom: 30px;
+      padding-left: 44px;
+      .slider-item{
+        justify-content: center;
+        align-items: center;
+        display: inline-flex;
+        border-radius: 5px;
+        margin-right: 15px;
+        &:last-child{
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+
+  /*end slider*/
+
+  .fa-info-circle:before {
+    opacity: 1;
+    color: rgba(0,0,0,1);
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+
+  i:hover {
+
+    color: #14E1A7!important;
+
+  }
+
+  #input_1_44{
+    margin-top: 40px;
+    margin-left: 8px;
+  }
+
+  .header_boni_check{
+    opacity: 1;
+    color: rgba(0,0,0,1);
+    font-size: 32px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -0,5px;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 72px;
+  }
+
+  #show_box_express_smart{
+    background-color: #D0F9ED;
+    cursor: pointer !important;
+    border: solid 1px #D0F9ED;
+    border-radius: 8px;
+    width: 291px;
+    margin: auto;
+  }
+
+  #show_box_manuell_smart{
+    cursor: pointer !important;
+    border: solid 1px #14E1A7;
+    border-radius: 8px;
+    width: 291px;
+    margin: auto;
+  }
+
+  input[type=radio] + label:before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0px 8px 0 8px;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid transparent;
+    margin-right: -17px;
+  }
+
+  input[type="radio"]:checked + label:after{
+    content: '';
+    width: 10px !important;
+    height: 10px !important;
+    background: transparent;
+    position: absolute;
+    top: 5px;
+    left: 13px;
+    border-radius: 50%;
+    display: inline-block;
+    cursor:pointer;
+  }
+
+  .gform_page_footer{
+    margin-top: 85px;
+  }
+
+
+
+  #express_empfelung_kreis_smart{
+    opacity: 1;
+    background-color: rgba(207,0,61, 1);
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin-left: -42px;
+    border-radius: 100%;
+  }
+
+  #express_empfelung_kreis_text_smart{
+    opacity: 1;
+    color: rgba(255,255,255,1);
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: -0.16px;
+    text-align: center;
+    line-height: 16px;
+    top: 23px;
+    position: absolute;
+    left: 6px;
+  }
+
+  #weiter_express_smart{
+    input{
+      border: solid 1px #14E1A7;
+      border-radius: 32px;
+      opacity: 1;
+      background-color: rgba(20,225,167, 1);
+      width: 240px;
+      height: 64px;
+      cursor: pointer;
+      opacity: 1;
+      color: rgba(0,0,0,1);
+      font-size: 18px;
+      font-weight: 900;
+      font-style: normal;
+      letter-spacing: 0.7px;
+      text-align: center;
+      line-height: 28px;
+      text-transform: uppercase;
+      padding-top: 7px;
+    }
+
+  }
+
+  #gform_next_button_1_130{
+    border: solid 1px #14E1A7;
+    border-radius: 32px !important;
+    opacity: 1;
+    background-color: #FFFFFF;
+    width: 240px;
+    height: 64px;
+    cursor: pointer;
+
+    opacity: 1;
+    color: rgba(0,0,0,1);
+
+    font-size: 18px;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 0.7px;
+    text-align: center;
+    line-height: 28px;
+    text-transform: uppercase;
+    padding-top: 7px;
+
+  }
+
+
+
+  .gform_page_footer #gform_next_button_1_130{
+    background-color: transparent !important;
+    color: transparent;
+    border: transparent;
+    position: absolute;
+  }
+
+
+
+
+  #gform_previous_button_1_130{
+    border: none;
+    opacity: 1;
+    cursor: pointer;
+    opacity: 1;
+    color: black;
+    font-size: 18px;
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: 52px;
+    min-height: 29px;
+  }
+
+  //Slider from right
+
+  #manuell-out{
+    width: 100%;
+    p{
+      padding: 16px;
+    }
+  }
+
+  #express-out{
+    width: 100%;
+    p{
+      padding: 16px;
+    }
+  }
+
+
+  .nav_out_wrapper{
+    margin-top: 206px;
+
+    #icon_navbar{
+      font-size: 40px;
+      padding: 16px;
+    }
+  }
+
+  .nav_slider_header{
+
+    opacity: 1;
+    color: rgba(0,0,0,1);
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -0.5px;
+    text-align: left;
+    line-height: 40px;
+  }
+
+  .nav_slider_text{
+
+    opacity: 1;
+    color: rgba(0,0,0,1);
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-align: left;
+    line-height: 24px;
+
+  }
+
+
+
+
+
+}

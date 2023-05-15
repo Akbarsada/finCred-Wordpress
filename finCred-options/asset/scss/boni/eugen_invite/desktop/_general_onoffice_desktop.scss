@@ -1,0 +1,97 @@
+body {
+  font-family: Nexa, Helvetica, sans-serif;
+}
+#boni_header{
+  position: fixed;
+  z-index: 9999999;
+  border-bottom: solid 1px #72EDCA;
+  width: 100%;
+  height: 129px;
+  background-color: white;
+}
+#content-desktop {
+  margin-top: 129px !important;
+}
+
+.gsection_title {
+  width: auto !important;
+  opacity: 1;
+  color: rgba(0,0,0,1);
+  margin-top: 0px;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: -0,2px;
+  text-align: left;
+  line-height: 26px;
+  display: inline;
+}
+
+/*
+#field_2_93, #field_2_94{
+  width: 80%;}
+
+*/
+
+
+
+
+
+
+div#links_wrapper {
+  height: calc(100% - 129px);
+}
+
+
+
+.grid .col.c4 #object-wrapper {
+  height: 100%;
+}
+
+.gform-theme-datepicker:not(.gform-legacy-datepicker) .ui-datepicker-calendar .ui-state-disabled .ui-state-default {
+  height: 20px !important;
+}
+
+#gform_page_2_2 #gform_next_button_2_43 {
+  padding-top: 8px;
+}
+
+
+
+
+.gform-theme-datepicker:not(.gform-legacy-datepicker) .ui-datepicker-calendar a.ui-state-default {
+  position: relative;
+  background: transparent !important;
+  border: none !important;
+}
+
+
+
+.gform-theme-datepicker:not(.gform-legacy-datepicker) .ui-datepicker-calendar a.ui-state-default:after {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: 2px;
+  transform: translate(-1px,-4px);
+  border: 1px solid #10B485;
+  background-color: #fff;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+
+
+.grid .col.c8 select { /* würde ich ev. noch über eine eigene klasse lösen, .col.c8 ist vielleicht nicht so sinnvoll */
+  pointer-events: none;
+  padding: 9px 7px 7px 9px; /* naja, es funktioniert */
+}
+
+
+
+.gform-theme-datepicker:not(.gform-legacy-datepicker) .ui-datepicker-header select.ui-datepicker-month {
+  pointer-events: none;
+}
+
+

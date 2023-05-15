@@ -1,0 +1,356 @@
+{% extends "base-boni.twig" %}
+{% import "macros.html" as macro %}
+
+{% block content %}
+<main>
+    {% if error_status == "ok" %}
+<div class="content grid mt-s" id="content-desktop">
+                {#DESKTOP#}
+                <div class="col c4 t0" id="links_wrapper">
+                    <div class="" id="object-wrapper">
+                        <div id="vorschaubild_bonicheck"><img src="{{ objekt_bild_url }}" alt=""></div>
+                        <div id="vorschautext_wrapper">
+                            <p id="vorschautext_header">Deine Wunschwohnung </p>
+                            <p id="vorschautext_objekttitel">{{ objekttitel }}</p>
+                            <p id="vorschautext_adresse">{{ strasse }} {{ hausnummer }}<br>{{ plz }} {{ ort }}</p>
+                            <p id="vorschautext_zimmer_header">ZIMMER</p>
+                            <p id="vorschautext_zimmer">{{ anzahl_zimmer }} Zimmer</p>
+                            <p id="vorschautext_miete_header">MIETE</p>
+                            <p id="vorschautext_miete">{{ warmmiete }} € pro Monat</p>
+                            <p id="vorschautext_error_info">{{ objekt_datensatz_leer }}</p>
+                            <div id="mini_footer_menu"><a href="#">Impressum</a><a href="#">Datenschutzerklärung</a></div>
+                            <img id="vorschautext_bild" class="responsive-img" src="{{ site.url }}/wp-content/plugins/eugen-options/asset/img/closeup-phone-cut.png" alt="Bild">
+                        </div>
+                    </div>
+                </div>
+                <div class="col c4 t0" ></div>
+                 {#DESKTOP#}
+
+                                                {#FORMULAR#}
+                                                <div class="col c8 t12" id="form_wrapper">
+                                                <div  id="form_loader">
+
+
+                                                    {#Formloader Fincredible#}
+                                                   <div id="loader_info">
+
+                                                    <div id="loader_icon">
+                                                        <div class="preloader-wrapper active">
+                                                            <div class="spinner-layer spinner-red-only">
+                                                                <div class="circle-clipper left">
+                                                                    <div class="circle"></div>
+                                                                </div><div class="gap-patch">
+                                                                    <div class="circle"></div>
+                                                                </div><div class="circle-clipper right">
+                                                                    <div class="circle"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                       <p id="loader_text">
+                                                           Du wirst gerade zu unserem Partner FINcredible weitergeleitet, bitte bleib auf der Seite …
+                                                       </p>
+                                                   </div>
+                                                    {#Formloader Fincredible#}
+                                                </div>
+
+
+                                                    {#Formloader Bürge#}
+                                                    <div id="form_loader_buerge">
+
+
+
+                                                    <div id="loader_info_buerge">
+                                                        <div class="manuel_icon_finish" style="text-align: center; font-size: 50px; margin: 50px;"><br>
+                                                            <i class="fa-regular fa-check-circle"></i><br>
+                                                        </div>
+
+                                                        <p id="loader_text">
+                                                            Die Email wurde verschickt
+                                                        </p>
+                                                    </div>
+
+
+                                                    </div>
+                                                    {#Formloader Bürge#}
+
+
+
+
+                                              {#Abfage ob Boni gültig bzw bereits durchgeführt#}
+
+
+
+                                                        {% filter shortcodes %}
+                                                            [gravityform id="1" title="true" description="false"  ajax=“true”][/gravityform]
+                                                        {% endfilter %}
+
+
+
+
+                                                </div>
+                                                {#FORMULAR#}
+
+                {#TABLET#}
+                <div class="col c0 t12">
+
+                        <div id="vorschautext_wrapper">
+                            {#ERROR MESSAGE#}
+                            <p id="vorschautext_error_info">{{ objekt_datensatz_leer }}</p>
+                            {#ERROR MESSAGE#}
+                            <div id="mini_footer_menu"><a id="imp_boni" href="#">Impressum</a><a href="#">Datenschutzerklärung</a></div>
+                        </div>
+
+                        {#COLLAPSIBLE#}
+                        <ul class="collapsible">
+                            <li>
+                                <div class="collapsible-header">
+                                    <p id="vorschautext_header">Deine Wunschwohnung</p><i class="material-icons">expand_more</i>
+                               {#     <p id="vorschautext_objekttitel">{{ objekttitel }}</p>#}
+                                    <p id="vorschautext_adresse">{{ strasse }} {{ hausnummer }}<br>{{ plz }} {{ ort }}</p>
+                                </div>
+
+                                <div class="collapsible-body">
+                                    <p id="vorschautext_zimmer_header">ZIMMER</p>
+                                    <p id="vorschautext_zimmer">{{ anzahl_zimmer }} Zimmer</p>
+                                    <p id="vorschautext_miete_header">MIETE</p>
+                                    <p id="vorschautext_miete">{{ warmmiete }}  € pro Monat</p>
+                                </div>
+                            </li>
+                        </ul>
+                        {#COLLAPSIBLE#}
+
+                    <div class="" id="object-wrapper"> </div>
+                </div>
+                {#TABLET#}
+
+</div>
+{% elseif error_status == "link_kaputt" %}
+    <div class="content grid mt-s" id="content-desktop">
+        {#DESKTOP#}
+
+        <div class="col c5 t0" >
+
+            <h1 class="mega hello_selina center" data-concealed="" data-revealed="true" style="">
+                <span class="highlight">
+                        <span class="text">
+                        Oops
+                        </span>
+                </span>
+
+            </h1>
+
+            <div style=" margin-top: 50px;
+            margin-left: 220px;
+            width: 100%;">
+                <div class="text" style="
+            font-size: 64px;
+            font-weight: 700;
+            margin-top: 80px;
+            font-size: 96px;">ungültiger Link</div>
+
+                <p style="margin-top: 50px">Es tut uns Leid, die Seite konnte nicht gefunden werden.</p>
+            </div>
+
+
+            <a href="{{ site_url }}">
+
+                <input type="button" class="back_hauptseite" class="gform_next_button button" value="zurück zur Hauptseite" >
+            </a>
+
+        </div>
+
+
+
+
+        {#DESKTOP#}
+
+        {#FORMULAR#}
+        <div class="col c7 t0" id="form_wrapper">
+            <img id="vorschautext_bild" class="responsive-img" src="https://staging.eugen.immo/wp-content/plugins/eugen-options/asset/img/closeup-phone-error.png" alt="Bild">
+
+        </div>
+        {#FORMULAR#}
+
+        {#TABLET#}
+        <div class="col c0 t12">
+
+            <div id="vorschautext_wrapper">
+                vorschautext_wrapper
+            </div>
+
+
+
+            <div class="" id="object-wrapper"> </div>
+        </div>
+        {#TABLET#}
+
+    </div>
+{% elseif error_status == "kein_objekt" %}
+    <div class="content grid mt-s" id="content-desktop">
+        {#DESKTOP#}
+
+        <div class="col c5 t0" >
+
+            <h1 class="mega hello_selina center" data-concealed="" data-revealed="true" style="">
+                <span class="highlight">
+                        <span class="text">
+                        Oops
+                        </span>
+                </span>
+
+            </h1>
+
+            <div style=" margin-top: 50px;
+            margin-left: 220px;
+            width: 100%;">
+            <div class="text" style="
+            font-size: 64px;
+            font-weight: 700;
+            margin-top: 80px;
+            font-size: 96px;">Objekt nicht gefunden</div>
+
+            <p style="margin-top: 50px">Es tut uns Leid, die Seite konnte nicht gefunden werden.</p>
+            </div>
+
+
+            <a href="{{ site_url }}">
+
+                <input type="button" class="back_hauptseite" class="gform_next_button button" value="zurück zur Hauptseite" >
+            </a>
+
+        </div>
+
+
+
+
+        {#DESKTOP#}
+
+        {#FORMULAR#}
+        <div class="col c7 t0" id="form_wrapper">
+            <img id="vorschautext_bild" class="responsive-img" src="https://staging.eugen.immo/wp-content/plugins/eugen-options/asset/img/closeup-phone-error.png" alt="Bild">
+
+        </div>
+        {#FORMULAR#}
+
+        {#TABLET#}
+        <div class="col c0 t12">
+
+            <div id="vorschautext_wrapper">
+                vorschautext_wrapper
+            </div>
+
+
+
+            <div class="" id="object-wrapper"> </div>
+        </div>
+        {#TABLET#}
+
+    </div>
+{% elseif error_status == "boni_abgeschlossen" %}
+    <div class="content grid mt-s" id="content-desktop">
+        {#DESKTOP#}
+        <div class="col c4 t0" id="links_wrapper">
+            <div class="" id="object-wrapper">
+                <div id="vorschaubild_bonicheck"><img src="{{ objekt_bild_url }}" alt=""></div>
+                <div id="vorschautext_wrapper">
+                    <p id="vorschautext_header">Deine Wunschwohnung</p>
+                    <p id="vorschautext_objekttitel">{{ objekttitel }}</p>
+                    <p id="vorschautext_adresse">{{ strasse }} {{ hausnummer }}<br>{{ plz }} {{ ort }}</p>
+                    <p id="vorschautext_zimmer_header">ZIMMER</p>
+                    <p id="vorschautext_zimmer">{{ anzahl_zimmer }} Zimmer</p>
+                    <p id="vorschautext_miete_header">MIETE</p>
+                    <p id="vorschautext_miete">{{ warmmiete }} € pro Monat</p>
+                    <p id="vorschautext_error_info">{{ objekt_datensatz_leer }}</p>
+                    <div id="mini_footer_menu"><a href="#">Impressum</a><a href="#">Datenschutzerklärung</a></div>
+                    <img id="vorschautext_bild" class="responsive-img" src="{{ site.url }}/wp-content/plugins/eugen-options/asset/img/closeup-phone-cut.png" alt="Bild">
+                </div>
+            </div>
+        </div>
+        <div class="col c4 t0" ></div>
+        {#DESKTOP#}
+
+        {#Vielen Dank#}
+        <div class="col c8 t12" id="form_wrapper">
+
+            <div id="gform_confirmation_wrapper_1" class="gform_confirmation_wrapper "><div id="gform_confirmation_message_1" class="gform_confirmation_message_1 gform_confirmation_message"><div id="maneul_loader"><br>
+                        <div class="manuel_icon_finish"><br>
+                            <i class="fa-regular fa-check-circle"></i><br>
+                        </div><br>
+                        <br>
+                        <p id="loader_text"><br>
+                            Vielen Dank! Dein Bonitätscheck wurde weitergeleitet.<br>
+                        </p><br>
+                        <p><br>
+                            Sobald uns die Rückmeldung des Eigentümers vorliegt, erhältst du eine Nachricht von uns.<br>
+                        </p><br>
+                        <br>
+                    </div></div></div>
+        </div>
+        {#Vielen Dank#}
+
+        {#TABLET#}
+
+        {#TABLET#}
+
+    </div>
+{% endif %}
+
+        <script>
+
+
+
+
+            //Smartphone Collapsible unten
+            jQuery(document).ready(function(){
+                $('.collapsible').collapsible();
+            });
+
+
+
+
+            var garage =  '{{ garagen_plaetze }}';
+            var hashtag_objekt =  '{{ hashtag_objekt }}';
+            var hashtag_kunde =  '{{ hashtag_kunde }}';
+            var hash_uuid =  '{{ request.get.uuid }}';
+            var warmmiete =  '{{ warmmiete }}';
+            var strasse =  '{{ strasse }}';
+            var hausnummer =  '{{ hausnummer }}';
+            var boni_post_id =  '{{ boni_post_id }}';
+            var vorname = '{{ kunden_vorname }}';
+            var nachname = '{{ kunden_name }}';
+            var anrede = '{{ kunden_anrede }}';
+            var email = '{{ kunden_email }}';
+            var nummer_inviter = "{{ nummer_inviter }}";
+            //jQuery('#input_1_155').val(0);
+            jQuery('#input_1_155').val(garage);
+            jQuery('#input_1_148').val(boni_post_id);
+            if(nummer_inviter) { jQuery('#input_1_149').val(nummer_inviter); }
+            document.getElementById("vorschautext_kunden_vorname").innerHTML = vorname +'!';
+            document.getElementById("vorschautext_kunden_vorname_smart").innerHTML = vorname +'!';
+
+            document.getElementById("input_1_10").value = vorname;
+            document.getElementById("input_1_10").disabled = true;
+            document.getElementById("input_1_11").value = nachname;
+            document.getElementById("input_1_11").disabled = true;
+            document.getElementById("input_1_13").value = email;
+            document.getElementById("input_1_13").disabled = true;
+
+            if(anrede == 'Frau'){
+                document.getElementById("choice_1_39_0").checked = true;
+            }
+            else if(anrede == 'Herr'){
+                document.getElementById("choice_1_39_1").checked = true;
+            }
+            else {
+                document.getElementById("choice_1_39_2").checked = true;
+            }
+
+            document.getElementById("choice_1_39_0").disabled = true;
+            document.getElementById("choice_1_39_1").disabled = true;
+            document.getElementById("choice_1_39_2").disabled = true;
+        </script>
+
+
+</main>
+{% endblock %}

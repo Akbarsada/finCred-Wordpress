@@ -1,0 +1,11 @@
+.wp-heading-inline,
+.page-title-action,
+#has-newer-autosave,
+.update-nag,
+#edit-slug-box,
+#notice,
+#submitdiv{display:none!important;}
+
+#titlewrap{
+    margin-top:100px;
+}

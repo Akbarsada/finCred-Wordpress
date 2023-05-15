@@ -1,0 +1,5 @@
+{% if 'svg' in data.illustration.mime_type %}
+{{ data.illustration.ID | svg_inline(data.class) }}
+{% else %}
+<img src="{{ data.illustration.url }}" width="{{ data.illustration.width }}" height="{{ data.illustration.height }}" class="illustration mobile-mt-m mobile-mb-m" aria-hidden="true" data-concealed>
+{% endif %}

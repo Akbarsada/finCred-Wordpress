@@ -1,0 +1,50 @@
+{#{% extends "base.twig" %}#}
+{% import "macros.html" as macro %}
+
+{% block content %}
+    <main>
+
+
+
+{#
+        Estate Parameter
+        [uuid] => 3c40d55a-6dde-4ac6-a5c2-8b577fff3a85
+        [objekttitel] =>
+        [objektbeschreibung] =>
+        [Id] => 7477
+        [strasse] => Schubertring
+        [hausnummer] => 9-11
+        [plz] => 1010
+        [ort] => Wien
+        [land] => AUT
+        [anzahl_zimmer] => 0.00#}
+
+
+
+
+        {{ 'Twig'|onOffice_boni_estate_Request|json_encode}}
+        <br>
+
+ {#
+        Address Parameter
+        [id] => 243783
+        [uuid] => 545cdcbc-0a70-4d36-9e2b-abddd013a391
+        [Briefanrede] => Sehr geehrte Frau Schoditsch,
+        [Vorname] => Stefanie
+        [Name] => Schoditsch
+        [Land] =>
+        [Ort] =>
+        [Plz] =>
+        [Strasse] =>
+        [Anrede] => Frau
+        [Email] => s.schoditsch@tunnel23.com#}
+
+
+        <br>
+        {{ 'Twig'|onOffice_boni_address_Request.Anrede}}
+
+
+
+
+    </main>
+{% endblock %}

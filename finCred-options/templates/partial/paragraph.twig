@@ -1,0 +1,3 @@
+{% import "macros.html" as macro %}
+
+<p{{ macro.paragraph_classes(data) }} data-concealed>{{ data.text | strip_tags | newline }}</p>

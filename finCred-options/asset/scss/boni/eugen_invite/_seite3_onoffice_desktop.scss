@@ -1,0 +1,184 @@
+#gform_page_2_2{
+  #next_button_arrow{
+    display: none;
+  }
+
+  #field_2_120{
+
+    margin-top: -77px!important;
+  }
+
+  #field_1_146{
+
+    margin-top: -77px!important;
+  }
+
+  .fa-info-circle:before {
+    opacity: 1;
+    color: rgba(0,0,0,1);
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+
+  i:hover {
+    color: #14E1A7!important;
+
+  }
+
+  #input_2_44{
+    margin-top: 40px;
+    margin-left: 19px;
+  }
+
+  .header_boni_check{
+    opacity: 1;
+    color: rgba(0,0,0,1);
+    font-size: 32px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -0,5px;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 72px;
+  }
+
+  #show_box_express{
+    background-color: #D0F9ED;
+    cursor: pointer !important;
+    border: solid 1px #D0F9ED;
+    border-radius: 8px;
+    width: 291px;
+    margin: auto;
+  }
+
+  #show_box_manuell{
+    cursor: pointer !important;
+    border: solid 1px #14E1A7;
+    border-radius: 8px;
+    width: 291px;
+    margin: auto;
+  }
+
+  input[type=radio] + label:before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0px 8px 0 8px;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #72EDCA;
+    border: 1px solid #10b485;
+    margin-right: -17px;
+  }
+
+  .gform_page_footer{
+    margin: 25px 0 !important;
+  }
+
+  #express_empfelung_kreis{
+    opacity: 1;
+    background-color: rgba(207,0,61, 1);
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin-left: -42px;
+    border-radius: 100%;
+  }
+
+  #gform_previous_button_2_130{
+    border: none;
+    opacity: 1;
+    cursor: pointer;
+    opacity: 1;
+    color: black;
+    font-size: 18px;
+    font-style: normal;
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 100%;
+    margin: 0 auto;
+    height: 50px;
+
+  }
+
+
+
+
+  .text_coice{
+    padding: 0px 16px;
+    height: 57px;
+  }
+
+  #manuell-out{
+    width: 600px;
+    p{
+      padding: 32px;
+    }
+
+
+
+  }
+
+
+
+
+
+
+  #express-out{
+    width: 600px;
+    p{
+      padding: 32px;
+    }
+  }
+
+
+  .nav_out_wrapper{
+    margin-top: 206px;
+
+    #icon_navbar{
+      font-size: 40px;
+      padding: 32px;
+    }
+  }
+
+  .nav_slider_header{
+
+    opacity: 1;
+    color: rgba(0,0,0,1);
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -0.5px;
+    text-align: left;
+    line-height: 40px;
+  }
+
+  .nav_slider_text{
+
+    opacity: 1;
+    color: rgba(0,0,0,1);
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-align: left;
+    line-height: 24px;
+
+  }
+
+  .lever{
+    vertical-align: baseline;
+  }
+
+  .switch{
+    width: 600px;
+    padding-left: 12px;
+  }
+
+}

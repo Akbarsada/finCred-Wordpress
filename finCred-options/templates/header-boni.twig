@@ -1,0 +1,46 @@
+<!doctype html>
+<html {{ site.language_attributes }}>
+<head>
+	<meta charset="{{ site.charset }}">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="shortcut icon" type="image/png" sizes="32x32" href="{{ img_url }}favicon32x32.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="{{ img_url }}favicon32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="{{ img_url }}favicon16x16.png">
+
+	<link rel="apple-touch-icon" href="{{ img_url }}favicon180x180.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="{{ img_url }}favicon57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="{{ img_url }}favicon60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="{{ img_url }}favicon72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="{{ img_url }}favicon76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="{{ img_url }}favicon114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="{{ img_url }}favicon120x120.png">
+	<link rel="apple-touch-icon" sizes="128x128" href="{{ img_url }}favicon128x128.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="{{ img_url }}favicon144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="{{ img_url }}favicon152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="{{ img_url }}favicon180x180.png">
+	
+	<link rel="preload" href="{{ site.theme.link }}/static/font/NexaRegular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" href="{{ site.theme.link }}/static/font/NexaHeavy.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" href="{{ site.theme.link }}/static/font/NexaXBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	
+	<script>
+		const LANG = '{{ lang }}';
+		const OOLANG = '{{ oolang }}';
+		const PAGE_TYPE = '{{ page_type }}';
+		const RECAPTCHA_KEY = '{{ recaptcha.key }}';
+	</script>
+	
+	{% if staging.is_production %}
+	
+	{% elseif staging.is_staging %}
+	
+	{% endif %}
+
+	
+	{{ function('wp_head') }}
+
+
+	

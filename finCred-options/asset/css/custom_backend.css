@@ -1,0 +1,65 @@
+
+nav {
+
+    background-color: white;
+    border-radius: 20px;
+}
+
+nav .nav-wrapper {
+    position: relative;
+    height: 100%;
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+}
+
+nav ul a {
+
+    color: black;
+    font-weight: bold;
+    border-radius: 20px ;
+}
+
+p{
+
+    font-size: 16px;
+}
+
+#onOffice_secret{
+    margin-bottom: 20px;
+}
+
+.btn:hover, .btn-large:hover, .btn-small:hover {
+    background-color: #14E1A7;
+    color: black;
+}
+
+
+#onOffice_anzahl_objekte{
+    margin-top: 20px;
+}
+.waves-effect{
+    border: solid 1px #14E1A7;
+    border-radius: 32px !important;
+    opacity: 1;
+    background-color: #FFFFFF;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    opacity: 1;
+    color: rgba(0,0,0,1);
+    font-size: 18px;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 0.7px;
+    text-align: center;
+    line-height: 28px;
+    text-transform: uppercase;
+
+
+}
+
+div.mce-inline-toolbar-grp {
+
+    display: none !important;
+}

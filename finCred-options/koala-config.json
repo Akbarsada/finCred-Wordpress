@@ -1,0 +1,26 @@
+{
+	"mappings": [
+		{	
+			"src": "asset/scss",
+			"dest": "asset/css"
+		}
+	],
+
+	"ignores": [
+		"node_modules",
+		"css",
+		"*.js",
+		"*.css"
+	],
+
+	
+	"options": {
+		"outputStyle": "expanded",
+		"autocompile": true,
+		"sourceMap": false,
+		"autoprefix": true,
+		"autoprefixConfig": "> 1%, last 2 versions, firefox >= 4, safari 7, safari 8, IE 8, IE 9, IE 10, IE 11"
+	},
+	
+	"includePaths": []
+}

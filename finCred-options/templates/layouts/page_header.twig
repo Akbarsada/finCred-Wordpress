@@ -1,0 +1,50 @@
+{% import "macros.html" as macro %}
+
+{% set section_classes = [ 'page-header' ] %}
+{% set section_classes = section_classes | merge([ 'page-header-' ~ data.type ]) %}
+{% set content_classes = [ 'content', 'grid', 'header-content' ] %}
+
+{% if data.color == 'image' %}
+
+{% else %}
+	{% set section_classes = section_classes | merge([ data.color ]) %}
+{% endif %}
+
+<section{{ macro.section_style([], [], [], section_classes) }}>
+	
+	{% if data.type == 'full-height' %}
+	{% set headline = data.headline_part_1 ~ '<ul class="variations">' %}
+	{% set parts = data.headline_part_2 | split("\n") %}
+	{% for part in parts %}
+		{% set headline = headline ~ '<li class="variation like-h1 mega">' ~ part ~ '</li>' %}
+	{% endfor %}
+	{% set headline = headline ~ '</ul>' %}
+	
+	<div class="content grid intro-animation">
+		<div class="col c12 horizontal-center vertical-center">
+			<div class="like-h1 mega" data-animate>
+				<span class="highlight"><span class="text">{{ data.word }}</span></span>
+			</div>
+		</div>
+	</div>
+	<div class="{{ content_classes | join(' ') }}">
+		<div class="col c8 vertical-center">
+			{% include 'partial/headline.twig' with { data: { level: 'h1', mega: true, text: headline } } %}
+		</div>
+		{% if data.illustration %}
+			{% include 'partial/conditional_image.twig' with { data: { illustration: data.illustration, class: 'illustration animation-on-reveal mobile-mt-m mobile-mb-m' }} %}
+		{% endif %}
+	</div>
+	
+	{% else %}
+	<div class="{{ content_classes | join(' ') }}">
+		<div class="col c8 vertical-center">
+			{% include 'partial/headline.twig' with { data: { level: 'h1', mega: false, text: data.headline } } %}
+		</div>
+		{% if data.illustration %}
+			{% include 'partial/conditional_image.twig' with { data: { illustration: data.illustration, class: 'illustration mobile-mt-m mobile-mb-m' }} %}
+		{% endif %}
+	</div>
+	
+	{% endif %}
+</section>

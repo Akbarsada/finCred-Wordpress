@@ -1,0 +1,61 @@
+{% import "macros.html" as macro %}
+
+{% spaceless %}
+	{% set grid_classes = [] %}
+  {% set cols_limit = 2 %}
+  {% set cols_desktop = data.columns.desktop_columns | split('|') %}
+  {% set cols_tablet = data.columns.tablet_columns | split('|') %}
+  {% set cols_mobile = data.columns.mobile_columns | split('|') %}
+  {% set cols_desktop_class = [] %}
+  {% set cols_tablet_class = [] %}
+  {% set cols_mobile_class = [] %}
+	
+	{% if data.full_width %}
+		{% set grid_classes = grid_classes | merge([ 'full-width' ]) %}
+	{% endif %}
+	{% if data.mobile_reverse %}
+		{% set grid_classes = grid_classes | merge([ 'mobile-column-reverse' ]) %}
+	{% endif %}
+	{% for margin in data.margins if margin is not empty %}
+		{% set grid_classes = grid_classes | merge([margin]) %}
+	{% endfor %}
+    
+  {% for i in 0..(cols_desktop | length -1) %}
+   
+   	{% if cols_desktop[i] %}
+   		{% set cols_desktop_class = cols_desktop_class | merge([ cols_desktop[i] ]) %}
+   	{% endif %}
+   	
+   	{% if cols_tablet[i] %}
+   		{% set cols_tablet_class = cols_tablet_class | merge([ cols_tablet[i] ]) %}
+   	{% endif %}
+   	
+   	{% if cols_mobile[i] %}
+  		{% set cols_mobile_class = cols_mobile_class | merge([ cols_mobile[i] ]) %}
+  	{% endif %}
+  
+  {% endfor %}
+{% endspaceless %}
+
+<div class="content grid {{ grid_classes | join(' ') }}">
+{% for i in 0..(cols_desktop | length -1) %}
+  {% set classes = ['col'] | merge([cols_desktop_class[i], cols_tablet_class[i], cols_mobile_class[i]]) %}
+  {% set classes = classes | merge(attribute(data, 'horizontal_column_' ~ (i +1))) %}
+	{% set classes = classes | merge(attribute(data, 'vertical_column_' ~ (i +1))) %}
+	{% set classes = classes | merge(attribute(data, 'align_column_' ~ (i +1))) %}
+	
+	{% if (data.mobile_reverse and i == 0) or (not data.mobile_reverse and i == 1) %}
+		{% set classes = classes | merge([ 'mobile-mt-l' ]) %}
+	{% endif %}
+	
+	<div{{ macro.class_list(classes) }}>
+  {% for layout in attribute(data, 'content_column_' ~ (i +1)).modules %}
+    {% include "partial/" ~ layout.acf_fc_layout ~ ".twig" with { "data": layout } %}
+		
+		{% if i == 0 and data.show_ornaments %}
+			{% include "partial/ornaments.twig" %}
+		{% endif %}
+	{% endfor %}
+	</div>
+{% endfor %}
+</div>

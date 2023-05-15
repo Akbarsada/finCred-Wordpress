@@ -1,0 +1,112 @@
+{% macro headline_classes(headline) %}
+{% spaceless %}
+	{% import _self as macro %}
+	
+	{% set classes = [] %}
+	{% if headline.color %} {% set classes = classes | merge([ headline.color]) %}  {% endif %}
+	{% if headline.display_desktop %}  {% set classes = classes | merge([headline.display_desktop]) %}  {% endif %}
+	{% if headline.display_tablet %}  {% set classes = classes | merge([headline.display_tablet]) %}  {% endif %}
+	{% if headline.display_mobile %}  {% set classes = classes | merge([headline.display_mobile]) %}  {% endif %}
+	{% if headline.mega %} {% set classes = classes | merge(['mega']) %}  {% endif %}
+	{% if(headline.custom_classes) %} {% set classes = classes | merge(headline.custom_classes) %}  {% endif %}
+	
+	{% for margin in [ 'desktop_mt', 'desktop_mb', 'tablet_mt', 'tablet_mb', 'mobile_mt', 'mobile_mb' ] %}
+		{% if attribute(headline, margin) %}
+			{% set classes = classes | merge([attribute(headline, margin)]) %}
+		{% endif %}
+	{% endfor %}
+{% endspaceless %}
+{{- macro.class_list(classes) -}}
+{% endmacro %}
+
+
+{% macro paragraph_classes(paragraph, append) %}
+{% spaceless %}
+	{% import _self as macro %}
+	
+	{% set classes = [] %}
+	{% if paragraph.color %} {% set classes = classes | merge([ paragraph.color]) %}  {% endif %}
+	{% if paragraph.is_lead %}        {% set classes = classes | merge(['size-lead']) %}              {% endif %}
+	{% if paragraph.align_desktop %}  {% set classes = classes | merge([paragraph.align_desktop]) %}  {% endif %}
+	{% if paragraph.align_tablet %}    {% set classes = classes | merge([paragraph.align_tablet]) %}    {% endif %}
+	{% if paragraph.align_mobile %}    {% set classes = classes | merge([paragraph.align_mobile]) %}    {% endif %}
+	{% if paragraph.icon %}            {% set classes = classes | merge(['icon-' ~ paragraph.icon]) %}  {% endif %}
+	{% if paragraph.custom_classes %}  {% set classes = classes | merge([paragraph.custom_classes]) %}  {% endif %}
+	
+	{% for item in append if append %}
+		{% set classes = classes | merge([item]) %}
+	{% endfor %}
+
+{% endspaceless %}
+{{- macro.class_list(classes) -}}
+{% endmacro %}
+
+
+{% macro class_list(classes, append) %}
+{% spaceless %}
+	{% set clean = [] %}
+	{% for class in classes if class %}
+		{% set clean = clean | merge([class]) %}
+	{% endfor %}
+	{% set list = clean | join(' ') | trim %}
+	{% if append %}
+		{% set list = ' ' ~ list %}
+	{% else %}
+		{% if list | trim != '' %}
+			{% set list = ' class="' ~ list ~'"' %}
+		{% else %}
+			{% set list = '' %}
+		{% endif %}
+	{% endif %}
+{% endspaceless %}
+{{- list -}}
+{% endmacro %}
+
+
+{% macro section_style(margins, paddings, background, custom = []) %}
+{% spaceless %}
+	{% import _self as macro %}
+	
+	{% set classes = custom %}
+	{% set style = '' %}
+	{% for margin in margins if margin is not empty %}
+		{% set classes = classes | merge([margin]) %}
+	{% endfor %}
+	{% for padding in paddings if padding is not empty %}
+		{% set classes = classes | merge([padding]) %}
+	{% endfor %}
+	{% if background.color == 'image' %}
+		{% set style = 'style="background-image: url(' ~ background.background_image.url ~ ');"' %}
+	{% elseif background.color %}
+		{% set classes = classes | merge([background.color]) %}
+	{% endif %}
+{% endspaceless %}
+{% if classes | length %}{{ macro.class_list(classes) }}{% endif %}
+{% if style %}{{ ' ' ~ style }}{% endif %}
+{% endmacro %}
+
+
+{% macro get_id(prefix) %}
+{% spaceless %}
+	
+	{% set id = [] %}
+	{% set chars = 'abcdef0123456789' %}
+	
+	{% for i in 1..12 %}
+		{% set randomCharacter = random(chars) %}
+		{% set id = id | merge([ randomCharacter ]) %}
+	{% endfor %}
+	{% set id = id | join %}
+
+	{{ prefix ~ '-' ~ id }}
+{% endspaceless %}
+{% endmacro %}
+
+
+{% macro value_or_empty(value) %}
+{% spaceless %}
+	{% if value %}
+		{{ value }}
+	{% endif %}
+{% endspaceless %}
+{% endmacro %}

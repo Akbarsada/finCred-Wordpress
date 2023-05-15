@@ -1,0 +1,148 @@
+
+
+/* Datapicker
+  ------------------------------------ */
+
+.gform-theme-datepicker:not(.gform-legacy-datepicker) .ui-datepicker-calendar .ui-state-disabled .ui-state-default {
+  box-shadow: none;
+}
+
+.gform-theme-datepicker:not(.gform-legacy-datepicker) {
+  width: 250px!important;
+  height: auto !important;
+}
+
+/*  .gform-theme-datepicker:not(.gform-legacy-datepicker) .ui-datepicker-header .ui-datepicker-next::before {
+    margin-top: -19px;
+  }
+
+  .gform-theme-datepicker:not(.gform-legacy-datepicker) .ui-datepicker-header .ui-datepicker-prev::before {
+    margin-top: -19px;
+  }
+
+  .ui-datepicker:not(.gform-legacy-datepicker) .ui-datepicker-title {
+    margin-top: -3px;
+  }*/
+
+
+#ui-datepicker-div{
+  background-color: #72EDCA !important;
+  border: solid 1px #10B485 !important;
+  border-radius: 16px;
+}
+//hide days of next and previous month
+#ui-datepicker-div table.ui-datepicker-calendar td.ui-datepicker-other-month.ui-datepicker-unselectable.ui-state-disabled {
+  visibility: hidden;
+}
+
+
+/*  .ui-datepicker:not(.gform-legacy-datepicker) a.ui-state-default {
+    line-height: 1!important;
+  }*/
+//einzelne Tage
+.gform-theme-datepicker:not(.gform-legacy-datepicker) td, .gform-theme-datepicker:not(.gform-legacy-datepicker) th {
+  padding: 0px!important;
+  text-shadow: none;
+  text-transform: none;
+}
+
+//Monat
+.gform-theme-datepicker:not(.gform-legacy-datepicker) .ui-datepicker-header select.ui-datepicker-month {
+  margin-right: 20px;
+  -moz-text-align-last: left!important;
+  text-align-last: left!important;
+  width: auto !important;
+}
+
+//Woche
+.gform-theme-datepicker:not(.gform-legacy-datepicker) .ui-datepicker-calendar th span {
+
+  color: rgba(0,0,0,1) !important;
+  font-size: 13px!important;
+  font-weight: 900 !important;
+  font-style: normal!important;
+  letter-spacing: 0px;
+  text-align: center!important;
+  line-height: 20px!important;
+  margin-left: 3px!important;
+}
+
+.ui-datepicker-month{
+  width: auto !important;
+  background-image: none !important;
+  color: rgba(0,0,0,1) !important;
+  font-family: nexa !important;
+  font-size: 13px !important;
+  font-weight: 900 !important;
+  font-style: normal !important;
+  letter-spacing: 0px;
+  text-align: right !important;
+  line-height: 20px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.ui-datepicker-year{
+  width: auto !important;
+  background-image: none !important;
+  color: rgba(0,0,0,1) !important;
+  font-size: 13px !important;
+  font-weight: 900 !important;
+  font-style: normal !important;
+  letter-spacing: 0px;
+  text-align: center !important;
+  line-height: 20px !important;
+}
+
+//nicht mögliche tage
+.gform-theme-datepicker:not(.gform-legacy-datepicker) .ui-datepicker-calendar .ui-state-disabled .ui-state-default {
+  align-items: center;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 100%;
+  font-size: 13px;
+  font-weight: 400;
+  color: #10B485 !important;
+  cursor: text;
+  display: flex;
+
+  justify-content: center;
+  text-decoration: none;
+
+  position: absolute!important;
+  box-shadow: none !important;
+}
+//ausgewählte Tage
+.gform-theme-datepicker:not(.gform-legacy-datepicker) .ui-datepicker-calendar .ui-datepicker-current-day .ui-state-default {
+  align-items: center;
+  background: #D0F9ED !important;
+  border: 1px solid #10B485 !important;
+  border-radius: 100%;
+  box-shadow: none;
+  color: #2f4054 !important;
+  font-size: 13px;
+  display: flex;
+
+  justify-content: center;
+  text-decoration: none;
+  transition: color .3s ease-in-out,background-color .3s ease-in-out,border-color .3s ease-in-out;
+
+}
+//auswahlmögliche Tage
+.gform-theme-datepicker:not(.gform-legacy-datepicker) .ui-datepicker-calendar .ui-state-default {
+  align-items: center;
+  background: #FFFFFF !important;
+  border: 1px solid #10B485 !important;
+  border-radius: 100%;
+  box-shadow: none;
+  color: #2f4054;
+  font-size: 13px;
+  font-weight: 900;
+  display: flex;
+
+  justify-content: center;
+  text-decoration: none;
+  transition: color .3s ease-in-out,background-color .3s ease-in-out,border-color .3s ease-in-out;
+
+
+}

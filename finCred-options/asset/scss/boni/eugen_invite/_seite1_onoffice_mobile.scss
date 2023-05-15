@@ -1,0 +1,144 @@
+#gform_page_1_1{
+
+  .info_kasten_smart {
+    margin-bottom: -17px !important;
+    height: 256px;
+    border-radius: 8px 8px 0px 0px;
+  }
+
+  .header_boni_info{
+    opacity: 1;
+    color: rgba(0,0,0,1);
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -0,4px;
+    text-align: left;
+    line-height: 30px;
+    padding-top: 40px;
+    padding-left: 16px;
+  }
+
+  .info_text_hallo{
+    margin-top: 56px;
+    height: auto;
+    text-align: center;
+  }
+
+  #vorschautext_kunden_text_smart{
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+
+  .fa-circle-1:before {
+    font-size: 24px;
+    margin-right: 14px;
+    vertical-align: middle;
+  }
+
+  .fa-circle-2:before {
+    font-size: 24px;
+    margin-right: 14px;
+    vertical-align: middle;
+  }
+
+  .fa-circle-3:before {
+    font-size: 24px;
+    margin-right: 14px;
+    vertical-align: middle;
+  }
+
+  .fa-circle-4:before {
+    font-size: 24px;
+    margin-right: 14px;
+    vertical-align: middle;
+  }
+
+  .text_boni_info{
+    opacity: 1;
+    color: rgba(0,0,0,1);
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-align: left;
+    line-height: 24px;
+    padding: 16px;
+  }
+
+  #vorschautext_kunden_vorname_smart{
+    opacity: 1;
+    color: black;
+    font-size: 50px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 0.3px;
+    line-height: 72px;
+  }
+
+  .mega{
+    font-size: 42px;
+  }
+
+  .text{
+    margin-right: 72px;
+  }
+
+  h1.mega .highlight, .like-h1.mega .highlight {
+    display: inline-block;
+    position: relative;
+    vertical-align: text-top;
+    font-size: 42px;
+    line-height: 1;
+    letter-spacing: 0.3px;
+    padding: 14px 0 0;
+    border-radius: 999px;
+    background-color: #14e1A7;
+    text-transform: uppercase;
+    -webkit-transform: translateY(-8px);
+    -moz-transform: translateY(-8px);
+    -ms-transform: translateY(-8px);
+    transform: translateY(-8px);
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+    overflow: hidden;
+  }
+
+  //Weiter Button Seite 1
+
+  #gform_next_button_1_118{
+
+    border: solid 1px #14E1A7;
+    border-radius: 32px;
+    opacity: 1;
+    background-color: #14e1a7;
+    width: 344px;
+    height: 64px;
+    cursor: pointer;
+    opacity: 1;
+    color: black;
+    font-size: 18px;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 0.7px;
+    text-align: center;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-top: 24px;
+    padding-top:7px;
+
+  }
+
+
+  .gform_wrapper.gravity-theme
+  .gform_footer,
+  .gform_wrapper.gravity-theme
+  .gform_page_footer {
+    margin: 17px !important;
+    padding: 0px !important;
+  }
+
+
+}

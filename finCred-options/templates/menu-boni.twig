@@ -1,0 +1,61 @@
+
+{% set header_class = '' %}
+{% if is_front_page and teaser_bar.show %}
+	{% set header_class = 'has-teaser-bar' %}
+{% endif %}
+
+<div id="boni_header">
+
+	<!-- Desktop -->
+	<div class="row hide-on-small-only hide-on-med-only boni-header" id="header-desktop">
+		<div class="col s3">
+			<a href="/" aria-label="Startseite" class="logo" data-concealed>
+				{% include "partial/logo.twig" with { data: { class: 'logo-default' } } %}
+			</a>
+		</div>
+		<div class="col s1" >
+			<span id="boni_check_desktop_header" >Bonitätscheck</span>
+		</div>
+		<div class="col s2 offset-s6" >
+			<div class="switch" id="translate_switch_desktop" style="display: none;">
+				<a href="#" class="btn btn-lang" data-lang="de" aria-label="BUTTON language switch"></a>
+			</div>
+		</div>
+	</div><!-- Ende Desktop -->
+
+
+	<!-- Tablet -->
+	<div class="row hide-on-large-only show-on-medium show-on-small" id="header-smartphone">
+		<div class="col s4" >
+			<a href="/" aria-label="Startseite" class="logo" data-concealed>
+				{% include "partial/logo.twig" with { data: { class: 'logo-default' } } %}
+			</a>
+
+		</div>
+
+		<div class="col s4" >
+
+
+			<span id="boni_check_smartphone_header" >Bonitätscheck</span>
+
+		</div>
+
+		<div class="col s4 lang_tablet" >
+
+
+			<div class="switch" id="translate_switch_desktop" style="display: none;">
+				<a href="#" class="btn btn-lang" data-lang="de" aria-label="BUTTON language switch"></a>
+			</div>
+
+		</div>
+
+
+	</div><!-- Ende Smartphone -->
+
+
+
+
+
+</div>
+
+<div id="window-height"></div>

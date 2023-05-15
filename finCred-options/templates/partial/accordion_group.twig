@@ -1,0 +1,23 @@
+
+{% set id = macro.get_id('accordion') %}
+{% set it = 0 %}
+
+<div class="accordion"{% if data.multiple %} id="{{ id }}" data-multiple="true"{% endif %}>
+	{% for accordion in data.accordions %}
+		<div class="accordion-item" data-concealed>
+			<button id="{{ id }}-button-{{ it }}" aria-expanded="false">
+				<span class="accordion-title">{{ accordion.title }}</span>
+				<span class="icon" aria-hidden="true">
+					<i class="fa fa-chevron-down expand" aria-hidden="true"></i>
+					<i class="fa fa-chevron-up collapse" aria-hidden="true"></i>
+				</span>
+			</button>
+			<div class="accordion-content">
+				{% for layout in accordion.modules %}
+					{% include "partial/" ~ layout.acf_fc_layout ~ ".twig" with { "data": layout } %}
+				{% endfor %}
+			</div>
+		</div>
+		{% set it = it + 1 %}
+	{% endfor %}
+</div>

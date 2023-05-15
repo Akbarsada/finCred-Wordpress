@@ -1,0 +1,5 @@
+{% set recaptcha_id = 'recaptcha-' ~ random() %}
+{% set response_id = recaptcha_id ~ '-response' %}
+
+<div class="g-recaptcha" id="{{ recaptcha_id }}" data-sitekey="{{ recaptcha.key }}" data-size="invisible" data-callback="googleRecaptchaCallback"></div>
+<input type="hidden" name="token" id="{{ response_id }}" value="">

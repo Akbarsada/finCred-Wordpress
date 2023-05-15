@@ -1,0 +1,48 @@
+{% extends "base-boni.twig" %}
+{% import "macros.html" as macro %}
+
+{% block content %}
+
+<main>
+    <script>
+
+        document.getElementById("boni_header").style.width = "10%";
+        document.getElementById("header-smartphone").style.display = "none";
+    </script>
+
+
+    <div class="content grid mt-s" id="content-desktop">
+        {#DESKTOP#}
+
+        <div class="col c4 t0" ></div>
+        {#DESKTOP#}
+
+        {#FORMULAR#}
+        <div class="col c12 t12" id="form_wrapper">
+            <div  id="form_loader">
+
+                <div id="loader_info">
+
+                    <p id="loader_text">
+                        {{ errorMessage_email }}
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+    </main>
+{% endblock %}

@@ -1,0 +1,1026 @@
+{% extends "base-boni.twig" %}
+{% import "macros.html" as macro %}
+
+{% block content %}
+    <main>
+        {% if error_status == "ok" %}
+            <div class="content grid mt-s" id="content-desktop">
+                {#DESKTOP#}
+                <div class="col c4 t0" id="links_wrapper">
+                    <div class="" id="object-wrapper">
+                        <div id="vorschaubild_bonicheck"><img src="{{ objekt_bild_url }}" alt=""></div>
+                        <div id="vorschautext_wrapper">
+                            <p id="vorschautext_header">Deine Wunschwohnung</p>
+                            <p id="vorschautext_objekttitel">{{ objekttitel }}</p>
+                            <p id="vorschautext_adresse">{{ strasse }} {{ hausnummer }}<br>{{ plz }} {{ ort }}</p>
+                            <p id="vorschautext_zimmer_header">ZIMMER</p>
+                            <p id="vorschautext_zimmer">{{ anzahl_zimmer }} Zimmer</p>
+                            <p id="vorschautext_miete_header">MIETE</p>
+                            <p id="vorschautext_miete">{{ warmmiete }} € pro Monat</p>
+                            <p id="vorschautext_error_info">{{ objekt_datensatz_leer }}</p>
+                            <div id="mini_footer_menu"><a href="#">Impressum</a><a href="#">Datenschutzerklärung</a></div>
+                            <img id="vorschautext_bild" class="responsive-img" src="{{ site.url }}/wp-content/plugins/eugen-options/asset/img/closeup-phone-cut.png" alt="Bild">
+                        </div>
+                    </div>
+                </div>
+                <div class="col c4 t0" ></div>
+                {#DESKTOP#}
+
+                {#FORMULAR#}
+                <div class="col c8 t12" id="form_wrapper">
+                    <div  id="form_loader">
+
+                        <div id="loader_info">
+
+                            <div id="loader_icon">
+                                <div class="preloader-wrapper active">
+                                    <div class="spinner-layer spinner-red-only">
+                                        <div class="circle-clipper left">
+                                            <div class="circle"></div>
+                                        </div><div class="gap-patch">
+                                            <div class="circle"></div>
+                                        </div><div class="circle-clipper right">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <p id="loader_text">
+                                Du wirst gerade zu unserem Partner FINcredible weitergeleitet, bitte bleib auf der Seite …
+                            </p>
+
+                        </div>
+
+
+                    </div>
+                    {% filter shortcodes %}
+                        [gravityform id="1" title="true" description="false"   ajax=“true”][/gravityform]
+                    {% endfilter %}
+                </div>
+                {#FORMULAR#}
+
+                {#TABLET#}
+                <div class="col c0 t12">
+
+                    <div id="vorschautext_wrapper">
+                        {#ERROR MESSAGE#}
+                        <p id="vorschautext_error_info">{{ objekt_datensatz_leer }}</p>
+                        {#ERROR MESSAGE#}
+                        <div id="mini_footer_menu"><a href="#">Impressum</a><a href="#">Datenschutzerklärung</a></div>
+                    </div>
+
+                    {#COLLAPSIBLE#}
+                    <ul class="collapsible">
+                        <li>
+                            <div class="collapsible-header">
+                                <p id="vorschautext_header">Deine Wunschwohnung</p><i class="material-icons">expand_more</i>
+                                {#     <p id="vorschautext_objekttitel">{{ objekttitel }}</p>#}
+                                <p id="vorschautext_adresse">{{ strasse }} {{ hausnummer }}<br>{{ plz }} {{ ort }}</p>
+                            </div>
+
+                            <div class="collapsible-body">
+                                <p id="vorschautext_zimmer_header">ZIMMER</p>
+                                <p id="vorschautext_zimmer">{{ anzahl_zimmer }} Zimmer</p>
+                                <p id="vorschautext_miete_header">MIETE</p>
+                                <p id="vorschautext_miete">{{ warmmiete }}  € pro Monat</p>
+                            </div>
+                        </li>
+                    </ul>
+                    {#COLLAPSIBLE#}
+
+                    <div class="" id="object-wrapper"> </div>
+                </div>
+                {#TABLET#}
+
+            </div>
+        {% elseif error_status == "link_kaputt" %}
+            <div class="content grid mt-s" id="content-desktop">
+                {#DESKTOP#}
+
+                <div class="col c5 t0" >
+
+                    <h1 class="mega hello_selina center" data-concealed="" data-revealed="true" style="">
+                <span class="highlight">
+                        <span class="text">
+                        Oops
+                        </span>
+                </span>
+
+                    </h1>
+
+                    <div style=" margin-top: 50px;
+            margin-left: 220px;
+            width: 100%;">
+                        <div class="text" style="
+            font-size: 64px;
+            font-weight: 700;
+            margin-top: 80px;
+            font-size: 96px;">ungültiger Link</div>
+
+                        <p style="margin-top: 50px">Es tut uns Leid, die Seite konnte nicht gefunden werden.</p>
+                    </div>
+
+
+                    <a href="{{ site_url }}">
+
+                        <input type="button" class="back_hauptseite" class="gform_next_button button" value="zurück zur Hauptseite" >
+                    </a>
+
+                </div>
+
+
+
+
+                {#DESKTOP#}
+
+                {#FORMULAR#}
+                <div class="col c7 t0" id="form_wrapper">
+                    <img id="vorschautext_bild" class="responsive-img" src="https://staging.eugen.immo/wp-content/plugins/eugen-options/asset/img/closeup-phone.png" alt="Bild">
+
+                </div>
+                {#FORMULAR#}
+
+                {#TABLET#}
+                <div class="col c0 t12">
+
+                    <div id="vorschautext_wrapper">
+                        vorschautext_wrapper
+                    </div>
+
+
+
+                    <div class="" id="object-wrapper"> </div>
+                </div>
+                {#TABLET#}
+
+            </div>
+        {% elseif error_status == "kein_objekt" %}
+            <div class="content grid mt-s" id="content-desktop">
+                {#DESKTOP#}
+
+                <div class="col c5 t0" >
+
+                    <h1 class="mega hello_selina center" data-concealed="" data-revealed="true" style="">
+                <span class="highlight">
+                        <span class="text">
+                        Oops
+                        </span>
+                </span>
+
+                    </h1>
+
+                    <div style=" margin-top: 50px;
+            margin-left: 220px;
+            width: 100%;">
+                        <div class="text" style="
+            font-size: 64px;
+            font-weight: 700;
+            margin-top: 80px;
+            font-size: 96px;">Objekt nicht gefunden</div>
+
+                        <p style="margin-top: 50px">Es tut uns Leid, die Seite konnte nicht gefunden werden.</p>
+                    </div>
+
+
+                    <a href="{{ site_url }}">
+
+                        <input type="button" class="back_hauptseite" class="gform_next_button button" value="zurück zur Hauptseite" >
+                    </a>
+
+                </div>
+
+
+
+
+                {#DESKTOP#}
+
+                {#FORMULAR#}
+                <div class="col c7 t0" id="form_wrapper">
+                    <img id="vorschautext_bild" class="responsive-img" src="https://staging.eugen.immo/wp-content/plugins/eugen-options/asset/img/closeup-phone.png" alt="Bild">
+
+                </div>
+                {#FORMULAR#}
+
+                {#TABLET#}
+                <div class="col c0 t12">
+
+                    <div id="vorschautext_wrapper">
+                        vorschautext_wrapper
+                    </div>
+
+
+
+                    <div class="" id="object-wrapper"> </div>
+                </div>
+                {#TABLET#}
+
+            </div>
+        {% elseif error_status == "boni_abgeschlossen" %}
+            <div class="content grid mt-s" id="content-desktop">
+                {#DESKTOP#}
+                <div class="col c4 t0" id="links_wrapper">
+                    <div class="" id="object-wrapper">
+                        <div id="vorschaubild_bonicheck"><img src="{{ objekt_bild_url }}" alt=""></div>
+                        <div id="vorschautext_wrapper">
+                            <p id="vorschautext_header">Deine Wunschwohnung</p>
+                            <p id="vorschautext_objekttitel">{{ objekttitel }}</p>
+                            <p id="vorschautext_adresse">{{ strasse }} {{ hausnummer }}<br>{{ plz }} {{ ort }}</p>
+                            <p id="vorschautext_zimmer_header">ZIMMER</p>
+                            <p id="vorschautext_zimmer">{{ anzahl_zimmer }} Zimmer</p>
+                            <p id="vorschautext_miete_header">MIETE</p>
+                            <p id="vorschautext_miete">{{ warmmiete }} € pro Monat</p>
+                            <p id="vorschautext_error_info">{{ objekt_datensatz_leer }}</p>
+                            <div id="mini_footer_menu"><a href="#">Impressum</a><a href="#">Datenschutzerklärung</a></div>
+                            <img id="vorschautext_bild" class="responsive-img" src="{{ site.url }}/wp-content/plugins/eugen-options/asset/img/closeup-phone-cut.png" alt="Bild">
+                        </div>
+                    </div>
+                </div>
+                <div class="col c4 t0" ></div>
+                {#DESKTOP#}
+
+                {#Vielen Dank#}
+                <div class="col c8 t12" id="form_wrapper">
+
+                    <div id="gform_confirmation_wrapper_1" class="gform_confirmation_wrapper "><div id="gform_confirmation_message_1" class="gform_confirmation_message_1 gform_confirmation_message"><div id="maneul_loader"><br>
+                                <div class="manuel_icon_finish"><br>
+                                    <i class="fa-regular fa-check-circle"></i><br>
+                                </div><br>
+                                <br>
+                                <p id="loader_text"><br>
+                                    Vielen Dank! Dein Bonitätscheck wurde weitergeleitet.<br>
+                                </p><br>
+                                <p><br>
+                                    Sobald uns die Rückmeldung des Eigentümers vorliegt, erhältst du eine Nachricht von uns.<br>
+                                </p><br>
+                                <br>
+                            </div></div></div>
+                </div>
+                {#Vielen Dank#}
+
+                {#TABLET#}
+
+                {#TABLET#}
+
+            </div>
+        {% endif %}
+
+        <script>
+
+
+
+            //ausblenden erste Seiste
+            jQuery(document).ready(function(){
+
+                setTimeout(function() {
+                    if(jQuery('#gform_page_1_1').is(':visible') && window.location.href.indexOf('boni_post_id') >= 0) {
+                        jQuery('#gform_page_1_1').css('display', 'none');
+                        jQuery('#gform_page_1_2').css('display', 'block');
+                    }
+                }, 100);
+
+
+                gform.addAction('gform_post_conditional_logic_field_action', function (formId, action, targetId, defaultValues, isInit) {
+                    jQuery('#input_1_155').val({{ garagen_plaetze }});
+                    jQuery('#input_1_144').val("{{ boni_post_id }}");
+                    jQuery('#input_1_145').val("{{ nummer_inviter }}");
+                    jQuery('#info_buerge').css('display', 'none');
+
+                    //set einzugstermin and disable
+                    jQuery('#input_1_117').val("{{ einzugstermin_wunsch }}");
+                    jQuery('#input_1_117').attr('disabled', 'disabled');
+                    jQuery('#input_1_117').css('background-color', '#F2F2F2');
+                    jQuery('#input_1_117').css('color', '#666666');
+
+                    //set einzugstermin and disable
+                    jQuery('#input_1_7').val("{{ einzugstermin_alternative }}");
+                    jQuery('#input_1_7').attr('disabled', 'disabled');
+                    jQuery('#input_1_7').css('background-color', '#F2F2F2');
+                    jQuery('#input_1_7').css('color', '#666666');
+
+
+                    //set anzahl Mieter and disable
+                    jQuery('#input_1_95').val("{{ anzahl_bewohner }}");
+                    jQuery('#input_1_95').attr('disabled', 'disabled');
+                    jQuery('#input_1_95').css('background-color', '#F2F2F2');
+                    jQuery('#input_1_95').css('color', '#666666');
+                    jQuery('#input_1_95').css('border', '#CCCCCC');
+                    jQuery('#next_haushalt').css('color', '#666666');
+                    jQuery('#prev_haushalt').css('color', '#666666');
+
+
+                    //set anzahl Mieter and disable
+                    jQuery('#input_1_5').val({{ anzahl_hauptmieter }});
+                    jQuery('#input_1_5').attr('disabled', 'disabled');
+                    jQuery('#input_1_5').css('background-color', '#F2F2F2');
+                    jQuery('#input_1_5').css('color', '#666666');
+                    jQuery('#input_1_5').css('border', '#CCCCCC');
+                    jQuery('#next_mieter').css('color', '#666666');
+                    jQuery('#prev_mieter').css('color', '#666666');
+
+
+                    //set anzahl Garage and disable
+                    jQuery('#input_1_152').val({{ garagen_plaetze }});
+                    jQuery('#input_1_152').attr('disabled', 'disabled');
+                    jQuery('#input_1_152').css('background-color', '#F2F2F2');
+                    jQuery('#input_1_152').css('color', '#666666');
+                    jQuery('#input_1_152').css('border', '#CCCCCC');
+                    jQuery('#next_garage').css('color', '#666666');
+                    jQuery('#prev_garage').css('color', '#666666');
+
+                    //checkbox unten
+                    jQuery('#label_1_143_1').css('display', 'none');
+
+                    if({{ anzahl_hauptmieter }} == 1){
+
+                        //mieter 1
+                        if("{{ kunden_anrede_1 }}" == 'Frau'){
+                            document.getElementById("choice_1_39_0").checked = true;
+                        }
+                        else if("{{ kunden_anrede_1 }}" == 'Herr'){
+                            document.getElementById("choice_1_39_1").checked = true;
+                        }
+                        else {
+                            document.getElementById("choice_1_39_2").checked = true;
+                        }
+
+
+                        jQuery('#input_1_10').val("{{ kunden_vorname_1 }}");
+                        jQuery('#input_1_10').attr('disabled', 'disabled');
+                        jQuery('#input_1_11').val("{{ kunden_name_1 }}");
+                        jQuery('#input_1_11').attr('disabled', 'disabled');
+                        jQuery('#input_1_13').val("{{ kunden_email_1 }}");
+                        jQuery('#input_1_13').attr('disabled', 'disabled');
+                        jQuery('#label_1_59_1').css('display', 'none');
+                        jQuery('#choice_1_39_0').attr('disabled', true);
+                        jQuery('#choice_1_39_1').attr('disabled', true);
+                        jQuery('#choice_1_39_2').attr('disabled', true);
+
+
+
+
+                    }
+
+
+
+                    if({{ anzahl_hauptmieter }} == 2){
+
+                        //mieter 1
+                        if("{{ kunden_anrede_1 }}" == 'Frau'){
+                            document.getElementById("choice_1_39_0").checked = true;
+                        }
+                        else if("{{ kunden_anrede_1 }}" == 'Herr'){
+                            document.getElementById("choice_1_39_1").checked = true;
+                        }
+                        else {
+                            document.getElementById("choice_1_39_2").checked = true;
+                        }
+
+
+                        jQuery('#input_1_10').val("{{ kunden_vorname_1 }}");
+                        jQuery('#input_1_10').attr('disabled', 'disabled');
+                        jQuery('#input_1_11').val("{{ kunden_name_1 }}");
+                        jQuery('#input_1_11').attr('disabled', 'disabled');
+                        jQuery('#input_1_13').val("{{ kunden_email_1 }}");
+                        jQuery('#input_1_13').attr('disabled', 'disabled');
+                        jQuery('#label_1_59_1').css('display', 'none');
+                        jQuery('#choice_1_39_0').attr('disabled', true);
+                        jQuery('#choice_1_39_1').attr('disabled', true);
+                        jQuery('#choice_1_39_2').attr('disabled', true);
+
+                        //mieter 2
+                        if("{{ kunden_anrede_2 }}" == 'Frau'){
+                            document.getElementById("choice_1_38_0").checked = true;
+                        }
+                        else if("{{ kunden_anrede_2 }}" == 'Herr'){
+                            document.getElementById("choice_1_38_1").checked = true;
+                        }
+                        else {
+                            document.getElementById("choice_1_38_2").checked = true;
+                        }
+
+                        jQuery('#input_1_17').val("{{ kunden_vorname_2 }}");
+                        jQuery('#input_1_17').attr('disabled', 'disabled');
+                        jQuery('#input_1_18').val("{{ kunden_name_2 }}");
+                        jQuery('#input_1_18').attr('disabled', 'disabled');
+                        jQuery('#input_1_19').val("{{ kunden_email_2 }}");
+                        jQuery('#input_1_19').attr('disabled', 'disabled');
+                        jQuery('#label_1_65_1').css('display', 'none');
+                        jQuery('#choice_1_38_0').attr('disabled', true);
+                        jQuery('#choice_1_38_1').attr('disabled', true);
+                        jQuery('#choice_1_38_2').attr('disabled', true);
+
+                        //Bürge
+                        jQuery('#field_1_65').css('display', 'block');
+                        jQuery('#choice_1_65_1').attr('disabled', false);
+
+
+
+                    }
+
+
+
+                    if({{ anzahl_hauptmieter }} == 3){
+
+                        //mieter 1
+                        if("{{ kunden_anrede_1 }}" == 'Frau'){
+                            document.getElementById("choice_1_39_0").checked = true;
+                        }
+                        else if("{{ kunden_anrede_1 }}" == 'Herr'){
+                            document.getElementById("choice_1_39_1").checked = true;
+                        }
+                        else {
+                            document.getElementById("choice_1_39_2").checked = true;
+                        }
+
+
+                        jQuery('#input_1_10').val("{{ kunden_vorname_1 }}");
+                        jQuery('#input_1_10').attr('disabled', 'disabled');
+                        jQuery('#input_1_11').val("{{ kunden_name_1 }}");
+                        jQuery('#input_1_11').attr('disabled', 'disabled');
+                        jQuery('#input_1_13').val("{{ kunden_email_1 }}");
+                        jQuery('#input_1_13').attr('disabled', 'disabled');
+                        jQuery('#label_1_59_1').css('display', 'none');
+                        jQuery('#choice_1_39_0').attr('disabled', true);
+                        jQuery('#choice_1_39_1').attr('disabled', true);
+                        jQuery('#choice_1_39_2').attr('disabled', true);
+
+                        //mieter 2
+                        if("{{ kunden_anrede_2 }}" == 'Frau'){
+                            document.getElementById("choice_1_38_0").checked = true;
+                        }
+                        else if("{{ kunden_anrede_2 }}" == 'Herr'){
+                            document.getElementById("choice_1_38_1").checked = true;
+                        }
+                        else {
+                            document.getElementById("choice_1_38_2").checked = true;
+                        }
+
+                        jQuery('#input_1_17').val("{{ kunden_vorname_2 }}");
+                        jQuery('#input_1_17').attr('disabled', 'disabled');
+                        jQuery('#input_1_18').val("{{ kunden_name_2 }}");
+                        jQuery('#input_1_18').attr('disabled', 'disabled');
+                        jQuery('#input_1_19').val("{{ kunden_email_2 }}");
+                        jQuery('#input_1_19').attr('disabled', 'disabled');
+                        jQuery('#label_1_65_1').css('display', 'none');
+                        jQuery('#choice_1_38_0').attr('disabled', true);
+                        jQuery('#choice_1_38_1').attr('disabled', true);
+                        jQuery('#choice_1_38_2').attr('disabled', true);
+
+                        //Bürge
+                        jQuery('#field_1_65').css('display', 'block');
+                        jQuery('#choice_1_65_1').attr('disabled', false);
+
+                        //mieter 3
+                        if("{{ kunden_anrede_3 }}" == 'Frau'){
+                            document.getElementById("choice_1_35_0").checked = true;
+                        }
+                        else if("{{ kunden_anrede_3 }}" == 'Herr'){
+                            document.getElementById("choice_1_35_1").checked = true;
+                        }
+                        else {
+                            document.getElementById("choice_1_35_2").checked = true;
+                        }
+
+                        jQuery('#input_1_23').val("{{ kunden_vorname_3 }}");
+                        jQuery('#input_1_23').attr('disabled', 'disabled');
+                        jQuery('#input_1_22').val("{{ kunden_name_3 }}");
+                        jQuery('#input_1_22').attr('disabled', 'disabled');
+                        jQuery('#input_1_24').val("{{ kunden_email_3 }}");
+                        jQuery('#input_1_24').attr('disabled', 'disabled');
+                        jQuery('#label_1_68_1').css('display', 'none');
+                        jQuery('#choice_1_35_0').attr('disabled', true);
+                        jQuery('#choice_1_35_1').attr('disabled', true);
+                        jQuery('#choice_1_35_2').attr('disabled', true);
+
+                        //Bürge
+                        jQuery('#field_1_68').css('display', 'block');
+                        jQuery('#choice_1_68_1').attr('disabled', false);
+
+
+
+                    }
+
+
+
+
+                    if({{ anzahl_hauptmieter }} == 4){
+                        //mieter 1
+                        if("{{ kunden_anrede_1 }}" == 'Frau'){
+                            document.getElementById("choice_1_39_0").checked = true;
+                        }
+                        else if("{{ kunden_anrede_1 }}" == 'Herr'){
+                            document.getElementById("choice_1_39_1").checked = true;
+                        }
+                        else {
+                            document.getElementById("choice_1_39_2").checked = true;
+                        }
+
+                        jQuery('#input_1_10').val("{{ kunden_vorname_1 }}");
+                        jQuery('#input_1_10').attr('disabled', 'disabled');
+                        jQuery('#input_1_11').val("{{ kunden_name_1 }}");
+                        jQuery('#input_1_11').attr('disabled', 'disabled');
+                        jQuery('#input_1_13').val("{{ kunden_email_1 }}");
+                        jQuery('#input_1_13').attr('disabled', 'disabled');
+                        jQuery('#label_1_59_1').css('display', 'none');
+                        jQuery('#choice_1_39_0').attr('disabled', true);
+                        jQuery('#choice_1_39_1').attr('disabled', true);
+                        jQuery('#choice_1_39_2').attr('disabled', true);
+
+
+                        //mieter 2
+                        if("{{ kunden_anrede_2 }}" == 'Frau'){
+                            document.getElementById("choice_1_38_0").checked = true;
+                        }
+                        else if("{{ kunden_anrede_2 }}" == 'Herr'){
+                            document.getElementById("choice_1_38_1").checked = true;
+                        }
+                        else {
+                            document.getElementById("choice_1_38_2").checked = true;
+                        }
+
+                        jQuery('#input_1_17').val("{{ kunden_vorname_2 }}");
+                        jQuery('#input_1_17').attr('disabled', 'disabled');
+                        jQuery('#input_1_18').val("{{ kunden_name_2 }}");
+                        jQuery('#input_1_18').attr('disabled', 'disabled');
+                        jQuery('#input_1_19').val("{{ kunden_email_2 }}");
+                        jQuery('#input_1_19').attr('disabled', 'disabled');
+                        jQuery('#label_1_65_1').css('display', 'none');
+                        jQuery('#choice_1_38_0').attr('disabled', true);
+                        jQuery('#choice_1_38_1').attr('disabled', true);
+                        jQuery('#choice_1_38_2').attr('disabled', true);
+
+                        //Bürge
+                        jQuery('#field_1_65').css('display', 'block');
+                        jQuery('#choice_1_65_1').attr('disabled', false);
+
+                        //mieter 3
+                        if("{{ kunden_anrede_3 }}" == 'Frau'){
+                            document.getElementById("choice_1_35_0").checked = true;
+                        }
+                        else if("{{ kunden_anrede_3 }}" == 'Herr'){
+                            document.getElementById("choice_1_35_1").checked = true;
+                        }
+                        else {
+                            document.getElementById("choice_1_35_2").checked = true;
+                        }
+
+                        jQuery('#input_1_23').val("{{ kunden_vorname_3 }}");
+                        jQuery('#input_1_23').attr('disabled', 'disabled');
+                        jQuery('#input_1_22').val("{{ kunden_name_3 }}");
+                        jQuery('#input_1_22').attr('disabled', 'disabled');
+                        jQuery('#input_1_24').val("{{ kunden_email_3 }}");
+                        jQuery('#input_1_24').attr('disabled', 'disabled');
+                        jQuery('#label_1_68_1').css('display', 'none');
+                        jQuery('#choice_1_35_0').attr('disabled', true);
+                        jQuery('#choice_1_35_1').attr('disabled', true);
+                        jQuery('#choice_1_35_2').attr('disabled', true);
+
+                        //mieter 4
+                        if("{{ kunden_anrede_4 }}" == 'Frau'){
+                            document.getElementById("choice_1_36_0").checked = true;
+                        }
+                        else if("{{ kunden_anrede_4 }}" == 'Herr'){
+                            document.getElementById("choice_1_36_1").checked = true;
+                        }
+                        else {
+                            document.getElementById("choice_1_36_2").checked = true;
+                        }
+
+                        jQuery('#input_1_27').val("{{ kunden_vorname_4 }}");
+                        jQuery('#input_1_27').attr('disabled', 'disabled');
+                        jQuery('#input_1_28').val("{{ kunden_name_4 }}");
+                        jQuery('#input_1_28').attr('disabled', 'disabled');
+                        jQuery('#input_1_29').val("{{ kunden_email_4 }}");
+                        jQuery('#input_1_29').attr('disabled', 'disabled');
+                        jQuery('#label_1_73_1').css('display', 'none');
+                        jQuery('#choice_1_36_0').attr('disabled', true);
+                        jQuery('#choice_1_36_1').attr('disabled', true);
+                        jQuery('#choice_1_36_2').attr('disabled', true);
+
+                        //Bürge
+                        jQuery('#field_1_73').css('display', 'block');
+                        jQuery('#choice_1_73_1').attr('disabled', false);
+
+
+
+                    }
+
+
+
+
+                    if({{ anzahl_hauptmieter }} == 5){
+
+
+                        //mieter 1
+                        if("{{ kunden_anrede_1 }}" == 'Frau'){
+                            document.getElementById("choice_1_39_0").checked = true;
+                        }
+                        else if("{{ kunden_anrede_1 }}" == 'Herr'){
+                            document.getElementById("choice_1_39_1").checked = true;
+                        }
+                        else {
+                            document.getElementById("choice_1_39_2").checked = true;
+                        }
+
+
+                        jQuery('#input_1_10').val("{{ kunden_vorname_1 }}");
+                        jQuery('#input_1_10').attr('disabled', 'disabled');
+                        jQuery('#input_1_11').val("{{ kunden_name_1 }}");
+                        jQuery('#input_1_11').attr('disabled', 'disabled');
+                        jQuery('#input_1_13').val("{{ kunden_email_1 }}");
+                        jQuery('#input_1_13').attr('disabled', 'disabled');
+                        jQuery('#label_1_59_1').css('display', 'none');
+                        jQuery('#choice_1_39_0').attr('disabled', true);
+                        jQuery('#choice_1_39_1').attr('disabled', true);
+                        jQuery('#choice_1_39_2').attr('disabled', true);
+
+                        //mieter 2
+                        if("{{ kunden_anrede_2 }}" == 'Frau'){
+                            $("#choice_1_38_0").prop( "checked", true );
+                        }
+                        else if("{{ kunden_anrede_2 }}" == 'Herr'){
+                            $("#choice_1_38_1").prop( "checked", true );
+                        }
+                        else {
+                            $("#choice_1_38_2").prop( "checked", true );
+                        }
+
+                        jQuery('#input_1_17').val("{{ kunden_vorname_2 }}");
+                        jQuery('#input_1_17').attr('disabled', 'disabled');
+                        jQuery('#input_1_18').val("{{ kunden_name_2 }}");
+                        jQuery('#input_1_18').attr('disabled', 'disabled');
+                        jQuery('#input_1_19').val("{{ kunden_email_2 }}");
+                        jQuery('#input_1_19').attr('disabled', 'disabled');
+                        jQuery('#label_1_65_1').css('display', 'none');
+                        jQuery('#choice_1_38_0').attr('disabled', true);
+                        jQuery('#choice_1_38_1').attr('disabled', true);
+                        jQuery('#choice_1_38_2').attr('disabled', true);
+
+                        //Bürge
+                        jQuery('#field_1_65').css('display', 'block');
+                        jQuery('#choice_1_65_1').attr('disabled', false);
+
+                        //mieter 3
+                        if("{{ kunden_anrede_3 }}" == 'Frau'){
+                            document.getElementById("choice_1_35_0").checked = true;
+                        }
+                        else if("{{ kunden_anrede_3 }}" == 'Herr'){
+                            document.getElementById("choice_1_35_1").checked = true;
+                        }
+                        else {
+                            document.getElementById("choice_1_35_2").checked = true;
+                        }
+
+                        jQuery('#input_1_23').val("{{ kunden_vorname_3 }}");
+                        jQuery('#input_1_23').attr('disabled', 'disabled');
+                        jQuery('#input_1_22').val("{{ kunden_name_3 }}");
+                        jQuery('#input_1_22').attr('disabled', 'disabled');
+                        jQuery('#input_1_24').val("{{ kunden_email_3 }}");
+                        jQuery('#input_1_24').attr('disabled', 'disabled');
+                        jQuery('#label_1_68_1').css('display', 'none');
+                        jQuery('#choice_1_35_0').attr('disabled', true);
+                        jQuery('#choice_1_35_1').attr('disabled', true);
+                        jQuery('#choice_1_35_2').attr('disabled', true);
+
+                        //mieter 4
+                        if("{{ kunden_anrede_4 }}" == 'Frau'){
+                            document.getElementById("choice_1_36_0").checked = true;
+                        }
+                        else if("{{ kunden_anrede_4 }}" == 'Herr'){
+                            document.getElementById("choice_1_36_1").checked = true;
+                        }
+                        else {
+                            document.getElementById("choice_1_36_2").checked = true;
+                        }
+
+                        jQuery('#input_1_27').val("{{ kunden_vorname_4 }}");
+                        jQuery('#input_1_27').attr('disabled', 'disabled');
+                        jQuery('#input_1_28').val("{{ kunden_name_4 }}");
+                        jQuery('#input_1_28').attr('disabled', 'disabled');
+                        jQuery('#input_1_29').val("{{ kunden_email_4 }}");
+                        jQuery('#input_1_29').attr('disabled', 'disabled');
+                        jQuery('#label_1_73_1').css('display', 'none');
+                        jQuery('#choice_1_36_0').attr('disabled', true);
+                        jQuery('#choice_1_36_1').attr('disabled', true);
+                        jQuery('#choice_1_36_2').attr('disabled', true);
+
+                        //mieter 5
+                        if("{{ kunden_anrede_5 }}" == 'Frau'){
+                            document.getElementById("choice_1_37_0").checked = true;
+                        }
+                        else if("{{ kunden_anrede_5 }}" == 'Herr'){
+                            document.getElementById("choice_1_37_1").checked = true;
+                        }
+                        else {
+                            document.getElementById("choice_1_37_2").checked = true;
+                        }
+
+                        jQuery('#input_1_32').val("{{ kunden_vorname_5 }}");
+                        jQuery('#input_1_32').attr('disabled', 'disabled');
+                        jQuery('#input_1_33').val("{{ kunden_name_5 }}");
+                        jQuery('#input_1_33').attr('disabled', 'disabled');
+                        jQuery('#input_1_34').val("{{ kunden_email_5 }}");
+                        jQuery('#input_1_34').attr('disabled', 'disabled');
+                        jQuery('#label_1_79_1').css('display', 'none');
+                        jQuery('#choice_1_37_0').attr('disabled', true);
+                        jQuery('#choice_1_37_1').attr('disabled', true);
+                        jQuery('#choice_1_37_2').attr('disabled', true);
+
+                        //Bürge
+                        jQuery('#field_1_79').css('display', 'block');
+                        jQuery('#choice_1_79_1').attr('disabled', false);
+
+
+
+
+                    }
+
+                    if("{{ nummer_inviter }}" == 1){
+
+                        if("{{ ist_buerge }}" == 0) {
+
+                            jQuery('#input_1_39').prop('disabled', false);
+                            jQuery('#choice_1_39_0').prop('disabled', false);
+                            jQuery('#choice_1_39_1').prop('disabled', false);
+                            jQuery('#choice_1_39_2').prop('disabled', false);
+
+                            jQuery('#input_1_10').attr('disabled', false);
+                            jQuery('#input_1_11').attr('disabled', false);
+                            //  jQuery('#input_1_13').attr('disabled', false);
+                            jQuery('#label_1_59_1').css('display', 'block');
+                        }
+                        else{
+                            jQuery('#label_1_59_1').css('display', 'block');
+                            jQuery('#label_1_59_1').attr('disabled', true);
+                            jQuery( "#choice_1_59_1" ).prop( "checked", true );
+                            jQuery('#info_buerge').css('display', 'block');
+
+
+                            if("{{ buerge_anrede_1 }}" == 'Frau'){
+                                document.getElementById("choice_1_61_0").checked = true;
+
+                            }
+                            else if("{{ buerge_anrede_1 }}" == 'Herr'){
+                                document.getElementById("choice_1_61_1").checked = true;
+
+                            }
+                            else {
+                                document.getElementById("choice_1_61_2").checked = true;
+
+                            }
+                            jQuery('#input_1_56').val("{{ buerge_vorname_1 }}");
+                            jQuery('#input_1_57').val("{{ buerge_name_1 }}");
+                            jQuery('#input_1_58').val("{{ buerge_email_1 }}");
+                            jQuery('#input_1_58').attr('readonly', true);
+
+                            jQuery('#field_1_129').css('display', 'none');
+                            jQuery('#field_1_153').css('display', 'none');
+                            jQuery('#gform_next_button_1_43').css('display', 'block');
+                            jQuery('#gform_next_button_1_43').attr('disabled', false);
+                        }
+
+                    }
+
+
+                    if("{{ nummer_inviter }}" == 2){
+
+                    if("{{ ist_buerge }}" == 0){
+
+                        jQuery('#input_1_38').prop('disabled', false);
+                        jQuery('#choice_1_38_0').prop('disabled', false);
+                        jQuery('#choice_1_38_1').prop('disabled', false);
+                        jQuery('#choice_1_38_2').prop('disabled', false);
+
+                        jQuery('#input_1_17').attr('disabled', false);
+                        jQuery('#input_1_18').attr('disabled', false);
+                        //  jQuery('#input_1_19').attr('disabled', false);
+                        jQuery('#label_1_65_1').css('display', 'block');
+                    }
+                    else{
+                        jQuery('#label_1_65_1').css('display', 'block');
+                        jQuery('#label_1_65_1').attr('disabled', true);
+                        jQuery( "#choice_1_65_1" ).prop( "checked", true );
+
+
+                        if("{{ buerge_anrede_2 }}" == 'Frau'){
+                            document.getElementById("choice_1_62_0").checked = true;
+
+                        }
+                        else if("{{ buerge_anrede_2 }}" == 'Herr'){
+                            document.getElementById("choice_1_62_1").checked = true;
+
+                        }
+                        else {
+                            document.getElementById("choice_1_62_2").checked = true;
+
+                        }
+                        jQuery('#input_1_63').val("{{ buerge_vorname_2 }}");
+                        jQuery('#input_1_64').val("{{ buerge_name_2 }}");
+                        jQuery('#input_1_66').val("{{ buerge_email_2 }}");
+                        jQuery('#input_1_66').attr('readonly', true);
+                        
+
+                        jQuery('#field_1_153').css('display', 'none');
+                        jQuery('#gform_next_button_1_43').css('display', 'block');
+
+
+                    }
+
+                    }
+
+                    if("{{ nummer_inviter }}" == 3){
+
+                        if("{{ ist_buerge }}" == 0) {
+                            jQuery('#input_1_35').attr('disabled', false);
+                            jQuery('#input_1_35').prop('disabled', false);
+                            jQuery('#choice_1_35_0').prop('disabled', false);
+                            jQuery('#choice_1_35_1').prop('disabled', false);
+                            jQuery('#choice_1_35_2').prop('disabled', false);
+
+                            jQuery('#input_1_22').attr('disabled', false);
+                            jQuery('#input_1_23').attr('disabled', false);
+                            // jQuery('#input_1_24').attr('disabled', false);
+                            jQuery('#label_1_68_1').css('display', 'block');
+                            jQuery('#field_1_68').css('display', 'block');
+                            jQuery('#choice_1_68_1').attr('disabled', false);
+                        }
+                        else{
+                            jQuery('#field_1_68').css('display', 'block');
+                            jQuery('#label_1_68_1').css('display', 'block');
+                            jQuery('#label_1_68_1').attr('disabled', true);
+                            jQuery( "#choice_1_68_1" ).prop( "checked", true );
+
+
+                            if("{{ buerge_anrede_3 }}" == 'Frau'){
+                                document.getElementById("choice_1_69_0").checked = true;
+
+                            }
+                            else if("{{ buerge_anrede_3 }}" == 'Herr'){
+                                document.getElementById("choice_1_69_1").checked = true;
+
+                            }
+                            else {
+                                document.getElementById("choice_1_69_2").checked = true;
+
+                            }
+                            jQuery('#input_1_70').val("{{ buerge_vorname_3 }}");
+                            jQuery('#input_1_71').val("{{ buerge_name_3 }}");
+                            jQuery('#input_1_72').val("{{ buerge_email_3 }}");
+                            jQuery('#input_1_72').attr('readonly', true);
+
+                            jQuery('#field_1_153').css('display', 'none');
+                            jQuery('#gform_next_button_1_43').css('display', 'block');
+
+                        }
+
+
+
+                    }
+
+                    if("{{ nummer_inviter }}" == 4){
+
+
+                        if("{{ ist_buerge }}" == 0){
+
+                        jQuery('#input_1_36').prop('disabled', false);
+                        jQuery('#choice_1_36_0').prop('disabled', false);
+                        jQuery('#choice_1_36_1').prop('disabled', false);
+                        jQuery('#choice_1_36_2').prop('disabled', false);
+
+                        jQuery('#input_1_27').attr('disabled', false);
+                        jQuery('#input_1_28').attr('disabled', false);
+                        //Bürge
+                        jQuery('#choice_1_73_1').attr('disabled', false);
+                        jQuery('#field_1_73').css('display', 'block');
+                        jQuery('#label_1_73_1').css('display', 'block');
+                        }
+                        else{
+                            jQuery('#field_1_73').css('display', 'block');
+                            jQuery('#label_1_73_1').css('display', 'block');
+                            jQuery('#label_1_73_1').attr('disabled', true);
+                            jQuery( "#choice_1_73_1" ).prop( "checked", true );
+
+
+                             if("{{ buerge_anrede_4 }}" == 'Frau'){
+                                document.getElementById("choice_1_75_0").checked = true;
+                            }
+                            else if("{{ buerge_anrede_4 }}" == 'Herr'){
+                                document.getElementById("choice_1_75_1").checked = true;
+                            }
+                            else {
+                                document.getElementById("choice_1_75_2").checked = true;
+                            }
+                            jQuery('#input_1_76').val("{{ buerge_vorname_4 }}");
+                            jQuery('#input_1_77').val("{{ buerge_name_4 }}");
+                            jQuery('#input_1_78').val("{{ buerge_email_4 }}");
+                            jQuery('#input_1_78').attr('readonly', true);
+
+                            jQuery('#field_1_153').css('display', 'none');
+                            jQuery('#gform_next_button_1_43').css('display', 'block');
+
+
+                        }
+
+
+
+                    }
+
+                    if("{{ nummer_inviter }}" == 5){
+
+                        if("{{ ist_buerge }}" == 0) {
+                            jQuery('#input_1_37').prop('disabled', false);
+                            jQuery('#choice_1_37_0').prop('disabled', false);
+                            jQuery('#choice_1_37_1').prop('disabled', false);
+                            jQuery('#choice_1_37_2').prop('disabled', false);
+
+                            jQuery('#input_1_32').attr('disabled', false);
+                            jQuery('#input_1_33').attr('disabled', false);
+                            // jQuery('#input_1_34').attr('disabled', false);
+                            jQuery('#label_1_79_1').css('display', 'block');
+                        }
+                        else{
+                            jQuery('#field_1_79').css('display', 'block');
+                            jQuery('#label_1_79_1').css('display', 'block');
+                            jQuery('#label_1_79_1').attr('disabled', true);
+                            jQuery( "#choice_1_79_1" ).prop( "checked", true );
+
+
+                            if("{{ buerge_anrede_4 }}" == 'Frau'){
+                                document.getElementById("choice_1_81_0").checked = true;
+                            }
+                            else if("{{ buerge_anrede_4 }}" == 'Herr'){
+                                document.getElementById("choice_1_81_1").checked = true;
+                            }
+                            else {
+                                document.getElementById("choice_1_81_2").checked = true;
+                            }
+                            jQuery('#input_1_82').val("{{ buerge_vorname_5 }}");
+                            jQuery('#input_1_83').val("{{ buerge_name_5 }}");
+                            jQuery('#input_1_84').val("{{ buerge_email_5 }}");
+                            jQuery('#input_1_84').attr('readonly', true);
+
+                            jQuery('#field_1_153').css('display', 'none');
+                            jQuery('#gform_next_button_1_43').css('display', 'block');
+
+                        }
+
+
+                    }
+
+                });
+
+            });
+
+
+
+            //Smartphone Collapsible unten
+            jQuery(document).ready(function(){
+                $('.collapsible').collapsible();
+            });
+
+            var hashtag_objekt =  '{{ hashtag_objekt }}';
+            var hashtag_kunde =  '{{ hashtag_kunde }}';
+            var hash_uuid =  '{{ request.get.uuid }}';
+            var warmmiete =  '{{ warmmiete }}';
+            var strasse =  '{{ strasse }}';
+            var hausnummer =  '{{ hausnummer }}';
+            var boni_post_id =  '{{ boni_post_id }}';
+            var nummer_inviter = '{{ nummer_inviter }}';
+            var vorname = '{{ kunden_vorname }}';
+            var nachname = '{{ kunden_name }}';
+            var anrede = '{{ kunden_anrede }}';
+            var email = '{{ kunden_email }}';
+
+            document.getElementById("vorschautext_kunden_vorname").innerHTML = vorname +'';
+            document.getElementById("vorschautext_kunden_vorname_smart").innerHTML = vorname +'';
+
+
+
+
+            /*     jQuery('#show_box_manuell').on('click', function(){
+
+                     jQuery('#show_box_manuell').css('background-color', '#D0F9ED');
+                     jQuery('#show_box_express').css('background-color', '#FFF');
+
+                     jQuery('#gform_next_button_1_130').css('background-color', '#14E1A7');
+                     jQuery('#weiter_express input').css('background-color', '#FFF');
+
+                     jQuery("#choice_1_44_1").prop("checked", true);
+
+                     document.getElementById("switch_express_manuell_input").checked = true;
+
+                     jQuery("#switch_checked_express").css('color', '#999999');
+                     jQuery("#switch_checked_manuell").css('color', 'black');
+
+                     jQuery('#show_box_manuell').css('border-color', '#D0F9ED');
+                     jQuery('#show_box_express').css('border-color', '#14E1A7');
+
+
+                 });
+     */
+        </script>
+    </main>
+{% endblock %}

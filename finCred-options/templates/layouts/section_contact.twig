@@ -1,0 +1,83 @@
+{% import "macros.html" as macro %}
+
+{% set form_type = 'contact-general' %}
+{% set input_prefix = form_type ~ '-' %}
+
+<section class="contact pt-xl pb-xl">
+	<div class="content grid">
+		<div class="col text text-center align-center mobile-align-left">
+			{% include "partial/headline.twig" with { data: { level: 'h2', text: data.headline }} %}
+			{% include "partial/paragraph.twig" with { data: { text: data.text, is_lead: true }} %}
+		</div>
+	</div>
+	<div class="content grid mt-l">
+		<div class="col c2"></div>
+		<div class="col c8 t12">
+			
+			<form class="eugen-form mt-s" data-type="{{ form_type }}" novalidate>
+				<div class="grid">
+					<div class="col c6">
+						<div class="form-grid">
+							<div class="form-col c100" data-concealed>
+								<label for="{{ input_prefix }}first-name" aria-label="{{ __('FORM first name', 'eugen') }}">
+									<input type="text" name="{{ input_prefix }}first-name" id="{{ input_prefix }}first-name">
+									<span class="placeholder">{{ __('FORM first name', 'eugen') }}</span>
+								</label>
+							</div>
+						</div>
+						<div class="form-grid">
+							<div class="form-col c100" data-concealed>
+								<label for="{{ input_prefix }}last-name"  aria-label="{{ __('FORM last name', 'eugen') }}">
+									<input type="text" name="{{ input_prefix }}last-name" id="{{ input_prefix }}last-name">
+									<span class="placeholder">{{ __('FORM last name', 'eugen') }}</span>
+								</label>
+							</div>
+						</div>
+						<div class="form-grid">
+							<div class="form-col c100" data-concealed>
+								<label for="{{ input_prefix }}email" aria-label="{{ __('FORM e-mail', 'eugen') }}">
+									<input type="email" name="{{ input_prefix }}email" id="{{ input_prefix }}email">
+									<span class="placeholder">{{ __('FORM e-mail', 'eugen') }}</span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="col c6 mobile-mt-s">
+						<div class="form-grid has-textarea">
+							<div class="form-col c100" data-concealed>
+								<label for="{{ input_prefix }}message"  aria-label="{{ __('CONTACT message', 'eugen') }}">
+									<textarea name="{{ input_prefix }}message" id="{{ input_prefix }}message"></textarea>
+									<span class="placeholder">{{ __('CONTACT message', 'eugen') }}</span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="col c12 mt-xs tablet-mt-s mobile-mt-s">
+						<div class="form-grid">
+							<div class="form-col c100" data-concealed>
+								<div class="has-checkbox">
+									<input type="checkbox" name="{{ input_prefix }}consent" id="{{ input_prefix }}consent">
+									<label for="{{ input_prefix }}consent">
+										<span class="text-wrapper">
+											<span class="checkbox-status checkbox-status-inactive icon-consent"></span>
+											<span class="checkbox-status checkbox-status-active icon-consent fa-solid fa-check"></span>
+											<span class="label-value">{{ __('CONTACT consent', 'eugen') }}</span>
+										</span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-grid mt-m">
+							<div class="form-col c100 align-center" data-concealed>
+								<button class="btn btn-primary btn-large" data-submit>{{ __('CONTACT submit', 'eugen') }}</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				{% include "partial/recaptcha.twig" %}
+			</form>
+			
+		</div>
+		<div class="col c2"></div>
+	</div>
+</section>
